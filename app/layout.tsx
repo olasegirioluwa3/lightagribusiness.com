@@ -1,0 +1,48 @@
+import type { Metadata } from "next";
+import { Inter, Merriweather } from "next/font/google";
+import "./globals.css";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+
+const sans = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const serif = Merriweather({
+  weight: ["300", "400", "700", "900"],
+  subsets: ["latin"],
+  variable: "--font-serif",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: "Light Agribusiness | Africa's Agribusiness Knowledge, Advisory & Technology Institution",
+  description:
+    "Light Agribusiness Consultancy Limited equips people and organizations with practical agricultural training, business systems, diagnostics, and LightAgriOS software.",
+  keywords: [
+    "agribusiness consulting Africa",
+    "farm management software Nigeria",
+    "LightAgriOS",
+    "agribusiness academy",
+    "farm diagnostics",
+    "agricultural SOPs",
+  ],
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className={`${sans.variable} ${serif.variable}`}>
+      <body className="min-h-screen flex flex-col bg-brand-parchment text-brand-charcoal antialiased selection:bg-brand-green selection:text-white">
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}

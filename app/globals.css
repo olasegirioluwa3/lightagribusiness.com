@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-green: #1F5C3F;
+  --color-gold: #C69214;
+  --color-parchment: #F4F1E8;
+  --color-charcoal: #222222;
+  --color-slate: #5A5A5A;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #F4F1E8;
+  color: #222222;
+}
+
+body {
+  background-color: #F4F1E8;
+  color: #222222;
+  font-family: var(--font-sans), Inter, system-ui, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Typography & Motif Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif), Merriweather, Georgia, serif;
+  color: #222222;
+}
+
+/* Radiating Rays Background Motif (Light Brand Accent) */
+.bg-radiating-rays {
+  background-image: radial-gradient(
+    circle at 50% -20%,
+    rgba(198, 146, 20, 0.12) 0%,
+    rgba(31, 92, 63, 0.05) 45%,
+    rgba(244, 241, 232, 0) 75%
+  );
+}
+
+.bg-radiating-subtle {
+  background-image: radial-gradient(
+    circle at 50% 0%,
+    rgba(198, 146, 20, 0.08) 0%,
+    rgba(244, 241, 232, 0) 60%
+  );
+}
+
+/* Text Highlights */
+::selection {
+  background-color: #1F5C3F;
+  color: #FAF8F3;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4F1E8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C8BFAB;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1F5C3F;
+}
