@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "../ui/Container";
 import { footerNavigation } from "@/data/navigation";
 
@@ -15,33 +16,15 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-12 border-b border-brand-charcoal-muted">
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg bg-brand-green flex items-center justify-center text-brand-gold">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="w-5 h-5"
-                >
-                  <path d="M12 2v4" />
-                  <path d="M4.93 4.93l2.83 2.83" />
-                  <path d="M2 12h4" />
-                  <path d="M19.07 4.93l-2.83 2.83" />
-                  <path d="M22 12h-4" />
-                  <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                  <path d="M5 20h14" />
-                  <path d="M8 16h8" />
-                </svg>
-              </div>
-              <div>
-                <span className="font-serif font-bold text-xl text-white tracking-tight">
-                  LIGHT AGRIBUSINESS
-                </span>
-                <span className="block text-[11px] font-semibold uppercase tracking-widest text-brand-gold">
-                  Consultancy Limited
-                </span>
+              <div className="relative h-20 w-auto">
+                <Image
+                  src="/image/lightagribusiness logo with name.png"
+                  alt="Light Agribusiness Consultancy Limited"
+                  width={200}
+                  height={80}
+                  className="object-contain"
+                  priority
+                />
               </div>
             </div>
 

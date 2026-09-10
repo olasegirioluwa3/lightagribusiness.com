@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Container } from "../ui/Container";
 import { Button } from "../ui/Button";
@@ -38,27 +39,14 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* Institutional Brand Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            {/* Radiating Light Graphic Mark */}
-            <div className="w-10 h-10 rounded-lg bg-brand-green flex items-center justify-center text-brand-gold shadow-green group-hover:scale-105 transition-transform duration-200">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-6 h-6"
-              >
-                {/* Sunburst / Radiating rays upward */}
-                <path d="M12 2v4" />
-                <path d="M4.93 4.93l2.83 2.83" />
-                <path d="M2 12h4" />
-                <path d="M19.07 4.93l-2.83 2.83" />
-                <path d="M22 12h-4" />
-                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                <path d="M5 20h14" />
-                <path d="M8 16h8" />
-              </svg>
+            <div className="w-10 h-10 rounded-lg overflow-hidden shadow-green group-hover:scale-105 transition-transform duration-200 relative">
+              <Image
+                src="/image/lightagribusiness logo.png"
+                alt="Light Agribusiness Logo"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
             <div className="flex flex-col">
               <span className="font-serif font-bold text-xl sm:text-2xl text-brand-charcoal tracking-tight leading-none group-hover:text-brand-green transition-colors">

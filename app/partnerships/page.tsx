@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
@@ -86,6 +87,47 @@ export default function PartnershipsPage() {
               </div>
             </Card>
           ))}
+        </div>
+
+        {/* Partners Showcase */}
+        <div className="mb-20">
+          <SectionHeader
+            badge="Our Network"
+            badgeVariant="gold"
+            title="Trusted Partners & Collaborators"
+            subtitle="We work with leading institutions across Africa to transform agricultural education, practice, and technology."
+            align="left"
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white/60 p-8 rounded-xl border border-brand-border/60 flex items-center justify-center relative h-40">
+              <Image
+                src="/image/partner-1.png"
+                alt="Partner 1"
+                fill
+                className="object-contain"
+                loading="lazy"
+              />
+            </div>
+            <div className="bg-white/60 p-8 rounded-xl border border-brand-border/60 flex items-center justify-center relative h-40">
+              <Image
+                src="/image/partner-2.png"
+                alt="Partner 2"
+                fill
+                className="object-contain"
+                loading="lazy"
+              />
+            </div>
+            <div className="bg-white/60 p-8 rounded-xl border border-brand-border/60 flex items-center justify-center relative h-40">
+              <Image
+                src="/image/partner-3.png"
+                alt="Partner 3"
+                fill
+                className="object-contain"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
       </Container>
     </div>

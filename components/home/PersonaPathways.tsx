@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { Container } from "../ui/Container";
 import { SectionHeader } from "../ui/SectionHeader";
 import { Card } from "../ui/Card";
@@ -97,6 +98,17 @@ export const PersonaPathways: React.FC = () => {
               </div>
 
               <div className="md:col-span-5 bg-brand-parchment p-6 rounded-xl border border-brand-border/60 flex flex-col justify-between h-full text-center sm:text-left">
+                {activePersona.image && (
+                  <div className="mb-4 relative aspect-video">
+                    <Image
+                      src={activePersona.image}
+                      alt={`${activePersona.name} - ${activePersona.role}`}
+                      fill
+                      className="object-cover rounded-lg"
+                      loading="lazy"
+                    />
+                  </div>
+                )}
                 <div>
                   <span className="text-xs font-bold uppercase tracking-wider text-brand-gold-dark block mb-1">
                     Recommended Next Step

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
@@ -75,6 +76,112 @@ export default function InsightsPage() {
               </div>
             </Card>
           ))}
+        </div>
+
+        {/* Gallery Section */}
+        <div className="mb-20">
+          <SectionHeader
+            badge="Visual Story"
+            badgeVariant="green"
+            title="Light Agribusiness in Action"
+            subtitle="Explore our work across farms, training sessions, and advisory engagements across Africa."
+            align="left"
+          />
+
+          {/* Featured Video */}
+          {/* <div className="bg-brand-parchment-card border border-brand-border/60 rounded-2xl p-6 mb-8">
+            <video
+              controls
+              className="w-full rounded-lg"
+              poster="/image/lightagribusiness-gallery (1).jpg"
+            >
+              <source src="/video/gallery-tomato.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div> */}
+
+          {/* Educational Videos */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div className="bg-brand-parchment-card border border-brand-border/60 rounded-2xl p-6">
+              <video
+                controls
+                className="w-full rounded-lg mb-4"
+              >
+                <source src="/video/agriculture-potential.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <h3 className="font-serif font-bold text-lg text-brand-charcoal mb-2">
+                Agriculture Does Not Lack Potential
+              </h3>
+              <p className="text-sm text-brand-grey">
+                What we lack is access to the right knowledge.
+              </p>
+            </div>
+            <div className="bg-brand-parchment-card border border-brand-border/60 rounded-2xl p-6">
+              <video
+                controls
+                className="w-full rounded-lg mb-4"
+              >
+                <source src="/video/practical-learning.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <h3 className="font-serif font-bold text-lg text-brand-charcoal mb-2">
+                We Don&apos;t Just Teach Agriculture
+              </h3>
+              <p className="text-sm text-brand-grey">
+                We make learning practical.
+              </p>
+            </div>
+          </div>
+
+          {/* Additional Videos */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-brand-parchment-card border border-brand-border/60 rounded-2xl p-6">
+              <video
+                controls
+                className="w-full rounded-lg mb-4"
+              >
+                <source src="/video/farmers-with-samples.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <h3 className="font-serif font-bold text-lg text-brand-charcoal mb-2">
+                Farmers in LightAgribusiness
+              </h3>
+              <p className="text-sm text-brand-grey">
+                Our farmers with samples at hand, showing practical application.
+              </p>
+            </div>
+            <div className="bg-brand-parchment-card border border-brand-border/60 rounded-2xl p-6">
+              <video
+                controls
+                className="w-full rounded-lg mb-4"
+              >
+                <source src="/video/logo-lightning-effect.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <h3 className="font-serif font-bold text-lg text-brand-charcoal mb-2">
+                LightAgribusiness Brand
+              </h3>
+              <p className="text-sm text-brand-grey">
+                Our logo with a lightning effect, representing our illuminating mission.
+              </p>
+            </div>
+          </div>
+
+          {/* Gallery Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38].map((num) => (
+              <div key={num} className="aspect-square overflow-hidden rounded-lg border border-brand-border/40 relative">
+                <Image
+                  src={`/image/lightagribusiness-gallery (${num}).jpg`}
+                  alt={`Light Agribusiness Gallery ${num}`}
+                  fill
+                  className="object-cover hover:scale-110 transition-transform duration-300"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </Container>
     </div>

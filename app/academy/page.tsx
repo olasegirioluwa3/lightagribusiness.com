@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
@@ -161,6 +162,75 @@ export default function AcademyPage() {
               <Button href="/partnerships#academic" variant="primary" size="md" className="w-full">
                 Partner with the Academy
               </Button>
+            </div>
+          </div>
+        </div>
+
+        {/* Academy Training Visuals */}
+        <div className="mb-20">
+          <SectionHeader
+            badge="Training in Action"
+            badgeVariant="academy"
+            title="Practical Learning Environments"
+            subtitle="Our training programs take place in real farm environments, not classrooms."
+            align="left"
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 relative aspect-video">
+              <Image
+                src="/image/pillar1- farmer explaining to a student in a farm.png"
+                alt="Farmer explaining to student in farm"
+                fill
+                className="object-cover rounded-lg"
+                loading="lazy"
+              />
+            </div>
+            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 relative aspect-video">
+              <Image
+                src="/image/pillar1 - female instructor advising many farmers in a farm.png"
+                alt="Female instructor advising farmers"
+                fill
+                className="object-cover rounded-lg"
+                loading="lazy"
+              />
+            </div>
+            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 relative aspect-video">
+              <Image
+                src="/image/pillar1- male instructor with some students having a lot of feed samples.png"
+                alt="Male instructor with students and feed samples"
+                fill
+                className="object-cover rounded-lg"
+                loading="lazy"
+              />
+            </div>
+            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 relative aspect-video">
+              <Image
+                src="/image/pillar1 - female instructor advising some farmers in a vegetable store.png"
+                alt="Instructor in vegetable store"
+                fill
+                className="object-cover rounded-lg"
+                loading="lazy"
+              />
+            </div>
+            
+            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 relative aspect-video">
+              <Image
+                src="/image/pillar1-man in an office with a laptop.png"
+                alt="Training session with laptop"
+                fill
+                className="object-cover rounded-lg"
+                loading="lazy"
+              />
+            </div>
+            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 relative aspect-video">
+              <Image
+                src="/image/pillar1-woman in a garden with a laptop.png"
+                alt="Practical training in garden"
+                fill
+                className="object-cover rounded-lg"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>

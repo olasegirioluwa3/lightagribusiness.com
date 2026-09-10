@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect, useRef } from "react";
 import { Container } from "../ui/Container";
 import { Button } from "../ui/Button";
 import { Badge } from "../ui/Badge";
@@ -6,11 +8,52 @@ import Link from "next/link";
 import { HiArrowRight, HiShieldCheck } from "react-icons/hi";
 
 export const Hero: React.FC = () => {
+  const [currentVideo, setCurrentVideo] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const videos = [
+    "/video/agriculture-potential.mp4",
+    "/video/practical-learning.mp4"
+  ];
+
+  const handleVideoEnd = () => {
+    setCurrentVideo((prev) => (prev + 1) % videos.length);
+  };
+
+  const handleVideoLoad = () => {
+    setIsLoaded(true);
+    if (videoRef.current) {
+      videoRef.current.play().catch(console.error);
+    }
+  };
+
+  useEffect(() => {
+    setIsLoaded(false);
+    if (videoRef.current) {
+      videoRef.current.load();
+    }
+  }, [currentVideo]);
+
   return (
-    <section className="relative overflow-hidden pt-12 pb-20 sm:pt-16 sm:pb-28 bg-radiating-rays border-b border-brand-border/40">
-      {/* Background Decorative Rings / Radiating Light Rays */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full overflow-hidden pointer-events-none -z-10">
-        <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-gradient-to-b from-brand-gold/15 to-transparent rounded-full blur-3xl opacity-60" />
+    <section className="relative overflow-hidden pt-12 pb-20 sm:pt-16 sm:pb-28 min-h-[600px] border-b border-brand-border/40">
+      {/* Background Video */}
+      <div className="absolute top-0 left-0 w-full h-full -z-10">
+        <video
+          ref={videoRef}
+          key={currentVideo}
+          src={videos[currentVideo]}
+          autoPlay
+          muted
+          loop={false}
+          playsInline
+          onEnded={handleVideoEnd}
+          onLoadedData={handleVideoLoad}
+          className="w-full h-full object-cover"
+          style={{ opacity: isLoaded ? 0.4 : 0 }}
+        />
+        {/* Overlay for text readability */}
+        <div className="absolute top-0 left-0 w-full h-full bg-brand-parchment/60" />
       </div>
 
       <Container size="lg">

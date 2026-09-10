@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
@@ -117,6 +118,47 @@ export default function AdvisoryPage() {
           </div>
         </div>
 
+        {/* Advisory Team Visuals */}
+        <div className="mb-20">
+          <SectionHeader
+            badge="Our Team in Action"
+            badgeVariant="advisory"
+            title="Expert Advisory at Work"
+            subtitle="Our consultants bring decades of combined experience in African agribusiness operations."
+            align="left"
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 relative aspect-video">
+              <Image
+                src="/image/advisory-man presenting analytics1.png"
+                alt="Advisory consultant presenting analytics"
+                fill
+                className="object-cover rounded-lg"
+                loading="lazy"
+              />
+            </div>
+            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 relative aspect-video">
+              <Image
+                src="/image/advisory-man presenting analytics2.png"
+                alt="Advisory consultant presenting data insights"
+                fill
+                className="object-cover rounded-lg"
+                loading="lazy"
+              />
+            </div>
+            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 relative aspect-video">
+              <Image
+                src="/image/advisory-my office picture.png"
+                alt="Advisory office environment"
+                fill
+                className="object-cover rounded-lg"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+
         {/* The 5D Framework Breakdown */}
         <div className="bg-brand-parchment-card border border-brand-border/60 rounded-2xl p-8 sm:p-12 mb-16 shadow-parchment">
           <Badge variant="green" className="mb-3">Our Disciplined Methodology</Badge>
@@ -128,7 +170,7 @@ export default function AdvisoryPage() {
             that change takes root on the ground.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-8">
             <div className="bg-brand-parchment p-5 rounded-xl border border-brand-border/60">
               <span className="text-xs font-bold uppercase text-brand-gold-dark block mb-1">Stage 01</span>
               <h4 className="font-serif font-bold text-base text-brand-charcoal mb-2">Diagnose</h4>
@@ -157,6 +199,28 @@ export default function AdvisoryPage() {
               <span className="text-xs font-bold uppercase text-brand-green block mb-1">Stage 05</span>
               <h4 className="font-serif font-bold text-base text-brand-charcoal mb-2">Sustain</h4>
               <p className="text-xs text-brand-grey">LightAgriOS integration so the new systems run automatically.</p>
+            </div>
+          </div>
+
+          {/* Framework Visuals */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 relative aspect-video">
+              <Image
+                src="/image/framework1.png"
+                alt="5D Framework Overview"
+                fill
+                className="object-cover rounded-lg"
+                loading="lazy"
+              />
+            </div>
+            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 relative aspect-video">
+              <Image
+                src="/image/framework2.png"
+                alt="5D Framework Implementation"
+                fill
+                className="object-cover rounded-lg"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>

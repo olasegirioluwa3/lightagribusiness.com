@@ -21,6 +21,7 @@ export interface Persona {
   age: number;
   role: string;
   avatarText: string;
+  image?: string;
   painPoint: string;
   solution: string;
   headlineMessage: string;
