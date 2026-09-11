@@ -202,25 +202,88 @@ export default function AdvisoryPage() {
             </div>
           </div>
 
-          {/* Framework Visuals */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 relative aspect-video">
-              <Image
-                src="/image/framework1.png"
-                alt="5D Framework Overview"
-                fill
-                className="object-cover rounded-lg"
-                loading="lazy"
-              />
+          {/* Framework Blueprint Panels */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="bg-gradient-to-br from-brand-charcoal to-brand-green-dark text-white p-8 rounded-2xl shadow-xl border border-brand-green/30 relative overflow-hidden flex flex-col justify-between">
+              <div className="absolute top-0 right-0 w-48 h-48 bg-brand-gold/10 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none" />
+              <div>
+                <div className="flex items-center gap-2 mb-3">
+                  <Badge variant="gold">Institutional Methodology</Badge>
+                  <span className="text-xs uppercase tracking-wider text-brand-parchment/70 font-semibold">Diagnostic to Execution</span>
+                </div>
+                <h3 className="font-serif text-2xl font-bold text-white mb-3">
+                  The Transformation Roadmap
+                </h3>
+                <p className="text-sm text-brand-parchment/80 leading-relaxed mb-6">
+                  Unlike traditional consultants who deliver paper reports and disappear, Light stays through the messy implementation phase until processes are embedded in your daily workflow.
+                </p>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-start gap-3 bg-white/10 p-3 rounded-lg backdrop-blur-sm border border-white/10">
+                    <span className="text-brand-gold font-bold text-xs uppercase px-2 py-0.5 bg-brand-gold/20 rounded">Week 1-2</span>
+                    <div>
+                      <h5 className="font-semibold text-white">Full On-Site Forensic Diagnostic</h5>
+                      <p className="text-xs text-brand-parchment/70">Pinpointing feed waste, labor leakage, biosecurity breaches, and inventory shrinkage.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3 bg-white/10 p-3 rounded-lg backdrop-blur-sm border border-white/10">
+                    <span className="text-brand-gold font-bold text-xs uppercase px-2 py-0.5 bg-brand-gold/20 rounded">Week 3-4</span>
+                    <div>
+                      <h5 className="font-semibold text-white">SOP Architecture & Protocol Design</h5>
+                      <p className="text-xs text-brand-parchment/70">Custom standard operating procedures tailored for the operational literacy of your team.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3 bg-white/10 p-3 rounded-lg backdrop-blur-sm border border-white/10">
+                    <span className="text-brand-gold font-bold text-xs uppercase px-2 py-0.5 bg-brand-gold/20 rounded">Week 5-8</span>
+                    <div>
+                      <h5 className="font-semibold text-white">Floor Deployment & Staff Coaching</h5>
+                      <p className="text-xs text-brand-parchment/70">Hands-on farm floor training until supervisors execute protocols independently.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="pt-6 mt-6 border-t border-white/15 flex items-center justify-between text-xs text-brand-parchment/70">
+                <span>Deliverable: Verified Operational Blueprint</span>
+                <span className="text-brand-gold font-semibold">Zero Paperwork Inertia</span>
+              </div>
             </div>
-            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 relative aspect-video">
-              <Image
-                src="/image/framework2.png"
-                alt="5D Framework Implementation"
-                fill
-                className="object-cover rounded-lg"
-                loading="lazy"
-              />
+
+            <div className="bg-brand-parchment-card p-8 rounded-2xl border border-brand-border/60 shadow-parchment flex flex-col justify-between">
+              <div>
+                <div className="flex items-center gap-2 mb-3">
+                  <Badge variant="lightagrios">Sustain Phase Integration</Badge>
+                  <span className="text-xs uppercase tracking-wider text-brand-grey font-semibold">Long-Term Control</span>
+                </div>
+                <h3 className="font-serif text-2xl font-bold text-brand-charcoal mb-3">
+                  Sustaining Systems with LightAgriOS
+                </h3>
+                <p className="text-sm text-brand-grey leading-relaxed mb-6">
+                  A business without a system depends entirely on one person&apos;s memory. Once your operational protocols are stabilized, we lock them into LightAgriOS so that accountability is automated.
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                  <div className="p-4 bg-white/80 rounded-xl border border-brand-border/50">
+                    <h5 className="font-serif font-bold text-brand-charcoal text-sm mb-1">Daily Log Automation</h5>
+                    <p className="text-xs text-brand-grey">Floor workers log mortality, feed usage, and sales in seconds, offline or online.</p>
+                  </div>
+                  <div className="p-4 bg-white/80 rounded-xl border border-brand-border/50">
+                    <h5 className="font-serif font-bold text-brand-charcoal text-sm mb-1">Audit Scorecard</h5>
+                    <p className="text-xs text-brand-grey">Automated variance alerts notify managers immediately when feed conversion drifts.</p>
+                  </div>
+                  <div className="p-4 bg-white/80 rounded-xl border border-brand-border/50">
+                    <h5 className="font-serif font-bold text-brand-charcoal text-sm mb-1">P&amp;L Transparency</h5>
+                    <p className="text-xs text-brand-grey">Investor-ready batch costing and true margins calculated automatically.</p>
+                  </div>
+                  <div className="p-4 bg-white/80 rounded-xl border border-brand-border/50">
+                    <h5 className="font-serif font-bold text-brand-charcoal text-sm mb-1">Continuous Retainer</h5>
+                    <p className="text-xs text-brand-grey">Quarterly governance reviews by Light advisors ensure standard compliance.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="pt-6 border-t border-brand-border/40 flex flex-col sm:flex-row items-center justify-between gap-3">
+                <span className="text-xs text-brand-grey font-medium">Diagnostic package includes 6 months of LightAgriOS</span>
+                <Button href="/contact" variant="primary" size="sm">
+                  Book Diagnostic
+                </Button>
+              </div>
             </div>
           </div>
         </div>

@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Container } from "../ui/Container";
 import { footerNavigation } from "@/data/navigation";
 
@@ -16,16 +15,11 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-12 border-b border-brand-charcoal-muted">
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="relative h-20 w-auto">
-                <Image
-                  src="/image/lightagribusiness logo with name.png"
-                  alt="Light Agribusiness Consultancy Limited"
-                  width={200}
-                  height={80}
-                  className="object-contain"
-                  priority
-                />
-              </div>
+              <img
+                src="/image/lightagribusiness logo with name.png"
+                alt="Light Agribusiness Consultancy Limited"
+                className="h-20 w-auto object-contain"
+              />
             </div>
 
             <p className="text-sm text-brand-parchment/80 leading-relaxed max-w-md">

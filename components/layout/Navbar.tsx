@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Container } from "../ui/Container";
 import { Button } from "../ui/Button";
@@ -39,13 +38,11 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* Institutional Brand Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-lg overflow-hidden shadow-green group-hover:scale-105 transition-transform duration-200 relative">
-              <Image
+            <div className="w-10 h-10 rounded-lg overflow-hidden shadow-green group-hover:scale-105 transition-transform duration-200">
+              <img
                 src="/image/lightagribusiness logo.png"
                 alt="Light Agribusiness Logo"
-                fill
-                className="object-contain"
-                priority
+                className="w-full h-full object-contain"
               />
             </div>
             <div className="flex flex-col">

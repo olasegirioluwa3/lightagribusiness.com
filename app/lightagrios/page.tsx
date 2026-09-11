@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
@@ -117,6 +118,83 @@ export default function LightAgriOSPage() {
                 <p className="text-xs sm:text-sm text-brand-grey leading-relaxed">{m.desc}</p>
               </Card>
             ))}
+          </div>
+        </div>
+
+        {/* Technology in the Field Visual Showcase */}
+        <div className="mb-20">
+          <SectionHeader
+            badge="Field Usability"
+            badgeVariant="lightagrios"
+            title="Built for the Reality of the African Farm Floor"
+            subtitle="Technology that sits in a boardroom is useless. LightAgriOS is engineered for daily record logging by supervisors, farm owners, and field workers in active production environments."
+            align="left"
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 flex flex-col justify-between">
+              <div className="relative aspect-[4/3] w-full mb-3 rounded-lg overflow-hidden">
+                <Image
+                  src="/image/female famer with lighagrios phone.png"
+                  alt="Farmer entering flock records on mobile phone"
+                  fill
+                  className="object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <h5 className="font-serif font-bold text-sm text-brand-charcoal mb-1">Mobile Offline Logging</h5>
+                <p className="text-xs text-brand-grey">Instant data capture in remote pens without needing a cellular connection.</p>
+              </div>
+            </div>
+
+            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 flex flex-col justify-between">
+              <div className="relative aspect-[4/3] w-full mb-3 rounded-lg overflow-hidden">
+                <Image
+                  src="/image/middle-aged man with lighagrios tab.png"
+                  alt="Operations manager analyzing metrics on tablet"
+                  fill
+                  className="object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <h5 className="font-serif font-bold text-sm text-brand-charcoal mb-1">Executive Visibility</h5>
+                <p className="text-xs text-brand-grey">Managers inspect feed conversion ratios, production cycles, and labor logs.</p>
+              </div>
+            </div>
+
+            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 flex flex-col justify-between">
+              <div className="relative aspect-[4/3] w-full mb-3 rounded-lg overflow-hidden">
+                <Image
+                  src="/image/old man with lightagrios tab1.png"
+                  alt="Commercial farm owner reviewing inventory and costs"
+                  fill
+                  className="object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <h5 className="font-serif font-bold text-sm text-brand-charcoal mb-1">Intuitive for Every Age</h5>
+                <p className="text-xs text-brand-grey">No complex training required. Simple high-contrast buttons and guided prompts.</p>
+              </div>
+            </div>
+
+            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 flex flex-col justify-between">
+              <div className="relative aspect-[4/3] w-full mb-3 rounded-lg overflow-hidden">
+                <Image
+                  src="/image/old man with lightagrios tab2.png"
+                  alt="Commercial farmer reviewing batch profitability analytics"
+                  fill
+                  className="object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <h5 className="font-serif font-bold text-sm text-brand-charcoal mb-1">Batch Cost Tracking</h5>
+                <p className="text-xs text-brand-grey">Understand exact margins per pen, pond, or greenhouse before harvest day.</p>
+              </div>
+            </div>
           </div>
         </div>
 
