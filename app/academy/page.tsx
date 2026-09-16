@@ -7,6 +7,8 @@ import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { HiCheckCircle, HiAcademicCap, HiBriefcase, HiSparkles } from "react-icons/hi";
 
+import { PageHero } from "@/components/ui/PageHero";
+
 export default function AcademyPage() {
   const certTiers = [
     {
@@ -37,27 +39,43 @@ export default function AcademyPage() {
   ];
 
   return (
-    <div className="py-12 sm:py-16">
-      <Container size="lg">
-        {/* Header */}
-        <div className="max-w-3xl mb-16">
-          <Badge variant="academy" className="mb-3">
-            Pillar One: Knowledge &amp; Capacity Development
-          </Badge>
-          <h1 className="font-serif text-4xl sm:text-5xl font-extrabold text-brand-charcoal mb-4 leading-tight">
-            Light Agribusiness Academy
-          </h1>
-          <p className="text-lg text-brand-grey leading-relaxed mb-4">
-            We turn agricultural ambition into practical, employable, applicable competence.
-            No theoretical lectures that gather dust — our curriculum is built backward from the exact
-            tasks a farm manager must execute on Monday morning.
-          </p>
-          <div className="h-1 w-20 bg-brand-gold rounded-full" />
-        </div>
+    <div>
+      <PageHero
+        badge="Pillar One: Knowledge & Capacity Development"
+        badgeVariant="academy"
+        title="Light Agribusiness Academy"
+        subtitle="We turn agricultural ambition into practical, employable, applicable competence. No theoretical lectures that gather dust — our curriculum is built backward from the exact tasks a farm manager must execute on Monday morning."
+        imageSrc="/image/pillar1 - female instructor advising many farmers in a farm.png"
+        imageAlt="Light Agribusiness Academy field training and practical instruction"
+        layout="split-right"
+        breadcrumbs={[{ label: "Academy" }]}
+        pills={[
+          "3 Rigorous Certification Tiers",
+          "SIWES & University Cohorts",
+          "100% Farm-Floor Assessed",
+        ]}
+        floatingCard={{
+          badge: "Tested Competence",
+          title: "Real Farm Verification",
+          description: "Assessment is based on demonstrated farm floor tasks, not mere class attendance.",
+        }}
+        actions={
+          <>
+            <Button href="#certifications" variant="primary" size="md">
+              View Certifications
+            </Button>
+            <Button href="/partnerships#academic" variant="outline" size="md">
+              University Partnerships
+            </Button>
+          </>
+        }
+      />
 
-        {/* Certification Tiers */}
-        <div className="mb-20">
-          <SectionHeader
+      <div className="py-12 sm:py-16">
+        <Container size="lg">
+          {/* Certification Tiers */}
+          <div id="certifications" className="mb-20">
+            <SectionHeader
             badge="Rigorous Credentials"
             badgeVariant="gold"
             title="The Three Certification Tiers"
@@ -117,7 +135,7 @@ export default function AcademyPage() {
         </div>
 
         {/* SIWES & Student Industrial Training Callout */}
-        <div className="bg-brand-parchment-card border border-brand-green/20 rounded-2xl p-8 sm:p-12 mb-16">
+        <div id="siwes" className="bg-brand-parchment-card border border-brand-green/20 rounded-2xl p-8 sm:p-12 mb-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8 space-y-4">
               <Badge variant="green">SIWES &amp; University Partnerships</Badge>
@@ -167,7 +185,7 @@ export default function AcademyPage() {
         </div>
 
         {/* Academy Training Visuals */}
-        <div className="mb-20">
+        <div id="training" className="mb-20">
           <SectionHeader
             badge="Training in Action"
             badgeVariant="academy"
@@ -236,5 +254,6 @@ export default function AcademyPage() {
         </div>
       </Container>
     </div>
+  </div>
   );
 }

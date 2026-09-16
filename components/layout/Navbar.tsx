@@ -56,14 +56,14 @@ export const Navbar: React.FC = () => {
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
+          <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1.5">
             {headerNavigation.map((item) => {
               const isActive = pathname === item.href;
               return (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                  className={`px-2.5 xl:px-3 py-1.5 xl:py-2 rounded-md text-sm font-medium transition-colors ${
                     isActive
                       ? "text-brand-green font-bold bg-brand-green/10"
                       : "text-brand-charcoal hover:text-brand-green hover:bg-brand-green/5"

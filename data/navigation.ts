@@ -2,6 +2,11 @@ import { NavItem } from "@/types";
 
 export const headerNavigation: NavItem[] = [
   {
+    label: "Home",
+    href: "/",
+    description: "Africa's Agribusiness Knowledge, Advisory & Technology Institution",
+  },
+  {
     label: "Academy",
     href: "/academy",
     description: "Practical capacity development, certifications & SIWES internships",

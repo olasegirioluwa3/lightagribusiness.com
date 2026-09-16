@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { HiAcademicCap, HiCurrencyDollar, HiGlobeAlt, HiOfficeBuilding } from "react-icons/hi";
+import { PageHero } from "@/components/ui/PageHero";
 
 export default function PartnershipsPage() {
   const models = [
@@ -40,23 +41,40 @@ export default function PartnershipsPage() {
   ];
 
   return (
-    <div className="py-12 sm:py-16">
-      <Container size="lg">
-        {/* Header */}
-        <div className="max-w-3xl mb-16">
-          <Badge variant="green" className="mb-3">Institutional Collaboration</Badge>
-          <h1 className="font-serif text-4xl sm:text-5xl font-extrabold text-brand-charcoal mb-4 leading-tight">
-            Institutional Partnerships
-          </h1>
-          <p className="text-lg text-brand-grey leading-relaxed mb-4">
-            Transforming African agribusiness requires institutional integration across education,
-            finance, government, and commercial supply chains. We partner deliberately with organizations
-            committed to durable agricultural outcomes.
-          </p>
-          <div className="h-1 w-20 bg-brand-gold rounded-full" />
-        </div>
+    <div>
+      <PageHero
+        badge="Institutional Collaboration"
+        badgeVariant="green"
+        title="Institutional Partnerships"
+        subtitle="Transforming African agribusiness requires institutional integration across education, finance, government, and commercial supply chains. We partner deliberately with organizations committed to durable agricultural outcomes."
+        imageSrc="/image/investor-banner-exec.jpg"
+        imageAlt="Institutional agribusiness leadership and executive collaboration"
+        layout="split-left"
+        breadcrumbs={[{ label: "Partnerships" }]}
+        pills={[
+          "University SIWES Models",
+          "DFI Portfolio Monitoring",
+          "Outgrower Supply Chains",
+        ]}
+        statBox={{
+          number: "4 Strategic",
+          label: "Engagement Frameworks",
+        }}
+        actions={
+          <>
+            <Button href="#models" variant="primary" size="md">
+              Explore Partner Frameworks
+            </Button>
+            <Button href="/contact" variant="outline" size="md">
+              Initiate Partnership
+            </Button>
+          </>
+        }
+      />
 
-        {/* Partnership Models Grid */}
+      <div className="py-12 sm:py-16">
+        <Container size="lg">
+          {/* Partnership Models Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {models.map((m) => (
             <Card key={m.title} hoverable borderAccent="gold" className="p-8">
@@ -131,5 +149,6 @@ export default function PartnershipsPage() {
         </div>
       </Container>
     </div>
+  </div>
   );
 }

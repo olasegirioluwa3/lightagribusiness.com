@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { HiDownload, HiDocumentText, HiTrendingUp } from "react-icons/hi";
+import { PageHero } from "@/components/ui/PageHero";
 
 export default function InsightsPage() {
   const publications = [
@@ -36,22 +37,41 @@ export default function InsightsPage() {
   ];
 
   return (
-    <div className="py-12 sm:py-16">
-      <Container size="lg">
-        {/* Header */}
-        <div className="max-w-3xl mb-16">
-          <Badge variant="gold" className="mb-3">Research &amp; Thought Leadership</Badge>
-          <h1 className="font-serif text-4xl sm:text-5xl font-extrabold text-brand-charcoal mb-4 leading-tight">
-            Insights &amp; Publications
-          </h1>
-          <p className="text-lg text-brand-grey leading-relaxed mb-4">
-            Knowledge that cannot be simplified has not yet been understood well enough to teach.
-            Explore our annual readiness reports, practical toolkits, and diagnostic insights.
-          </p>
-          <div className="h-1 w-20 bg-brand-gold rounded-full" />
-        </div>
+    <div>
+      <PageHero
+        badge="Research & Thought Leadership"
+        badgeVariant="gold"
+        title="Insights & Publications"
+        subtitle="Knowledge that cannot be simplified has not yet been understood well enough to teach. Explore our annual readiness reports, practical toolkits, and diagnostic insights."
+        imageSrc="/image/lightagribusiness-gallery (37).jpg"
+        imageAlt="Agricultural landscape and market insights research"
+        layout="editorial"
+        breadcrumbs={[{ label: "Insights" }]}
+        pills={[
+          "Annual Readiness Report",
+          "Poultry SOP Starter Kits",
+          "Yield Leaks Whitepaper",
+        ]}
+        floatingCard={{
+          badge: "Featured Publication",
+          title: "State of African Agribusiness Readiness",
+          description: "Annual report synthesizing aggregated diagnostic benchmarks across commercial farms.",
+        }}
+        actions={
+          <>
+            <Button href="#publications" variant="primary" size="md">
+              Download Research
+            </Button>
+            <Button href="#gallery" variant="outline" size="md">
+              Field Gallery
+            </Button>
+          </>
+        }
+      />
 
-        {/* Publications Grid */}
+      <div className="py-12 sm:py-16">
+        <Container size="lg">
+          {/* Publications Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {publications.map((item) => (
             <Card key={item.title} hoverable borderAccent="gold" className="flex flex-col justify-between">
@@ -185,5 +205,6 @@ export default function InsightsPage() {
         </div>
       </Container>
     </div>
+  </div>
   );
 }

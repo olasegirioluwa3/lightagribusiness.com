@@ -1,51 +1,83 @@
 import React from "react";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
+import { PageHero } from "@/components/ui/PageHero";
 
 export default function AboutPage() {
   const values = [
     {
       title: "Practical Knowledge",
       desc: "Every framework must survive contact with a real farm by Friday. Theory without execution is a distraction.",
+      image: "/image/pillar1- farmer explaining to a student in a farm.png",
+      tag: "Actionable Competence",
     },
     {
       title: "Integrity",
       desc: "We tell clients the truth about their farm operations even when a softer answer is easier to sell.",
+      image: "/image/advisory-man presenting analytics2.png",
+      tag: "Uncompromising Honesty",
     },
     {
       title: "Systems Thinking",
       desc: "We build structures, SOPs, and dashboards that keep working after our consultants leave the room.",
+      image: "/image/middle-aged man with lighagrios tab.png",
+      tag: "Durable Structures",
     },
     {
       title: "Continuous Learning",
       desc: "We hold our own team, diagnostics, and software to the exact same standards of rigor we teach.",
+      image: "/image/pillar1- male instructor with some students having a lot of feed samples.png",
+      tag: "Institutional Rigor",
     },
     {
       title: "Impact & Stewardship",
       desc: "We measure our success by what actually changed on the farm floor, not the hours billed.",
+      image: "/image/lightagribusiness-gallery (37).jpg",
+      tag: "Lasting Transformation",
     },
   ];
 
   return (
-    <div className="py-12 sm:py-16">
-      <Container size="lg">
-        {/* Header */}
-        <div className="max-w-3xl mb-16">
-          <Badge variant="gold" className="mb-3">Institutional Story &amp; Philosophy</Badge>
-          <h1 className="font-serif text-4xl sm:text-5xl font-extrabold text-brand-charcoal mb-4 leading-tight">
-            About Light Agribusiness
-          </h1>
-          <p className="text-lg text-brand-grey leading-relaxed mb-4">
-            Africa&apos;s Agribusiness Knowledge, Advisory, Systems and Technology Institution.
-            Illuminating the path of agribusiness success through practical transformation.
-          </p>
-          <div className="h-1 w-20 bg-brand-gold rounded-full" />
-        </div>
+    <div>
+      <PageHero
+        badge="Institutional Story & Philosophy"
+        badgeVariant="gold"
+        title="About Light Agribusiness"
+        subtitle="Africa's Agribusiness Knowledge, Advisory, Systems and Technology Institution. Illuminating the path of agribusiness success through practical transformation."
+        imageSrc="/image/lightagribusiness-gallery (12).jpg"
+        imageAlt="Light Agribusiness institution leadership and field operations"
+        layout="montage"
+        secondaryImageSrc="/image/advisory-my office picture.png"
+        secondaryImageAlt="Advisory consultation center"
+        breadcrumbs={[{ label: "About" }]}
+        pills={[
+          "Sage-Creator Archetype",
+          "5 Governing Beliefs",
+          "Pan-African Vision",
+        ]}
+        statBox={{
+          number: "5 Core",
+          label: "Institutional Values",
+        }}
+        actions={
+          <>
+            <Button href="#story" variant="primary" size="md">
+              The Origin Narrative
+            </Button>
+            <Button href="#values" variant="outline" size="md">
+              5 Core Values
+            </Button>
+          </>
+        }
+      />
 
-        {/* Canonical Company Story (Verbatim from Brand Manual Part 2) */}
+      <div className="py-12 sm:py-16">
+        <Container size="lg">
+          {/* Canonical Company Story (Verbatim from Brand Manual Part 2) */}
         <div className="bg-brand-parchment-card p-8 sm:p-12 rounded-2xl border border-brand-border/60 mb-20 shadow-parchment">
           <Badge variant="green" className="mb-4">The Origin Narrative</Badge>
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-charcoal mb-6">
@@ -83,8 +115,8 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Core Values Grid */}
-        <div className="mb-20">
+        {/* Core Values Grid with Rich Imagery */}
+        <div id="values" className="mb-20">
           <SectionHeader
             badge="Institutional Character"
             badgeVariant="gold"
@@ -93,14 +125,53 @@ export default function AboutPage() {
             align="left"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {values.map((v, i) => (
-              <Card key={v.title} hoverable borderAccent="gold" className="p-6">
-                <span className="text-2xl font-serif font-extrabold text-brand-gold block mb-2">
-                  0{i + 1}
-                </span>
-                <h3 className="font-serif font-bold text-lg text-brand-charcoal mb-2">{v.title}</h3>
-                <p className="text-xs sm:text-sm text-brand-grey leading-relaxed">{v.desc}</p>
+              <Card
+                key={v.title}
+                hoverable
+                borderAccent="gold"
+                className="overflow-hidden flex flex-col p-0 group"
+              >
+                {/* Value Image Header with Number Overlay */}
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-brand-charcoal">
+                  <Image
+                    src={v.image}
+                    alt={v.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+
+                  {/* Floating Number Badge */}
+                  <div className="absolute top-3 left-3 bg-brand-charcoal/85 backdrop-blur-md px-2.5 py-1 rounded-md border border-brand-gold/50 shadow-md">
+                    <span className="text-xs font-serif font-bold text-brand-gold tracking-wider">
+                      VALUE 0{i + 1}
+                    </span>
+                  </div>
+
+                  {/* Value Tag */}
+                  <div className="absolute bottom-3 left-3">
+                    <span className="text-[11px] font-semibold uppercase tracking-wider text-white/90 bg-brand-green/80 backdrop-blur-xs px-2.5 py-0.5 rounded">
+                      {v.tag}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="p-6 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h3 className="font-serif font-bold text-xl text-brand-charcoal mb-2.5 group-hover:text-brand-green transition-colors">
+                      {v.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-brand-charcoal-muted leading-relaxed">
+                      {v.desc}
+                    </p>
+                  </div>
+                  <div className="h-0.5 w-12 bg-brand-gold/40 rounded-full mt-4 group-hover:w-20 group-hover:bg-brand-gold transition-all duration-300" />
+                </div>
               </Card>
             ))}
           </div>
@@ -126,5 +197,6 @@ export default function AboutPage() {
         </div>
       </Container>
     </div>
+  </div>
   );
 }

@@ -6,6 +6,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
+import { PageHero } from "@/components/ui/PageHero";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -16,22 +17,31 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="py-12 sm:py-16">
-      <Container size="lg">
-        {/* Header */}
-        <div className="max-w-3xl mb-16">
-          <Badge variant="gold" className="mb-3">Connect with Light</Badge>
-          <h1 className="font-serif text-4xl sm:text-5xl font-extrabold text-brand-charcoal mb-4 leading-tight">
-            Consultations &amp; Inquiries
-          </h1>
-          <p className="text-lg text-brand-grey leading-relaxed mb-4">
-            Whether you are booking a Farm Diagnostic, enrolling in an Academy certification cohort,
-            or scheduling an enterprise LightAgriOS consultation, our team is ready to assist.
-          </p>
-          <div className="h-1 w-20 bg-brand-gold rounded-full" />
-        </div>
+    <div>
+      <PageHero
+        badge="Connect with Light"
+        badgeVariant="gold"
+        title="Consultations & Inquiries"
+        subtitle="Whether you are booking a Farm Diagnostic, enrolling in an Academy certification cohort, or scheduling an enterprise LightAgriOS consultation, our advisors are ready to assist."
+        imageSrc="/image/advisory-my office picture.png"
+        imageAlt="Light Agribusiness consultation office"
+        layout="split-card"
+        breadcrumbs={[{ label: "Contact" }]}
+        pills={[
+          "⚡ 1-Day Response SLA",
+          "Fixed-Fee Diagnostics",
+          "Multi-Farm Enterprise Consults",
+        ]}
+        floatingCard={{
+          badge: "Direct Communication",
+          title: "Advisory Desk",
+          description: "Connect directly with experienced agribusiness practitioners who understand African farming realities.",
+        }}
+      />
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <div className="py-12 sm:py-16">
+        <Container size="lg">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           {/* Contact Form */}
           <div className="lg:col-span-7">
             <Card borderAccent="green" className="p-8 sm:p-10">
@@ -182,5 +192,6 @@ export default function ContactPage() {
         </div>
       </Container>
     </div>
+  </div>
   );
 }

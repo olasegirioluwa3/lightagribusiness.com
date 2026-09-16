@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { HiCheckCircle, HiDeviceMobile, HiChartBar, HiLockClosed, HiCloud } from "react-icons/hi";
+import { PageHero } from "@/components/ui/PageHero";
 
 export default function LightAgriOSPage() {
   const tiers = [
@@ -82,25 +83,41 @@ export default function LightAgriOSPage() {
   ];
 
   return (
-    <div className="py-12 sm:py-16">
-      <Container size="lg">
-        {/* Header */}
-        <div className="max-w-3xl mb-16">
-          <Badge variant="lightagrios" className="mb-3">
-            Pillar Three: Agricultural Technology
-          </Badge>
-          <h1 className="font-serif text-4xl sm:text-5xl font-extrabold text-brand-charcoal mb-4 leading-tight">
-            LightAgriOS
-          </h1>
-          <p className="text-lg text-brand-grey leading-relaxed mb-4">
-            We turn farm data into decisions you can actually see and act on. The single operating
-            system built for how African agribusinesses actually function: offline-ready, multi-enterprise,
-            and simple enough for farm floor staff to use daily.
-          </p>
-          <div className="h-1 w-20 bg-brand-gold rounded-full" />
-        </div>
+    <div>
+      <PageHero
+        badge="Pillar Three: Agricultural Technology"
+        badgeVariant="lightagrios"
+        title="LightAgriOS"
+        subtitle="We turn farm data into decisions you can actually see and act on. The single operating system built for how African agribusinesses actually function: offline-ready, multi-enterprise, and simple enough for farm floor staff to use daily."
+        imageSrc="/image/female famer with lighagrios phone.png"
+        imageAlt="Female farmer utilizing LightAgriOS farm management system on mobile device"
+        layout="tech"
+        breadcrumbs={[{ label: "LightAgriOS" }]}
+        pills={[
+          "⚡ Offline-First Record Keeping",
+          "📊 Automated Analytics",
+          "🌱 Multi-Farm Dashboards",
+        ]}
+        floatingCard={{
+          badge: "Built for African Realities",
+          title: "Works 100% Offline",
+          description: "Log mortality, feeds, and inventory on the farm floor; automatically syncs when online.",
+        }}
+        actions={
+          <>
+            <Button href="#pricing" variant="primary" size="md">
+              View Pricing Tiers
+            </Button>
+            <Button href="/contact" variant="outline" size="md">
+              Schedule Enterprise Demo
+            </Button>
+          </>
+        }
+      />
 
-        {/* Product Modules Grid */}
+      <div className="py-12 sm:py-16">
+        <Container size="lg">
+          {/* Product Modules Grid */}
         <div className="mb-20">
           <SectionHeader
             badge="Platform Architecture"
@@ -267,5 +284,6 @@ export default function LightAgriOSPage() {
         </div>
       </Container>
     </div>
+  </div>
   );
 }

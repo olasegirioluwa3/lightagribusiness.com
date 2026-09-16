@@ -7,6 +7,8 @@ import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { HiCheckCircle, HiArrowRight, HiClipboardCheck, HiDocumentText } from "react-icons/hi";
 
+import { PageHero } from "@/components/ui/PageHero";
+
 export default function AdvisoryPage() {
   const advisoryServices = [
     {
@@ -37,27 +39,42 @@ export default function AdvisoryPage() {
   ];
 
   return (
-    <div className="py-12 sm:py-16">
-      <Container size="lg">
-        {/* Header */}
-        <div className="max-w-3xl mb-16">
-          <Badge variant="advisory" className="mb-3">
-            Pillar Two: Advisory &amp; Business Systems
-          </Badge>
-          <h1 className="font-serif text-4xl sm:text-5xl font-extrabold text-brand-charcoal mb-4 leading-tight">
-            Light Advisory
-          </h1>
-          <p className="text-lg text-brand-grey leading-relaxed mb-4">
-            We turn agricultural effort into a business that runs on systems, not guesswork.
-            A farm without a system depends entirely on one person&apos;s memory. We build structures
-            that keep operating when the owner is not in the room.
-          </p>
-          <div className="h-1 w-20 bg-brand-gold rounded-full" />
-        </div>
+    <div>
+      <PageHero
+        badge="Pillar Two: Advisory & Business Systems"
+        badgeVariant="advisory"
+        title="Light Advisory"
+        subtitle="We turn agricultural effort into a business that runs on systems, not guesswork. A farm without a system depends entirely on one person's memory. We build structures that keep operating when the owner is not in the room."
+        imageSrc="/image/advisory-man presenting analytics1.png"
+        imageAlt="Light Advisory farm diagnostic and agricultural analytics consulting"
+        layout="split-left"
+        breadcrumbs={[{ label: "Advisory" }]}
+        pills={[
+          "Fixed-Fee Diagnostics",
+          "Plain-Language SOP Kits",
+          "Investment Readiness",
+        ]}
+        statBox={{
+          number: "5-10 Days",
+          label: "Audit Turnaround",
+        }}
+        actions={
+          <>
+            <Button href="#diagnostic" variant="primary" size="md">
+              Request Diagnostic
+            </Button>
+            <Button href="#sops" variant="outline" size="md">
+              SOP Frameworks
+            </Button>
+          </>
+        }
+      />
 
-        {/* Service Ladder */}
-        <div className="mb-20">
-          <SectionHeader
+      <div className="py-12 sm:py-16">
+        <Container size="lg">
+          {/* Service Ladder */}
+          <div className="mb-20">
+            <SectionHeader
             badge="Offer Ladder"
             badgeVariant="gold"
             title="Operational Advisory Packages"
@@ -289,5 +306,6 @@ export default function AdvisoryPage() {
         </div>
       </Container>
     </div>
+  </div>
   );
 }
