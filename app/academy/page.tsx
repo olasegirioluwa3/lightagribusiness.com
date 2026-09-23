@@ -1,259 +1,50 @@
 import React from "react";
-import Image from "next/image";
-import { Container } from "@/components/ui/Container";
-import { SectionHeader } from "@/components/ui/SectionHeader";
-import { Card } from "@/components/ui/Card";
-import { Badge } from "@/components/ui/Badge";
-import { Button } from "@/components/ui/Button";
-import { HiCheckCircle, HiAcademicCap, HiBriefcase, HiSparkles } from "react-icons/hi";
+import { Metadata } from "next";
+import { AcademyHero } from "@/components/academy/AcademyHero";
+import { CapabilityGap } from "@/components/academy/CapabilityGap";
+import { AcademyOfferings } from "@/components/academy/AcademyOfferings";
+import { CertificationPathway } from "@/components/academy/CertificationPathway";
+import { WhoIsItFor } from "@/components/academy/WhoIsItFor";
+import { LearningExperience } from "@/components/academy/LearningExperience";
+import { UpcomingProgrammes } from "@/components/academy/UpcomingProgrammes";
+import { AcademyCommunity } from "@/components/academy/AcademyCommunity";
+import { AcademyCTA } from "@/components/academy/AcademyCTA";
 
-import { PageHero } from "@/components/ui/PageHero";
+export const metadata: Metadata = {
+  title: "Light Agribusiness Academy | Knowledge & Capacity Development",
+  description:
+    "Practical knowledge, professional development, and certification designed to turn agribusiness learning into real-world application across Africa.",
+};
 
 export default function AcademyPage() {
-  const certTiers = [
-    {
-      level: "Foundation Certificate",
-      audience: "Students, Graduates, New Agripreneurs",
-      duration: "1 to 3 Weeks",
-      focus: "Single-topic mastery (e.g., Poultry Business Basics, Farm Record-Keeping, Greenhouse Operations).",
-      standard: "Assessed completion quiz + short practical farm assignment submitted within 7 days.",
-      badge: "Entry Tier",
-    },
-    {
-      level: "Professional Certificate",
-      audience: "Working Farm Managers, Commercial Operators",
-      duration: "6 to 8 Weeks",
-      focus: "Role-oriented commercial management (e.g., Certified Farm Operations Manager, Feed & Inventory Controller).",
-      standard: "Assessed live project/case study + demonstrated workflow on the learner's own farm floor.",
-      badge: "Practitioner Tier",
-      popular: true,
-    },
-    {
-      level: "Advanced / Executive Certificate",
-      audience: "Corporate Executives, Agribusiness Investors, Consultants",
-      duration: "10 to 12 Weeks",
-      focus: "Enterprise transformation, outgrower management, and investment-readiness diagnostic specialist.",
-      standard: "Comprehensive capstone project evaluated by an expert panel of agribusiness practitioners.",
-      badge: "Executive Tier",
-    },
-  ];
-
   return (
-    <div>
-      <PageHero
-        badge="Pillar One: Knowledge & Capacity Development"
-        badgeVariant="academy"
-        title="Light Agribusiness Academy"
-        subtitle="We turn agricultural ambition into practical, employable, applicable competence. No theoretical lectures that gather dust — our curriculum is built backward from the exact tasks a farm manager must execute on Monday morning."
-        imageSrc="/image/pillar1 - female instructor advising many farmers in a farm.png"
-        imageAlt="Light Agribusiness Academy field training and practical instruction"
-        layout="split-right"
-        breadcrumbs={[{ label: "Academy" }]}
-        pills={[
-          "3 Rigorous Certification Tiers",
-          "SIWES & University Cohorts",
-          "100% Farm-Floor Assessed",
-        ]}
-        floatingCard={{
-          badge: "Tested Competence",
-          title: "Real Farm Verification",
-          description: "Assessment is based on demonstrated farm floor tasks, not mere class attendance.",
-        }}
-        actions={
-          <>
-            <Button href="#certifications" variant="primary" size="md">
-              View Certifications
-            </Button>
-            <Button href="/partnerships#academic" variant="outline" size="md">
-              University Partnerships
-            </Button>
-          </>
-        }
-      />
+    <main className="min-h-screen bg-[#FAF8F3]">
+      {/* 1. Hero Section: Headline, CTAs, Value Badges & Showcase */}
+      <AcademyHero />
 
-      <div className="py-12 sm:py-16">
-        <Container size="lg">
-          {/* Certification Tiers */}
-          <div id="certifications" className="mb-20">
-            <SectionHeader
-            badge="Rigorous Credentials"
-            badgeVariant="gold"
-            title="The Three Certification Tiers"
-            subtitle="Credibility depends on assessment rigor, not the mode of delivery. Every tier is built on practical testing rather than mere attendance."
-            align="left"
-          />
+      {/* 2. The Capability Gap: Problem Statement, 5 Challenge Cards & Quote */}
+      <CapabilityGap />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {certTiers.map((cert) => (
-              <Card
-                key={cert.level}
-                hoverable
-                borderAccent="academy"
-                className={`flex flex-col justify-between ${
-                  cert.popular ? "ring-2 ring-brand-gold" : ""
-                }`}
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <Badge variant="academy">{cert.badge}</Badge>
-                    <span className="text-xs text-brand-grey font-semibold">{cert.duration}</span>
-                  </div>
+      {/* 3. What We Offer: 6 Service Cards & Featured Light Academy Ecosystem */}
+      <AcademyOfferings />
 
-                  <h3 className="font-serif text-xl font-bold text-brand-charcoal mb-2">
-                    {cert.level}
-                  </h3>
+      {/* 4. The Certification Pathway: 3-Tier Linear Progression */}
+      <CertificationPathway />
 
-                  <p className="text-xs font-semibold uppercase text-amber-800 mb-4">
-                    Target: {cert.audience}
-                  </p>
+      {/* 5. Who Is It For?: 6 Audience Personas */}
+      <WhoIsItFor />
 
-                  <div className="space-y-3 mb-6 text-xs sm:text-sm text-brand-charcoal-muted">
-                    <div>
-                      <span className="font-bold text-brand-charcoal block">Focus Area:</span>
-                      <span>{cert.focus}</span>
-                    </div>
-                    <div>
-                      <span className="font-bold text-brand-green block">Assessment Standard:</span>
-                      <span>{cert.standard}</span>
-                    </div>
-                  </div>
-                </div>
+      {/* 6. The Learning Experience: 5-Stage Stepper & Field Application */}
+      <LearningExperience />
 
-                <div className="pt-4 border-t border-brand-border/40">
-                  <Button
-                    href="/contact"
-                    variant={cert.popular ? "primary" : "outline"}
-                    size="md"
-                    className="w-full justify-center"
-                  >
-                    Enroll / Inquire
-                  </Button>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </div>
+      {/* 7. Upcoming Programmes: 3 Featured Cohorts with Details */}
+      <UpcomingProgrammes />
 
-        {/* SIWES & Student Industrial Training Callout */}
-        <div id="siwes" className="bg-brand-parchment-card border border-brand-green/20 rounded-2xl p-8 sm:p-12 mb-16">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <div className="lg:col-span-8 space-y-4">
-              <Badge variant="green">SIWES &amp; University Partnerships</Badge>
-              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-charcoal">
-                The Bridge Between the Classroom and Commercial Competence
-              </h2>
-              <p className="text-sm text-brand-grey leading-relaxed">
-                Agriculture degrees produce graduates who know the biology of crops, but employers need
-                people who know inventory control, mortality management, staff supervision, and digital
-                records. We partner with universities to place students in structured, mentored
-                internships where they manage live operations.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs sm:text-sm text-brand-charcoal-muted">
-                <div className="flex items-center gap-2">
-                  <HiCheckCircle className="w-5 h-5 text-brand-green shrink-0" />
-                  <span>Curriculum aligned with operating farm managers</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <HiCheckCircle className="w-5 h-5 text-brand-green shrink-0" />
-                  <span>Hands-on LightAgriOS digital record training</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <HiCheckCircle className="w-5 h-5 text-brand-green shrink-0" />
-                  <span>Employability certification upon completion</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <HiCheckCircle className="w-5 h-5 text-brand-green shrink-0" />
-                  <span>Direct alumni network &amp; job board access</span>
-                </div>
-              </div>
-            </div>
+      {/* 8. Alumni / Community: Testimonial & Real Progress */}
+      <AcademyCommunity />
 
-            <div className="lg:col-span-4 bg-brand-parchment p-6 rounded-xl border border-brand-border/60 text-center">
-              <HiAcademicCap className="w-12 h-12 text-brand-green mx-auto mb-3" />
-              <h3 className="font-serif font-bold text-lg text-brand-charcoal mb-2">
-                University Partner?
-              </h3>
-              <p className="text-xs text-brand-grey mb-4">
-                Partner with Light to strengthen your faculty&apos;s practical training outcomes and
-                student employability.
-              </p>
-              <Button href="/partnerships#academic" variant="primary" size="md" className="w-full">
-                Partner with the Academy
-              </Button>
-            </div>
-          </div>
-        </div>
-
-        {/* Academy Training Visuals */}
-        <div id="training" className="mb-20">
-          <SectionHeader
-            badge="Training in Action"
-            badgeVariant="academy"
-            title="Practical Learning Environments"
-            subtitle="Our training programs take place in real farm environments, not classrooms."
-            align="left"
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 relative aspect-video">
-              <Image
-                src="/image/pillar1- farmer explaining to a student in a farm.png"
-                alt="Farmer explaining to student in farm"
-                fill
-                className="object-cover rounded-lg"
-                loading="lazy"
-              />
-            </div>
-            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 relative aspect-video">
-              <Image
-                src="/image/pillar1 - female instructor advising many farmers in a farm.png"
-                alt="Female instructor advising farmers"
-                fill
-                className="object-cover rounded-lg"
-                loading="lazy"
-              />
-            </div>
-            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 relative aspect-video">
-              <Image
-                src="/image/pillar1- male instructor with some students having a lot of feed samples.png"
-                alt="Male instructor with students and feed samples"
-                fill
-                className="object-cover rounded-lg"
-                loading="lazy"
-              />
-            </div>
-            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 relative aspect-video">
-              <Image
-                src="/image/pillar1 - female instructor advising some farmers in a vegetable store.png"
-                alt="Instructor in vegetable store"
-                fill
-                className="object-cover rounded-lg"
-                loading="lazy"
-              />
-            </div>
-            
-            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 relative aspect-video">
-              <Image
-                src="/image/pillar1-man in an office with a laptop.png"
-                alt="Training session with laptop"
-                fill
-                className="object-cover rounded-lg"
-                loading="lazy"
-              />
-            </div>
-            <div className="bg-white/60 p-4 rounded-xl border border-brand-border/60 relative aspect-video">
-              <Image
-                src="/image/pillar1-woman in a garden with a laptop.png"
-                alt="Practical training in garden"
-                fill
-                className="object-cover rounded-lg"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-      </Container>
-    </div>
-  </div>
+      {/* 9. Final CTA: Dual Actions & Institutional Value */}
+      <AcademyCTA />
+    </main>
   );
 }

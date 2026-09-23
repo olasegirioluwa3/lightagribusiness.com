@@ -67,7 +67,7 @@ export const ApproachProcess: React.FC = () => {
               to action and creates measurable, sustainable improvement.
             </p>
             <Button
-              href="/advisory"
+              href="/approach"
               variant="primary"
               size="md"
               className="group bg-brand-green hover:bg-brand-green-light text-white font-semibold flex items-center gap-2 w-fit"

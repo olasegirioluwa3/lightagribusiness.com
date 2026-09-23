@@ -1,154 +1,29 @@
-import React from "react";
-import Image from "next/image";
-import { Container } from "@/components/ui/Container";
-import { SectionHeader } from "@/components/ui/SectionHeader";
-import { Card } from "@/components/ui/Card";
-import { Badge } from "@/components/ui/Badge";
-import { Button } from "@/components/ui/Button";
-import { HiAcademicCap, HiCurrencyDollar, HiGlobeAlt, HiOfficeBuilding } from "react-icons/hi";
-import { PageHero } from "@/components/ui/PageHero";
+"use client";
+
+import React, { useState } from "react";
+import { PartnershipsHero } from "@/components/partnerships/PartnershipsHero";
+import { WhyPartnerWithLight } from "@/components/partnerships/WhyPartnerWithLight";
+import { PartnershipModels } from "@/components/partnerships/PartnershipModels";
+import { SuccessStoriesAlignment } from "@/components/partnerships/SuccessStoriesAlignment";
+import { JoiningOurNetwork } from "@/components/partnerships/JoiningOurNetwork";
+import { GlobalNetworkAndImpact } from "@/components/partnerships/GlobalNetworkAndImpact";
+import { PartnershipsCTA } from "@/components/partnerships/PartnershipsCTA";
 
 export default function PartnershipsPage() {
-  const models = [
-    {
-      title: "Universities & Polytechnics",
-      icon: <HiAcademicCap className="w-8 h-8 text-brand-green" />,
-      tag: "Academic Tier 1",
-      offer: "Structured SIWES placements, co-certified curriculum, guest instruction, and field labs.",
-      gain: "Practical graduate employability and industry-aligned accreditation.",
-    },
-    {
-      title: "Impact Investors & DFIs",
-      icon: <HiCurrencyDollar className="w-8 h-8 text-brand-gold-dark" />,
-      tag: "Financial Tier 1",
-      offer: "Standardized investment-readiness diagnostics and portfolio-wide LightAgriOS dashboards.",
-      gain: "Lower default rates, verified operational metrics, and transparent capital deployment.",
-    },
-    {
-      title: "Government & Extension Agencies",
-      icon: <HiOfficeBuilding className="w-8 h-8 text-slate-700" />,
-      tag: "Public Sector Tier 2",
-      offer: "Large-scale vocational training, M&E frameworks, and regional extension digitization.",
-      gain: "Audited agricultural transformation and scalable youth employment programs.",
-    },
-    {
-      title: "Cooperatives & Processors",
-      icon: <HiGlobeAlt className="w-8 h-8 text-teal-700" />,
-      tag: "Commercial Tier 2",
-      offer: "Group training rates, outgrower traceability, and cooperative-wide software licenses.",
-      gain: "Consistent off-taker quality, reduced supply chain disruption, and trained farmer members.",
-    },
-  ];
+  const [selectedCategory, setSelectedCategory] = useState("All Categories");
 
   return (
-    <div>
-      <PageHero
-        badge="Institutional Collaboration"
-        badgeVariant="green"
-        title="Institutional Partnerships"
-        subtitle="Transforming African agribusiness requires institutional integration across education, finance, government, and commercial supply chains. We partner deliberately with organizations committed to durable agricultural outcomes."
-        imageSrc="/image/investor-banner-exec.jpg"
-        imageAlt="Institutional agribusiness leadership and executive collaboration"
-        layout="split-left"
-        breadcrumbs={[{ label: "Partnerships" }]}
-        pills={[
-          "University SIWES Models",
-          "DFI Portfolio Monitoring",
-          "Outgrower Supply Chains",
-        ]}
-        statBox={{
-          number: "4 Strategic",
-          label: "Engagement Frameworks",
-        }}
-        actions={
-          <>
-            <Button href="#models" variant="primary" size="md">
-              Explore Partner Frameworks
-            </Button>
-            <Button href="/contact" variant="outline" size="md">
-              Initiate Partnership
-            </Button>
-          </>
-        }
+    <main className="min-h-screen bg-[#FAF8F3]">
+      <PartnershipsHero />
+      <WhyPartnerWithLight />
+      <PartnershipModels
+        selectedCategory={selectedCategory}
+        onSelectCategory={setSelectedCategory}
       />
-
-      <div className="py-12 sm:py-16">
-        <Container size="lg">
-          {/* Partnership Models Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          {models.map((m) => (
-            <Card key={m.title} hoverable borderAccent="gold" className="p-8">
-              <div className="flex items-center justify-between mb-4">
-                <div className="p-3 bg-brand-parchment rounded-xl border border-brand-border/60">
-                  {m.icon}
-                </div>
-                <Badge variant="default">{m.tag}</Badge>
-              </div>
-
-              <h3 className="font-serif font-bold text-2xl text-brand-charcoal mb-3">{m.title}</h3>
-
-              <div className="space-y-3 text-xs sm:text-sm mb-6">
-                <div>
-                  <span className="font-bold text-brand-green block">What Light Delivers:</span>
-                  <p className="text-brand-grey">{m.offer}</p>
-                </div>
-                <div>
-                  <span className="font-bold text-brand-charcoal block">Value for Partner:</span>
-                  <p className="text-brand-grey">{m.gain}</p>
-                </div>
-              </div>
-
-              <div className="pt-4 border-t border-brand-border/40">
-                <Button href="/contact" variant="outline" size="sm" className="w-full justify-center">
-                  Initiate Partnership Discussion
-                </Button>
-              </div>
-            </Card>
-          ))}
-        </div>
-
-        {/* Partners Showcase */}
-        <div className="mb-20">
-          <SectionHeader
-            badge="Our Network"
-            badgeVariant="gold"
-            title="Trusted Partners & Collaborators"
-            subtitle="We work with leading institutions across Africa to transform agricultural education, practice, and technology."
-            align="left"
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white/60 p-8 rounded-xl border border-brand-border/60 flex items-center justify-center relative h-40">
-              <Image
-                src="/image/partner-1.png"
-                alt="Partner 1"
-                fill
-                className="object-contain"
-                loading="lazy"
-              />
-            </div>
-            <div className="bg-white/60 p-8 rounded-xl border border-brand-border/60 flex items-center justify-center relative h-40">
-              <Image
-                src="/image/partner-2.png"
-                alt="Partner 2"
-                fill
-                className="object-contain"
-                loading="lazy"
-              />
-            </div>
-            <div className="bg-white/60 p-8 rounded-xl border border-brand-border/60 flex items-center justify-center relative h-40">
-              <Image
-                src="/image/partner-3.png"
-                alt="Partner 3"
-                fill
-                className="object-contain"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-      </Container>
-    </div>
-  </div>
+      <SuccessStoriesAlignment />
+      <JoiningOurNetwork />
+      <GlobalNetworkAndImpact />
+      <PartnershipsCTA />
+    </main>
   );
 }

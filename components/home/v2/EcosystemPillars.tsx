@@ -42,7 +42,7 @@ const pillars = [
 
 export const EcosystemPillars: React.FC = () => {
   return (
-    <section className="relative py-16 sm:py-22 lg:py-24 overflow-hidden bg-[#0B1D14]">
+    <section id="pillars" className="relative py-16 sm:py-22 lg:py-24 overflow-hidden bg-[#0B1D14]">
       {/* Subtle Agricultural Landscape Texture Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
