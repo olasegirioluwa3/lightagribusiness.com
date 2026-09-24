@@ -62,7 +62,7 @@ export const EcosystemPillars: React.FC = () => {
             <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-emerald-400/90 block mb-2.5">
               The Light Ecosystem
             </span>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[42px] font-bold text-white tracking-tight leading-[1.2]">
+            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-white tracking-tight leading-[1.2]">
               One ecosystem. Three ways
               <span className="block mt-1 sm:mt-1.5">
                 to move agribusiness forward.
@@ -120,7 +120,7 @@ export const EcosystemPillars: React.FC = () => {
               <div className="bg-white px-6 sm:px-7 pt-4 pb-6 sm:pb-7 flex flex-col flex-1 justify-between text-left">
                 <div>
                   {/* Pillar Title */}
-                  <h3 className="font-serif font-bold text-xl sm:text-[22px] text-gray-900 leading-snug group-hover:text-brand-green transition-colors duration-200 text-left">
+                  <h3 className="font-bold text-xl sm:text-[22px] text-gray-900 leading-snug group-hover:text-brand-green transition-colors duration-200 text-left">
                     {pillar.titleSingleLine}
                   </h3>
 

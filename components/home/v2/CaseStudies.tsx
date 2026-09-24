@@ -51,7 +51,7 @@ export const CaseStudies: React.FC = () => {
             <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-brand-green block mb-2.5">
               From Problems To Progress 
             </span>
-            <h2 className="font-serif text-2xl sm:text-3xl lg:text-[34px] font-bold text-gray-900 tracking-tight leading-[1.25]">
+            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-bold text-gray-900 tracking-tight leading-[1.25]">
               Real work. Practical solutions.
               <span className="block mt-1">Measurable change.</span>
             </h2>

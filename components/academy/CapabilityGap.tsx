@@ -45,7 +45,7 @@ export const CapabilityGap: React.FC = () => {
             <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.22em] text-[#1F5C3F] block mb-3">
               THE CAPABILITY GAP
             </span>
-            <h2 className="font-serif text-2xl sm:text-4xl lg:text-[40px] font-bold text-brand-charcoal tracking-tight leading-tight mb-4">
+            <h2 className="text-2xl sm:text-4xl lg:text-[40px] font-bold text-brand-charcoal tracking-tight leading-tight mb-4">
               Knowledge exists.
               <span className="block text-[#1F5C3F]">Application is the challenge.</span>
             </h2>
@@ -92,10 +92,10 @@ export const CapabilityGap: React.FC = () => {
                 
                 {/* Quote Content Overlay */}
                 <div className="absolute inset-0 p-6 sm:p-8 flex flex-col justify-end">
-                  <div className="text-3xl sm:text-4xl text-[#D4AF37] font-serif leading-none mb-2">
+                  <div className="text-3xl sm:text-4xl text-[#D4AF37] leading-none mb-2">
                     &ldquo;
                   </div>
-                  <blockquote className="font-serif text-lg sm:text-xl lg:text-2xl font-bold text-white leading-snug mb-3 max-w-md">
+                  <blockquote className="text-lg sm:text-xl lg:text-2xl font-bold text-white leading-snug mb-3 max-w-md">
                     The right knowledge, applied at the right time, can change the{" "}
                     <span className="text-[#D4AF37] underline decoration-[#D4AF37]/50 underline-offset-4">trajectory</span>{" "}
                     of an agribusiness.

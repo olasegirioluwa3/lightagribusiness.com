@@ -37,8 +37,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        serif: ["var(--font-serif)", "Merriweather", "Georgia", "serif"],
-        sans: ["var(--font-sans)", "Inter", "system-ui", "sans-serif"],
+        sans: ["var(--font-roboto)", "Roboto", "system-ui", "sans-serif"],
+        serif: ["var(--font-roboto)", "Roboto", "system-ui", "sans-serif"],
       },
       boxShadow: {
         parchment: "0 4px 20px -2px rgba(34, 34, 34, 0.05), 0 2px 6px -1px rgba(34, 34, 34, 0.03)",

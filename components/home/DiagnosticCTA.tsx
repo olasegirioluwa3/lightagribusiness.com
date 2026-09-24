@@ -21,7 +21,7 @@ export const DiagnosticCTA: React.FC = () => {
                 </span>
               </div>
 
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
                 Turn agricultural effort into a business that runs on systems.
               </h2>
 
@@ -77,7 +77,7 @@ export const DiagnosticCTA: React.FC = () => {
               <span className="text-xs font-bold uppercase tracking-widest text-brand-gold block mb-2">
                 Our 5D Delivery Framework
               </span>
-              <h4 className="font-serif font-bold text-xl text-white mb-6">
+              <h4 className="font-bold text-xl text-white mb-6">
                 How We Deliver Every Engagement
               </h4>
 

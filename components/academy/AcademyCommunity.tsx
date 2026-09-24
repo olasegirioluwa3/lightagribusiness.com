@@ -20,7 +20,7 @@ export const AcademyCommunity: React.FC = () => {
               <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.22em] text-emerald-400 block mb-3 font-mono">
                 LIGHT ACADEMY COMMUNITY
               </span>
-              <h2 className="font-serif text-2xl sm:text-3xl lg:text-[36px] font-bold text-white tracking-tight leading-tight mb-3">
+              <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-bold text-white tracking-tight leading-tight mb-3">
                 Real people. Real progress.
               </h2>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 max-w-md">
@@ -38,10 +38,10 @@ export const AcademyCommunity: React.FC = () => {
 
             {/* 2. Middle Column: Testimonial Quote */}
             <div className="lg:col-span-4 p-8 sm:p-10 lg:py-8 lg:px-6 z-10 border-t lg:border-t-0 lg:border-l border-white/10">
-              <div className="text-3xl sm:text-4xl text-[#D4AF37] font-serif leading-none mb-2">
+              <div className="text-3xl sm:text-4xl text-[#D4AF37] leading-none mb-2">
                 &ldquo;
               </div>
-              <blockquote className="font-serif text-sm sm:text-base lg:text-[17px] text-white leading-relaxed mb-3">
+              <blockquote className="text-sm sm:text-base lg:text-[17px] text-white leading-relaxed mb-3">
                 The training gave me practical skills I could immediately apply on my farm.*
               </blockquote>
               <div className="text-xs text-slate-400 font-medium">

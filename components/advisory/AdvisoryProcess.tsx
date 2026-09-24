@@ -72,7 +72,7 @@ export const AdvisoryProcess: React.FC = () => {
           <span className="text-[11px] font-bold uppercase tracking-[0.25em] text-[#8BC34A] block mb-2">
             OUR ADVISORY PROCESS
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl text-white tracking-tight leading-tight mb-3">
+          <h2 className="text-3xl sm:text-4xl text-white tracking-tight leading-tight mb-3">
             From insight to impact.
           </h2>
           <p className="text-xs sm:text-sm text-white/75 leading-relaxed">

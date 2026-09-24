@@ -42,7 +42,7 @@ export const AcademyHero: React.FC = () => {
             </div>
 
             {/* Main Headline */}
-            <h1 className="font-serif text-3xl sm:text-5xl xl:text-[52px] font-extrabold text-white tracking-tight leading-[1.12] mb-6">
+            <h1 className="text-3xl sm:text-5xl xl:text-[52px] font-extrabold text-white tracking-tight leading-[1.12] mb-6">
               Better agribusinesses begin with better{" "}
               <span className="text-[#D4AF37] block mt-1">capability.</span>
             </h1>
@@ -89,13 +89,13 @@ export const AcademyHero: React.FC = () => {
 
                 {/* Floating Top Right Value Stack Badge */}
                 <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-md p-3 sm:p-4 rounded-xl border border-white/15 text-right space-y-1 shadow-lg">
-                  <div className="text-xs sm:text-sm font-serif font-bold text-white tracking-wide">
+                  <div className="text-xs sm:text-sm font-bold text-white tracking-wide">
                     Better People
                   </div>
-                  <div className="text-xs sm:text-sm font-serif font-bold text-emerald-300 tracking-wide">
+                  <div className="text-xs sm:text-sm font-bold text-emerald-300 tracking-wide">
                     Better Systems
                   </div>
-                  <div className="text-xs sm:text-sm font-serif font-bold text-[#D4AF37] tracking-wide">
+                  <div className="text-xs sm:text-sm font-bold text-[#D4AF37] tracking-wide">
                     Better Agribusinesses
                   </div>
                 </div>

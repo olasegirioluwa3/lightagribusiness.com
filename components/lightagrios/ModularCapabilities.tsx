@@ -70,7 +70,7 @@ export const ModularCapabilities: React.FC = () => {
               <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-brand-green block mb-2">
                 OUR CORE SOFTWARE SERVICES
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-brand-charcoal tracking-tight leading-tight mb-3">
+              <h2 className="text-3xl sm:text-4xl font-bold text-brand-charcoal tracking-tight leading-tight mb-3">
                 MODULAR CAPABILITIES SUITE
               </h2>
               <p className="text-sm sm:text-base text-brand-grey leading-relaxed">
@@ -91,7 +91,7 @@ export const ModularCapabilities: React.FC = () => {
                       <Icon className="w-5 h-5" />
                     </div>
                     <div>
-                      <h3 className="font-serif font-bold text-base text-brand-charcoal mb-1 group-hover:text-brand-green transition-colors">
+                      <h3 className="font-bold text-base text-brand-charcoal mb-1 group-hover:text-brand-green transition-colors">
                         {cap.title}
                       </h3>
                       <p className="text-xs text-brand-grey leading-relaxed">

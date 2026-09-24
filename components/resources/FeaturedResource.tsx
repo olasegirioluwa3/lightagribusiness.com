@@ -53,7 +53,7 @@ export const FeaturedResource: React.FC<FeaturedResourceProps> = ({ onOpenResour
                   <span className="text-[8px] font-bold tracking-wider uppercase text-[#1F5C3F] block">
                     LIGHT AGRIBUSINESS
                   </span>
-                  <h4 className="font-serif font-extrabold text-[13px] leading-tight text-[#112015] mt-0.5">
+                  <h4 className="font-extrabold text-[13px] leading-tight text-[#112015] mt-0.5">
                     Comprehensive Soil Health Guide
                   </h4>
                 </div>
@@ -85,7 +85,7 @@ export const FeaturedResource: React.FC<FeaturedResourceProps> = ({ onOpenResour
                   <span className="inline-block px-3 py-1 rounded text-[11px] font-bold uppercase tracking-widest bg-[#8BC34A]/20 text-[#8BC34A] border border-[#8BC34A]/40 mb-3">
                     FEATURED RESOURCE
                   </span>
-                  <h3 className="font-serif text-2xl sm:text-3xl font-extrabold text-white tracking-tight leading-tight mb-3">
+                  <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight leading-tight mb-3">
                     Comprehensive Soil Health Guide
                   </h3>
                   <p className="text-xs sm:text-sm text-white/85 leading-relaxed mb-6 max-w-xl">

@@ -97,7 +97,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
               </div>
             )}
 
-            <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white leading-[1.12] tracking-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white leading-[1.12] tracking-tight">
               {title}
             </h1>
 
@@ -157,7 +157,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
                         {floatingCard.badge}
                       </span>
                     )}
-                    <h4 className="font-serif font-bold text-sm text-brand-charcoal mb-1">
+                    <h4 className="font-bold text-sm text-brand-charcoal mb-1">
                       {floatingCard.title}
                     </h4>
                     <p className="text-xs text-brand-grey leading-snug">
@@ -185,7 +185,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
 
                 {statBox && (
                   <div className="absolute -bottom-5 -right-4 sm:-right-6 bg-brand-green text-white p-4 rounded-xl shadow-2xl border border-brand-green-light/40 animate-fadeIn">
-                    <p className="font-serif font-extrabold text-2xl text-brand-gold">
+                    <p className="font-extrabold text-2xl text-brand-gold">
                       {statBox.number}
                     </p>
                     <p className="text-xs font-semibold uppercase tracking-wider text-white/90">
@@ -218,7 +218,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
                         {floatingCard.badge}
                       </span>
                     )}
-                    <h4 className="font-serif font-bold text-sm text-white mb-1">
+                    <h4 className="font-bold text-sm text-white mb-1">
                       {floatingCard.title}
                     </h4>
                     <p className="text-xs text-white/70 leading-snug">
@@ -261,7 +261,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
 
                 {statBox && (
                   <div className="absolute top-4 left-0 z-30 bg-brand-charcoal/90 backdrop-blur-md p-3 rounded-lg border border-brand-gold/50 shadow-lg">
-                    <span className="font-serif font-bold text-lg text-brand-gold block leading-none">
+                    <span className="font-bold text-lg text-brand-gold block leading-none">
                       {statBox.number}
                     </span>
                     <span className="text-[10px] uppercase font-semibold text-white/80">
@@ -291,7 +291,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
                       <span className="text-[10px] font-bold uppercase tracking-widest text-brand-gold block mb-1">
                         {floatingCard.badge || "Featured Publication"}
                       </span>
-                      <h4 className="font-serif font-bold text-sm text-white leading-snug">
+                      <h4 className="font-bold text-sm text-white leading-snug">
                         {floatingCard.title}
                       </h4>
                       <p className="text-xs text-white/70 mt-1">
@@ -326,7 +326,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
                         {floatingCard.badge}
                       </span>
                     </div>
-                    <h4 className="font-serif font-bold text-base text-brand-charcoal mb-1">
+                    <h4 className="font-bold text-base text-brand-charcoal mb-1">
                       {floatingCard.title}
                     </h4>
                     <p className="text-xs text-brand-grey leading-relaxed">

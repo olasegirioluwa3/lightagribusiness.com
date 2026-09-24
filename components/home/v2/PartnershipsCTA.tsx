@@ -104,7 +104,7 @@ export const PartnershipsCTA: React.FC = () => {
               PARTNERSHIPS
             </span>
 
-            <h2 className="font-serif text-2xl sm:text-3xl lg:text-[34px] font-bold text-gray-900 tracking-tight leading-[1.25] mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-bold text-gray-900 tracking-tight leading-[1.25] mb-4">
               Building the agricultural <br className="hidden sm:inline" />
               ecosystem together.
             </h2>

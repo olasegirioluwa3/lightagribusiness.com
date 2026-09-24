@@ -97,7 +97,7 @@ export const InvestorBanner: React.FC = () => {
               FOR INVESTORS & FINANCIAL INSTITUTIONS
             </span>
 
-            <h2 className="font-serif text-2xl sm:text-3xl lg:text-[34px] font-bold text-white tracking-tight leading-[1.25] mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-bold text-white tracking-tight leading-[1.25] mb-4">
               Better agribusinesses are <br className="hidden sm:inline" />
               better investments.
             </h2>

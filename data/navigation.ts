@@ -47,10 +47,6 @@ export const headerNavigation: NavItem[] = [
     href: "/career",
   },
   {
-    label: "Contact",
-    href: "/contact",
-  },
-  {
     label: "About",
     href: "/about",
   },

@@ -53,10 +53,10 @@ export const GoverningBeliefs: React.FC = () => {
               }`}
             >
               <div>
-                <span className="text-3xl font-serif font-extrabold text-brand-gold-dark block mb-3">
+                <span className="text-3xl font-extrabold text-brand-gold-dark block mb-3">
                   {belief.num}
                 </span>
-                <h4 className="font-serif font-bold text-lg text-brand-charcoal mb-3 leading-snug">
+                <h4 className="font-bold text-lg text-brand-charcoal mb-3 leading-snug">
                   {belief.title}
                 </h4>
                 <p className="text-xs sm:text-sm text-brand-grey leading-relaxed">
@@ -76,7 +76,7 @@ export const GoverningBeliefs: React.FC = () => {
         <div className="bg-brand-charcoal text-white rounded-2xl p-8 sm:p-10 border border-brand-gold/30 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-3 max-w-2xl">
             <Badge variant="gold">Institutional Archetype</Badge>
-            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white">
+            <h3 className="text-2xl sm:text-3xl font-bold text-white">
               The Sage-Creator: Mentor &amp; Practical Builder
             </h3>
             <p className="text-sm text-brand-parchment/80 leading-relaxed">
@@ -87,7 +87,7 @@ export const GoverningBeliefs: React.FC = () => {
           </div>
 
           <div className="text-center md:text-right shrink-0">
-            <span className="block text-4xl font-serif font-extrabold text-brand-gold">
+            <span className="block text-4xl font-extrabold text-brand-gold">
               100%
             </span>
             <span className="text-xs font-semibold uppercase tracking-widest text-brand-parchment/70">

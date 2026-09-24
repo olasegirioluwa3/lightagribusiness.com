@@ -40,7 +40,7 @@ export const ThreePillarsSection: React.FC = () => {
                     </span>
                   </div>
 
-                  <h3 className="font-serif text-2xl font-bold text-brand-charcoal mb-2">
+                  <h3 className="text-2xl font-bold text-brand-charcoal mb-2">
                     {pillar.name}
                   </h3>
 
@@ -89,7 +89,7 @@ export const ThreePillarsSection: React.FC = () => {
         <div className="bg-brand-parchment-card border border-brand-green/20 rounded-2xl p-8 sm:p-10 shadow-parchment">
           <div className="max-w-2xl mb-8">
             <Badge variant="gold" className="mb-2">Cross-Pillar Reinforcement</Badge>
-            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-brand-charcoal mb-2">
+            <h3 className="text-2xl sm:text-3xl font-bold text-brand-charcoal mb-2">
               How the Three Pillars Power One Another
             </h3>
             <p className="text-sm text-brand-grey">
@@ -105,12 +105,12 @@ export const ThreePillarsSection: React.FC = () => {
                 className="bg-brand-parchment p-6 rounded-xl border border-brand-border/60 relative"
               >
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-2xl font-serif font-extrabold text-brand-gold">
+                  <span className="text-2xl font-extrabold text-brand-gold">
                     {step.step}
                   </span>
                   <Badge variant="green">{step.pillar}</Badge>
                 </div>
-                <h4 className="font-serif font-bold text-lg text-brand-charcoal mb-2">
+                <h4 className="font-bold text-lg text-brand-charcoal mb-2">
                   {step.title}
                 </h4>
                 <p className="text-xs sm:text-sm text-brand-grey leading-relaxed">

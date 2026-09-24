@@ -49,7 +49,7 @@ const ContactForm: React.FC = () => {
         <div className="w-14 h-14 rounded-full bg-brand-green/10 flex items-center justify-center">
           <HiCheckCircle className="w-8 h-8 text-brand-green" />
         </div>
-        <h3 className="font-serif font-bold text-lg text-brand-charcoal">
+        <h3 className="font-bold text-lg text-brand-charcoal">
           Message Sent!
         </h3>
         <p className="text-xs text-brand-grey max-w-xs">
@@ -174,7 +174,7 @@ export const ContactChannels: React.FC = () => {
                 key={office.name}
                 className="bg-white rounded-2xl p-5 border border-brand-border/80 shadow-sm"
               >
-                <h3 className="font-serif font-bold text-sm text-brand-charcoal mb-3 uppercase tracking-wide">
+                <h3 className="font-bold text-sm text-brand-charcoal mb-3 uppercase tracking-wide">
                   {office.name}
                 </h3>
 
@@ -235,7 +235,7 @@ export const ContactChannels: React.FC = () => {
 
             {/* Global Inquiries card */}
             <div className="bg-white rounded-2xl p-5 border border-brand-border/80 shadow-sm">
-              <h3 className="font-serif font-bold text-sm text-brand-charcoal mb-3 uppercase tracking-wide">
+              <h3 className="font-roboto font-bold text-sm text-brand-charcoal mb-3 uppercase tracking-wide">
                 Global Inquiries
               </h3>
               <div className="space-y-2.5">
@@ -267,7 +267,7 @@ export const ContactChannels: React.FC = () => {
                 </div>
               </div>
               <div className="p-4">
-                <h3 className="font-serif font-bold text-sm text-brand-charcoal mb-1">
+                <h3 className="font-bold text-sm text-brand-charcoal mb-1">
                   LightAgriOS &amp; Software Help
                 </h3>
                 <p className="text-xs text-brand-grey leading-relaxed">

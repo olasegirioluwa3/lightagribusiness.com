@@ -142,13 +142,18 @@ export const Navbar: React.FC = () => {
 />
 </div>
             </div>
-            <div className="flex flex-col">
-              <span className="font-serif font-bold text-xl sm:text-2xl text-brand-charcoal tracking-tight leading-none group-hover:text-brand-green transition-colors">
+            <div className="flex items-center gap-2">
+              <span className="font-bold text-2xl sm:text-3xl text-brand-charcoal tracking-tight leading-none group-hover:text-brand-green transition-colors">
                 LIGHT
               </span>
-              <span className="text-[10px] sm:text-xs font-semibold uppercase tracking-widest text-brand-grey leading-tight mt-0.5">
-                Agribusiness Institution
-              </span>
+              <div className="flex flex-col">
+                <span className="text-[10px] sm:text-xs font-semibold uppercase tracking-widest text-brand-grey leading-tight">
+                  Agribusiness
+                </span>
+                <span className="text-[10px] sm:text-xs font-semibold uppercase tracking-widest text-brand-grey leading-tight">
+                  Consultancy Limited
+                </span>
+              </div>
             </div>
           </Link>
 
@@ -291,12 +296,12 @@ export const Navbar: React.FC = () => {
               Diagnostic
             </Button>
             <Button
-              href="/academy"
+              href="/contact"
               variant="primary"
               size="sm"
               className="text-xs uppercase tracking-wider shadow-gold"
             >
-              Academy
+              Contact
             </Button>
           </div>
 
@@ -411,8 +416,8 @@ export const Navbar: React.FC = () => {
               <Button href="/advisory" variant="outline" size="md" className="w-full">
                 Diagnostic
               </Button>
-              <Button href="/academy" variant="primary" size="md" className="w-full">
-                Academy
+              <Button href="/contact" variant="primary" size="md" className="w-full">
+                Contact
               </Button>
             </div>
           </div>

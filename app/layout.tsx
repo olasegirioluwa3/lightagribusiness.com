@@ -1,20 +1,14 @@
 import type { Metadata } from "next";
-import { Inter, Merriweather } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { TawkTo } from "@/components/layout/TawkTo";
 
-const sans = Inter({
+const roboto = Roboto({
+  weight: ["300", "400", "500", "700", "900"],
   subsets: ["latin"],
-  variable: "--font-sans",
-  display: "swap",
-});
-
-const serif = Merriweather({
-  weight: ["300", "400", "700", "900"],
-  subsets: ["latin"],
-  variable: "--font-serif",
+  variable: "--font-roboto",
   display: "swap",
 });
 
@@ -42,8 +36,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${sans.variable} ${serif.variable}`}>
-      <body className="min-h-screen flex flex-col bg-brand-parchment text-brand-charcoal antialiased selection:bg-brand-green selection:text-white">
+    <html lang="en" className={roboto.variable}>
+      <body className="min-h-screen flex flex-col bg-brand-parchment text-brand-charcoal antialiased selection:bg-brand-green selection:text-white font-roboto">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

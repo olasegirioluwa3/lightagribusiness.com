@@ -53,7 +53,7 @@ export const WhoIsItFor: React.FC = () => {
           <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.22em] text-[#1F5C3F] block mb-2.5">
             WHO IS IT FOR?
           </span>
-          <h2 className="font-serif text-2xl sm:text-4xl lg:text-[40px] font-bold text-brand-charcoal tracking-tight leading-tight mb-3">
+          <h2 className="text-2xl sm:text-4xl lg:text-[40px] font-bold text-brand-charcoal tracking-tight leading-tight mb-3">
             Designed for every stage of the journey.
           </h2>
           <p className="text-sm sm:text-base text-brand-grey leading-relaxed">
@@ -73,7 +73,7 @@ export const WhoIsItFor: React.FC = () => {
                 <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#1F5C3F] border border-emerald-100 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-[#1F5C3F] group-hover:text-white transition-all shadow-sm">
                   <Icon className="w-6 h-6" />
                 </div>
-                <h3 className="font-serif text-sm sm:text-base font-bold text-brand-charcoal leading-snug">
+                <h3 className="text-sm sm:text-base font-bold text-brand-charcoal leading-snug">
                   {item.title}
                 </h3>
               </div>

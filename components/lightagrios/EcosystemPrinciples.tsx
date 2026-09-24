@@ -49,7 +49,7 @@ export const EcosystemPrinciples: React.FC = () => {
           <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-brand-green block mb-2">
             OUR ECOSYSTEM PRINCIPLES
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[40px] font-bold text-brand-charcoal tracking-tight leading-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold text-brand-charcoal tracking-tight leading-tight mb-4">
             We help you solve the right ones.
           </h2>
           <p className="text-sm sm:text-base text-brand-grey leading-relaxed">
@@ -74,7 +74,7 @@ export const EcosystemPrinciples: React.FC = () => {
                   </div>
 
                   {/* Title & Tag */}
-                  <h3 className="font-serif font-bold text-base sm:text-lg text-brand-charcoal tracking-tight mb-1">
+                  <h3 className="font-bold text-base sm:text-lg text-brand-charcoal tracking-tight mb-1">
                     {p.title}
                   </h3>
                   <div className="text-xs font-mono font-medium text-brand-green mb-3">

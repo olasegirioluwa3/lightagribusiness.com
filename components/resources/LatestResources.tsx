@@ -270,7 +270,7 @@ export const LatestResources: React.FC<LatestResourcesProps> = ({
             <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#1F5C3F] block mb-1.5">
               CURATED PUBLICATIONS
             </span>
-            <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-[#222222] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#222222] tracking-tight">
               LATEST RESOURCES
             </h2>
           </div>
@@ -283,7 +283,7 @@ export const LatestResources: React.FC<LatestResourcesProps> = ({
         {filteredResources.length === 0 ? (
           <div className="text-center py-16 bg-white rounded-2xl border border-[#E2DCCF] my-8 shadow-sm">
             <HiOutlineDocumentText className="w-12 h-12 text-[#7D7D7D] mx-auto mb-3" />
-            <h3 className="font-serif font-bold text-lg text-[#222222] mb-1">
+            <h3 className="font-bold text-lg text-[#222222] mb-1">
               No Resources Match Your Filter
             </h3>
             <p className="text-xs sm:text-sm text-[#5A5A5A] max-w-md mx-auto mb-4">
@@ -332,7 +332,7 @@ export const LatestResources: React.FC<LatestResourcesProps> = ({
 
                       {/* Card Content */}
                       <div className="p-6">
-                        <h3 className="font-serif font-bold text-lg sm:text-xl text-[#222222] mb-2.5 leading-snug group-hover:text-[#1F5C3F] transition-colors">
+                        <h3 className="font-bold text-lg sm:text-xl text-[#222222] mb-2.5 leading-snug group-hover:text-[#1F5C3F] transition-colors">
                           {item.title}
                         </h3>
                         <p className="text-xs sm:text-sm text-[#5A5A5A] leading-relaxed line-clamp-3">
@@ -379,7 +379,7 @@ export const LatestResources: React.FC<LatestResourcesProps> = ({
                         <span className="text-[10px] font-bold uppercase tracking-wider text-[#1F5C3F] block mb-1">
                           {item.category}
                         </span>
-                        <h3 className="font-serif font-bold text-base text-[#222222] mb-1.5 leading-snug group-hover:text-[#1F5C3F] transition-colors line-clamp-2">
+                        <h3 className="font-bold text-base text-[#222222] mb-1.5 leading-snug group-hover:text-[#1F5C3F] transition-colors line-clamp-2">
                           {item.title}
                         </h3>
                         <p className="text-[11px] sm:text-xs text-[#5A5A5A] leading-relaxed line-clamp-2">
@@ -421,7 +421,7 @@ export const LatestResources: React.FC<LatestResourcesProps> = ({
                         <span className="text-[10px] font-bold uppercase tracking-wider text-[#1F5C3F] block mb-1">
                           {item.category}
                         </span>
-                        <h3 className="font-serif font-bold text-base text-[#222222] mb-1.5 leading-snug group-hover:text-[#1F5C3F] transition-colors line-clamp-2">
+                        <h3 className="font-bold text-base text-[#222222] mb-1.5 leading-snug group-hover:text-[#1F5C3F] transition-colors line-clamp-2">
                           {item.title}
                         </h3>
                         <p className="text-[11px] sm:text-xs text-[#5A5A5A] leading-relaxed line-clamp-2">

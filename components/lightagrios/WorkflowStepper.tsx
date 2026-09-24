@@ -96,7 +96,7 @@ export const WorkflowStepper: React.FC = () => {
           <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.22em] text-emerald-400 block mb-2.5">
             OUR ADVISORY PROCESS
           </span>
-          <h2 className="font-serif text-2xl sm:text-4xl lg:text-[42px] font-bold text-white tracking-tight leading-tight mb-3">
+          <h2 className="text-2xl sm:text-4xl lg:text-[42px] font-bold text-white tracking-tight leading-tight mb-3">
             DATA-TO-DECISION OPERATIONAL WORKFLOW
           </h2>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
@@ -133,7 +133,7 @@ export const WorkflowStepper: React.FC = () => {
                       </div>
 
                       {/* Step Title */}
-                      <h3 className="font-serif text-lg sm:text-xl font-bold text-white mb-2 group-hover:text-emerald-300 transition-colors">
+                      <h3 className="text-lg sm:text-xl font-bold text-white mb-2 group-hover:text-emerald-300 transition-colors">
                         {st.title}
                       </h3>
 

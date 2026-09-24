@@ -53,7 +53,7 @@ export const WhoWeWorkWith: React.FC = () => {
           <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-brand-green block mb-2">
             WHO WE WORK WITH
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[40px] font-bold text-brand-charcoal tracking-tight leading-tight mb-3">
+          <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold text-brand-charcoal tracking-tight leading-tight mb-3">
             BUILT FOR AGRI-FOOD ENTERPRISES
           </h2>
           <p className="text-sm sm:text-base text-brand-grey leading-relaxed">
@@ -75,7 +75,7 @@ export const WhoWeWorkWith: React.FC = () => {
                   <Icon className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-serif font-bold text-sm text-brand-charcoal mb-1 leading-snug">
+                  <h3 className="font-bold text-sm text-brand-charcoal mb-1 leading-snug">
                     {cat.title}
                   </h3>
                   <p className="text-[11px] text-brand-grey leading-tight line-clamp-2">

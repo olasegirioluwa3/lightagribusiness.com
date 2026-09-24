@@ -62,7 +62,7 @@ export const AcademyOfferings: React.FC = () => {
           <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.22em] text-[#1F5C3F] block mb-2.5">
             WHAT WE OFFER
           </span>
-          <h2 className="font-serif text-2xl sm:text-4xl lg:text-[40px] font-bold text-brand-charcoal tracking-tight leading-tight mb-3">
+          <h2 className="text-2xl sm:text-4xl lg:text-[40px] font-bold text-brand-charcoal tracking-tight leading-tight mb-3">
             Practical learning for real-world impact.
           </h2>
           <p className="text-sm sm:text-base text-brand-grey leading-relaxed">
@@ -87,7 +87,7 @@ export const AcademyOfferings: React.FC = () => {
                       <div className="w-12 h-12 rounded-xl bg-white border border-brand-border/80 text-[#1F5C3F] flex items-center justify-center mb-5 shadow-sm group-hover:bg-[#1F5C3F] group-hover:text-white transition-colors">
                         <Icon className="w-6 h-6" />
                       </div>
-                      <h3 className="font-serif text-lg sm:text-xl font-bold text-brand-charcoal mb-2 group-hover:text-[#1F5C3F] transition-colors">
+                      <h3 className="text-lg sm:text-xl font-bold text-brand-charcoal mb-2 group-hover:text-[#1F5C3F] transition-colors">
                         {service.title}
                       </h3>
                       <p className="text-xs sm:text-sm text-brand-grey leading-relaxed mb-6">
@@ -128,7 +128,7 @@ export const AcademyOfferings: React.FC = () => {
                 <div className="inline-block px-2.5 py-1 rounded bg-[#1F5C3F]/40 border border-emerald-500/40 text-[10px] font-mono font-bold tracking-widest text-emerald-300 uppercase mb-4">
                   LIGHT ACADEMY
                 </div>
-                <h3 className="font-serif text-xl sm:text-2xl font-black text-white tracking-wide mb-3">
+                <h3 className="text-xl sm:text-2xl font-black text-white tracking-wide mb-3">
                   LEARN. APPLY. GROW.
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">

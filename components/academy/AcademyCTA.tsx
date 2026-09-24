@@ -29,7 +29,7 @@ export const AcademyCTA: React.FC = () => {
             <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.22em] text-[#D4AF37] block mb-2.5">
               INVEST IN PEOPLE. BUILD BETTER AGRIBUSINESS.
             </span>
-            <h2 className="font-serif text-2xl sm:text-3xl lg:text-[40px] font-bold text-white tracking-tight leading-normal mb-3">
+            <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-bold text-white tracking-tight leading-normal mb-3">
               Build the capability behind your agribusiness.
             </h2>
             <p className="text-sm sm:text-base text-slate-300 max-w-xl">

@@ -20,7 +20,7 @@ export const AboutWhoWeWorkWith: React.FC = () => {
           <span className="text-xs font-bold uppercase tracking-wider text-[#D4AF37] block mb-2">
             OUR PARTNERS
           </span>
-          <h2 className="font-serif text-2xl sm:text-3xl lg:text-[36px] font-bold text-brand-charcoal tracking-tight leading-tight mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-bold text-brand-charcoal tracking-tight leading-tight mb-4">
             Who We Work With
           </h2>
           <p className="text-sm sm:text-base text-brand-grey max-w-2xl mx-auto">

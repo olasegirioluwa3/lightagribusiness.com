@@ -57,7 +57,7 @@ export default function NotFound() {
             <Badge variant="gold">Error 404 · Page Not Found</Badge>
           </div>
 
-          <h1 className="font-serif text-4xl sm:text-5xl font-extrabold text-brand-charcoal tracking-tight leading-tight">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-brand-charcoal tracking-tight leading-tight">
             We will not leave you in the dark.
           </h1>
 
@@ -92,7 +92,7 @@ export default function NotFound() {
                   <span className="text-[10px] font-bold uppercase tracking-widest text-brand-gold-dark block mb-1">
                     {link.badge}
                   </span>
-                  <h3 className="font-serif font-bold text-sm text-brand-charcoal group-hover:text-brand-green transition-colors mb-1">
+                  <h3 className="font-bold text-sm text-brand-charcoal group-hover:text-brand-green transition-colors mb-1">
                     {link.title}
                   </h3>
                   <p className="text-xs text-brand-grey leading-tight">{link.desc}</p>

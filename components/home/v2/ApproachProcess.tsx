@@ -58,7 +58,7 @@ export const ApproachProcess: React.FC = () => {
             <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-brand-green block">
               Our Approach
             </span>
-            <h2 className="font-serif text-2xl sm:text-3xl lg:text-[34px] font-bold text-gray-900 tracking-tight leading-[1.25]">
+            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-bold text-gray-900 tracking-tight leading-[1.25]">
               From understanding
               <span className="block mt-1">to lasting impact.</span>
             </h2>
@@ -89,7 +89,7 @@ export const ApproachProcess: React.FC = () => {
                     <div
                       className={`w-14 h-14 rounded-full border-2 ${step.numBg} flex items-center justify-center mb-3 shadow-sm transition-transform duration-300 group-hover:scale-110`}
                     >
-                      <span className={`text-lg font-serif font-extrabold ${step.numColor}`}>
+                      <span className={`text-lg font-extrabold ${step.numColor}`}>
                         {step.num}
                       </span>
                     </div>
@@ -123,7 +123,7 @@ export const ApproachProcess: React.FC = () => {
                   <div
                     className={`w-12 h-12 rounded-full border-2 ${step.numBg} flex items-center justify-center flex-shrink-0 shadow-sm`}
                   >
-                    <span className={`text-base font-serif font-extrabold ${step.numColor}`}>
+                    <span className={`text-base font-extrabold ${step.numColor}`}>
                       {step.num}
                     </span>
                   </div>

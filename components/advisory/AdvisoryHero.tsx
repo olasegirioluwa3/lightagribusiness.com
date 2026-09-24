@@ -17,7 +17,7 @@ export const AdvisoryHero: React.FC = () => {
             </span>
 
             {/* Headline — all caps, following ContactHero structure */}
-            <h1 className="font-serif text-3xl sm:text-4xl lg:text-[44px] font-bold text-white uppercase tracking-tight leading-[1.15] mb-4">
+            <h1 className="text-3xl sm:text-4xl lg:text-[44px] font-bold text-white uppercase tracking-tight leading-[1.15] mb-4">
               Stop Guessing What {" "}
               <br className="hidden sm:block" />
               Is Wrong With Your Agribusiness.

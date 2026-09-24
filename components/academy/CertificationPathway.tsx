@@ -37,7 +37,7 @@ export const CertificationPathway: React.FC = () => {
             <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.22em] text-emerald-400 block mb-3">
               THE CERTIFICATION PATHWAY
             </span>
-            <h2 className="font-serif text-2xl sm:text-4xl lg:text-[42px] font-bold text-white tracking-tight leading-tight mb-4">
+            <h2 className="text-2xl sm:text-4xl lg:text-[42px] font-bold text-white tracking-tight leading-tight mb-4">
               Build recognised capability.
             </h2>
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-8 max-w-md">
@@ -76,7 +76,7 @@ export const CertificationPathway: React.FC = () => {
                     <span className="text-[10px] font-mono uppercase tracking-widest text-emerald-400 font-semibold block mb-1">
                       {step.highlight}
                     </span>
-                    <h3 className="font-serif text-base font-bold text-white mb-2">
+                    <h3 className="text-base font-bold text-white mb-2">
                       {step.title}
                     </h3>
                     <p className="text-xs text-slate-300 leading-relaxed">

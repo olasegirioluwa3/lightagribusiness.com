@@ -37,7 +37,7 @@ export const AdvisoryFrameworkAndTech: React.FC = () => {
               <span className="text-[11px] font-bold uppercase tracking-[0.25em] text-[#8BC34A] block mb-2">
                 THE LIGHT 7-PILLAR FRAMEWORK™
               </span>
-              <h2 className="font-serif text-2xl sm:text-3xl lg:text-[36px] font-bold text-white tracking-tight leading-tight mb-3">
+              <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-bold text-white tracking-tight leading-tight mb-3">
                 A systems lens for sustainable performance.
               </h2>
               <p className="text-xs sm:text-sm text-white/75 leading-relaxed max-w-xl">
@@ -184,7 +184,7 @@ export const AdvisoryFrameworkAndTech: React.FC = () => {
               <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8BC34A] block">
                 CONNECTING ADVISORY &amp; TECHNOLOGY
               </span>
-              <h3 className="font-serif text-2xl sm:text-3xl text-white tracking-tight leading-snug">
+              <h3 className="text-2xl sm:text-3xl text-white tracking-tight leading-snug">
                 Advisory identifies the problem. Technology helps sustain the solution.
               </h3>
               <p className="text-xs sm:text-sm text-white/75 leading-relaxed">

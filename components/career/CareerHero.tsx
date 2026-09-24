@@ -17,7 +17,7 @@ export const CareerHero: React.FC = () => {
             </span>
 
             {/* Headline — all caps, matching contact hero structure */}
-            <h1 className="font-serif text-3xl sm:text-4xl lg:text-[44px] font-bold text-white uppercase tracking-tight leading-[1.15] mb-4">
+            <h1 className="text-3xl sm:text-4xl lg:text-[44px] font-bold text-white uppercase tracking-tight leading-[1.15] mb-4">
               Build Your Future{" "}
               <br className="hidden sm:block" />
               In Agribusiness.

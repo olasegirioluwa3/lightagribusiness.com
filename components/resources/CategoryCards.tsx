@@ -57,7 +57,7 @@ export const CategoryCards: React.FC<CategoryCardsProps> = ({
             <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#1F5C3F] block mb-2">
               RESOURCES BY CATEGORY
             </span>
-            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#222222] tracking-tight leading-tight mb-3">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#222222] tracking-tight leading-tight mb-3">
               RESOURCES BY CATEGORY
             </h2>
             <p className="text-xs sm:text-sm text-[#5A5A5A] leading-relaxed">

@@ -19,7 +19,7 @@ html {
 body {
   background-color: #F4F1E8;
   color: #222222;
-  font-family: var(--font-sans), Inter, system-ui, sans-serif;
+  font-family: var(--font-roboto), Roboto, system-ui, sans-serif;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -27,7 +27,7 @@ body {
 
 /* Custom Typography & Motif Styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif), Merriweather, Georgia, serif;
+  font-family: var(--font-roboto), Roboto, system-ui, sans-serif;
   color: #222222;
 }
 

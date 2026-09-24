@@ -121,7 +121,7 @@ export const ValuePropsStrip: React.FC = () => {
             <p className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-brand-green mb-2.5">
               Practical Illumination
             </p>
-            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-serif font-bold text-gray-900 tracking-tight leading-[1.25]">
+            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-bold text-gray-900 tracking-tight leading-[1.25]">
               We don&apos;t just tell you what to do.
               <span className="block mt-1 sm:mt-1.5">
                 We help you see what matters.

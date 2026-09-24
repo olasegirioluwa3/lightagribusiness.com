@@ -81,7 +81,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({ resource, isOpen, 
             <span className="inline-block px-2.5 py-0.5 rounded text-[11px] font-bold uppercase tracking-wider bg-[#8BC34A] text-[#132018] mb-2">
               {resource.category}
             </span>
-            <h3 className="font-serif font-bold text-xl sm:text-2xl text-white leading-snug">
+            <h3 className="font-bold text-xl sm:text-2xl text-white leading-snug">
               {resource.title}
             </h3>
           </div>

@@ -154,7 +154,7 @@ export const PainPoints: React.FC = () => {
           <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-brand-green block mb-2.5">
             What We Help You Solve
           </span>
-          <h2 className="font-serif text-2xl sm:text-3xl lg:text-[34px] font-bold text-gray-900 tracking-tight leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-bold text-gray-900 tracking-tight leading-tight">
             What is holding your agribusiness back?
           </h2>
         </div>

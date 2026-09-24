@@ -121,7 +121,7 @@ export const WhyLight: React.FC = () => {
             <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-brand-gold block">
               Why Light?
             </span>
-            <h2 className="font-serif text-2xl sm:text-3xl lg:text-[34px] font-bold text-white tracking-tight leading-[1.25]">
+            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-bold text-white tracking-tight leading-[1.25]">
               More than a consultancy.
               <span className="block mt-1 text-brand-green">A systems partner.</span>
             </h2>
@@ -156,7 +156,7 @@ export const WhyLight: React.FC = () => {
             {/* Floating stat badge */}
             <div className="absolute -bottom-4 -left-4 bg-brand-gold text-white px-4 py-3 rounded-xl shadow-lg hidden sm:block">
               <p className="text-xs font-bold uppercase tracking-wider opacity-80">Systems Partner</p>
-              <p className="text-sm font-serif font-bold mt-0.5">Clarity. Systems. Growth.</p>
+              <p className="text-sm font-bold mt-0.5">Clarity. Systems. Growth.</p>
             </div>
           </div>
         </div>

@@ -37,7 +37,7 @@ export const ContactCTA: React.FC = () => {
               <span className="text-[11px] font-bold uppercase tracking-[0.22em] text-brand-gold block mb-3">
                 Let&apos;s Move Forward
               </span>
-              <h2 className="font-serif text-2xl sm:text-3xl lg:text-[42px] font-bold text-white tracking-tight leading-[1.2] mb-4">
+              <h2 className="text-2xl sm:text-3xl lg:text-[42px] font-bold text-white tracking-tight leading-[1.2] mb-4">
                 Ready to transform your agribusiness?
               </h2>
               <p className="text-sm text-white/70 leading-[1.85] max-w-xl">

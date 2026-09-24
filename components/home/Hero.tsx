@@ -67,7 +67,7 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Master Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-extrabold text-brand-charcoal tracking-tight leading-[1.15] mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-charcoal tracking-tight leading-[1.15] mb-6">
             Light illuminates the path of{" "}
             <span className="text-brand-green underline decoration-brand-gold decoration-4 underline-offset-8">
               agribusiness success
@@ -115,28 +115,28 @@ export const Hero: React.FC = () => {
           {/* Trust Highlights Grid */}
           <div className="pt-8 border-t border-brand-border/60 grid grid-cols-2 md:grid-cols-4 gap-4 text-left">
             <div className="bg-white/60 p-4 rounded-lg border border-brand-border/40">
-              <span className="block text-2xl font-serif font-bold text-brand-green">3 Pillars</span>
+              <span className="block text-2xl font-bold text-brand-green">3 Pillars</span>
               <span className="text-xs text-brand-grey leading-tight">
                 Integrated Academy, Advisory &amp; Software
               </span>
             </div>
 
             <div className="bg-white/60 p-4 rounded-lg border border-brand-border/40">
-              <span className="block text-2xl font-serif font-bold text-brand-gold-dark">5D Model</span>
+              <span className="block text-2xl font-bold text-brand-gold-dark">5D Model</span>
               <span className="text-xs text-brand-grey leading-tight">
                 Diagnose, Design, Document, Deploy, Sustain
               </span>
             </div>
 
             <div className="bg-white/60 p-4 rounded-lg border border-brand-border/40">
-              <span className="block text-2xl font-serif font-bold text-brand-green">Monday-Ready</span>
+              <span className="block text-2xl font-bold text-brand-green">Monday-Ready</span>
               <span className="text-xs text-brand-grey leading-tight">
                 Frameworks designed for instant farm application
               </span>
             </div>
 
             <div className="bg-white/60 p-4 rounded-lg border border-brand-border/40">
-              <span className="block text-2xl font-serif font-bold text-brand-charcoal">Pan-African</span>
+              <span className="block text-2xl font-bold text-brand-charcoal">Pan-African</span>
               <span className="text-xs text-brand-grey leading-tight">
                 Engineered for African operational conditions
               </span>

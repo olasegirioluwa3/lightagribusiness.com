@@ -73,7 +73,7 @@ export const PersonaPathways: React.FC = () => {
                   </span>
                 </div>
 
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-brand-charcoal leading-tight">
+                <h3 className="text-2xl sm:text-3xl font-bold text-brand-charcoal leading-tight">
                   &ldquo;{activePersona.headlineMessage}&rdquo;
                 </h3>
 
@@ -113,7 +113,7 @@ export const PersonaPathways: React.FC = () => {
                   <span className="text-xs font-bold uppercase tracking-wider text-brand-gold-dark block mb-1">
                     Recommended Next Step
                   </span>
-                  <h4 className="font-serif font-bold text-lg text-brand-charcoal mb-2">
+                  <h4 className="font-bold text-lg text-brand-charcoal mb-2">
                     {activePersona.role}
                   </h4>
                   <p className="text-xs text-brand-grey mb-6">

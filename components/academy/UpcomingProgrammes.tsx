@@ -49,7 +49,7 @@ export const UpcomingProgrammes: React.FC = () => {
             <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.22em] text-[#1F5C3F] block mb-2.5">
               UPCOMING PROGRAMMES
             </span>
-            <h2 className="font-serif text-2xl sm:text-4xl lg:text-[40px] font-bold text-brand-charcoal tracking-tight leading-tight mb-2">
+            <h2 className="text-2xl sm:text-4xl lg:text-[40px] font-bold text-brand-charcoal tracking-tight leading-tight mb-2">
               Featured programmes
             </h2>
             <p className="text-sm sm:text-base text-brand-grey">
@@ -91,7 +91,7 @@ export const UpcomingProgrammes: React.FC = () => {
 
                 {/* Card Content */}
                 <div className="p-6">
-                  <h3 className="font-serif text-lg sm:text-xl font-bold text-brand-charcoal mb-4 group-hover:text-[#1F5C3F] transition-colors leading-snug">
+                  <h3 className="text-lg sm:text-xl font-bold text-brand-charcoal mb-4 group-hover:text-[#1F5C3F] transition-colors leading-snug">
                     {prog.title}
                   </h3>
 

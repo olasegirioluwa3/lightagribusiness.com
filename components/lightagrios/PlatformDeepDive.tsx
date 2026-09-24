@@ -15,7 +15,7 @@ export const PlatformDeepDive: React.FC = () => {
             <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-emerald-400 block mb-2">
               PLATFORM & DEEP-DIVE
             </span>
-            <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight leading-tight mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight leading-tight mb-4">
               PLATFORM DEEP-DIVE: LIVESTOCK & FEED BALANCING
             </h2>
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6">
@@ -152,7 +152,7 @@ export const PlatformDeepDive: React.FC = () => {
                 <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-emerald-400 block mb-2">
                   COMMON FOR ADVISORY & TECHNOLOGY
                 </span>
-                <h3 className="font-serif text-lg sm:text-xl font-bold text-white mb-3 leading-snug">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 leading-snug">
                   Advisory identifies the problem. Technology helps sustain the solution.
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">

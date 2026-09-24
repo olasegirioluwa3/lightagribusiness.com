@@ -17,7 +17,7 @@ export const ContactHero: React.FC = () => {
             </span>
 
             {/* Headline — all caps, from the brand framework */}
-            <h1 className="font-serif text-3xl sm:text-4xl lg:text-[44px] font-bold text-white uppercase tracking-tight leading-[1.15] mb-5">
+            <h1 className="text-3xl sm:text-4xl lg:text-[44px] font-bold text-white uppercase tracking-tight leading-[1.15] mb-5">
               Get in Touch With{" "}
               <br className="hidden sm:block" />
               Light Agribusiness.

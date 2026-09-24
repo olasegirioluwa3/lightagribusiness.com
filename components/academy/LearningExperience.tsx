@@ -51,7 +51,7 @@ export const LearningExperience: React.FC = () => {
             <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.22em] text-[#1F5C3F] block mb-2.5">
               THE LEARNING EXPERIENCE
             </span>
-            <h2 className="font-serif text-base sm:text-xl md:text-2xl lg:text-[32px] xl:text-[36px] font-bold text-brand-charcoal tracking-tight leading-tight mb-2 whitespace-nowrap overflow-x-auto sm:overflow-x-visible pb-1 sm:pb-0">
+            <h2 className="text-base sm:text-xl md:text-2xl lg:text-[32px] xl:text-[36px] font-bold text-brand-charcoal tracking-tight leading-tight mb-2 whitespace-nowrap overflow-x-auto sm:overflow-x-visible pb-1 sm:pb-0">
               Learn &rarr; Practise &rarr; Apply &rarr; Assess &rarr; Improve
             </h2>
             <p className="text-sm sm:text-base text-brand-grey">
@@ -83,7 +83,7 @@ export const LearningExperience: React.FC = () => {
                       <Icon className="w-6 h-6" />
                     </div>
 
-                    <h3 className="font-serif text-sm sm:text-base font-bold text-brand-charcoal mb-1">
+                    <h3 className="text-sm sm:text-base font-bold text-brand-charcoal mb-1">
                       {step.title}
                     </h3>
                     <p className="text-[11px] sm:text-xs text-brand-grey leading-relaxed">

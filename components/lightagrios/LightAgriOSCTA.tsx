@@ -29,7 +29,7 @@ export const LightAgriOSCTA: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Left Side: Headline and CTAs */}
           <div className="lg:col-span-8">
-            <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight leading-tight mb-3">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight leading-tight mb-3">
               ACCELERATE YOUR PERFORMANCE WITH LIGHTAGRIOS.
             </h2>
             <p className="text-sm sm:text-base text-slate-300 mb-8 max-w-xl">

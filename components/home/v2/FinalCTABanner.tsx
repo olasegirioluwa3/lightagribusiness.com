@@ -58,7 +58,7 @@ export const FinalCTABanner: React.FC = () => {
           <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.25em] text-[#d4e9c7] block mb-2.5">
             LET&apos;S LIGHTEN THE PATH FORWARD
           </span>
-          <h2 className="font-serif text-2xl sm:text-3xl lg:text-[38px] font-bold text-white tracking-tight leading-tight mb-3">
+          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-white tracking-tight leading-tight mb-3">
             WHAT ARE YOU TRYING TO BUILD?
           </h2>
           <p className="text-xs sm:text-sm text-white/80 leading-relaxed max-w-xl mx-auto">

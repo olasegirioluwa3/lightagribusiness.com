@@ -55,7 +55,7 @@ export const FeedlotCaseStudy: React.FC = () => {
                 <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-brand-green block mb-2">
                   CASE STUDY
                 </span>
-                <h2 className="font-serif text-2xl sm:text-3xl lg:text-[34px] font-bold text-brand-charcoal tracking-tight leading-tight mb-2">
+                <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-bold text-brand-charcoal tracking-tight leading-tight mb-2">
                   Scale Operations, Enhance Governance: 2,000-Head Cattle Feedlot
                 </h2>
                 <div className="inline-block text-xs font-semibold text-brand-gold-dark bg-brand-gold/10 px-2.5 py-1 rounded border border-brand-gold/20 mb-4">

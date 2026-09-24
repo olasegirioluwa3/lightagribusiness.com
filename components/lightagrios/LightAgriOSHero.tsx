@@ -41,7 +41,7 @@ export const LightAgriOSHero: React.FC = () => {
             </div>
 
             {/* Main Headline matching provided UI */}
-            <h1 className="font-serif text-3xl sm:text-5xl xl:text-[52px] font-extrabold text-white tracking-tight leading-[1.12] mb-6">
+            <h1 className="text-3xl sm:text-5xl xl:text-[52px] font-extrabold text-white tracking-tight leading-[1.12] mb-6">
               DIGITAL CLARITY FOR{" "}
               <span className="text-[#D4AF37] block mt-1">
                 EVERY ACRE, FEEDLOT,
@@ -143,7 +143,7 @@ export const LightAgriOSHero: React.FC = () => {
                         <div className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-brand-grey">
                           Commercial Feedlot & Arable Complex
                         </div>
-                        <div className="font-serif font-bold text-sm sm:text-base text-brand-charcoal">
+                        <div className="font-bold text-sm sm:text-base text-brand-charcoal">
                           Operational Command Center
                         </div>
                       </div>

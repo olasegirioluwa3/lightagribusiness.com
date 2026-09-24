@@ -32,7 +32,7 @@ export const AdvisoryCaseStudy: React.FC = () => {
               <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#2E7D32] block mb-1">
                 CASE STUDY
               </span>
-              <h3 className="font-serif font-bold text-2xl sm:text-3xl text-[#122216] leading-snug">
+              <h3 className="font-bold text-2xl sm:text-3xl text-[#122216] leading-snug">
                 Improving farm performance through better systems
               </h3>
               <span className="text-xs font-semibold text-[#777777] block mt-1">

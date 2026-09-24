@@ -27,7 +27,7 @@ export const AdvisoryCTA: React.FC = () => {
 
       <Container size="lg" className="relative z-10">
         <div className="max-w-3xl space-y-6">
-          <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight uppercase">
+          <h2 className="font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight uppercase">
             YOUR AGRIBUSINESS DESERVES
             <br />
             BETTER SYSTEMS.

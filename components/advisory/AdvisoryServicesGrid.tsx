@@ -121,7 +121,7 @@ export const AdvisoryServicesGrid: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
 
             <div className="relative z-10 space-y-4">
-              <h3 className="font-serif font-bold text-xl sm:text-2xl text-white leading-snug">
+              <h3 className="font-bold text-xl sm:text-2xl text-white leading-snug">
                 Better decisions start with better information.
               </h3>
               <div>
