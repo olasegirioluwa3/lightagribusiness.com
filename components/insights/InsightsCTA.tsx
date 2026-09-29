@@ -11,8 +11,8 @@ export const InsightsCTA: React.FC = () => {
       {/* Background Image of Panoramic Farm Landscape */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/image/lightagribusiness-gallery (11).jpg"
-          alt="African agricultural sunrise landscape"
+          src="/image/footers image - sunset (1).jpg"
+          alt="African agricultural landscape at sunset"
           fill
           className="object-cover object-center opacity-60"
           priority={false}
@@ -48,7 +48,7 @@ export const InsightsCTA: React.FC = () => {
               </Link>
 
               <a
-                href="#reports-grid"
+                href="/resources"
                 className="inline-flex items-center px-6 py-3 rounded-full bg-black/40 hover:bg-white/10 text-white border border-white/35 hover:border-white/70 font-semibold text-xs sm:text-sm uppercase tracking-wider transition-all duration-200 backdrop-blur-xs"
               >
                 VIEW RESEARCH TOPICS

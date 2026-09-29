@@ -67,12 +67,7 @@ export const CareerCTA: React.FC<CareerCTAProps> = ({ onOpenApply }) => {
               <HiArrowRight className="w-4 h-4" />
             </button>
 
-            <a
-              href="#open-roles"
-              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[#122218] hover:bg-[#1a3324] text-white border border-white/20 font-bold text-xs uppercase tracking-wider transition-all duration-200"
-            >
-              <span>View All Openings</span>
-            </a>
+          
           </div>
         </div>
       </Container>

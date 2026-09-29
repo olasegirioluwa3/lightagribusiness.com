@@ -17,20 +17,30 @@ import {
 /* ─── Office data ─────────────────────────────────────────────────────── */
 const offices = [
   {
-    name: "Global Headquarters",
-    address: "14 Adeola Hopewell Street, Victoria Island, Abuja, Nigeria",
+    name: "Abeokuta Office",
+    address: "Abeokuta, Nigeria",
     email: "hello@lightagribusiness.com",
     phone: "+234 801 234 5678",
-    mapUrl: "https://maps.google.com",
+    mapUrl:
+      "https://www.google.com/maps/search/?api=1&query=Abeokuta%2C+Nigeria",
     image: "/image/lightagribusiness-gallery (22).jpg",
   },
   {
-    name: "Africa Office",
-    address: "3B, Bode Thomas Street, Surulere, Lagos, Nigeria",
-    email: "lagos@lightagribusiness.com",
-    phone: "+234 802 345 6789",
-    mapUrl: "https://maps.google.com",
+    name: "Abuja Office",
+    address: "Abuja, Nigeria",
+    email: "hello@lightagribusiness.com",
+    phone: "+234 801 234 5678",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Abuja%2C+Nigeria",
     image: "/image/lightagribusiness-gallery (23).jpg",
+  },
+  {
+    name: "Ilorin Office",
+    address: "Ilorin, Nigeria",
+    email: "hello@lightagribusiness.com",
+    phone: "+234 801 234 5678",
+    mapUrl:
+      "https://www.google.com/maps/search/?api=1&query=Geri-Alimi%2C+Ilorin%2C+Kwara+State%2C+Nigeria",
+    image: "/image/lightagribusiness-gallery (24).jpg",
   },
 ];
 
@@ -49,9 +59,7 @@ const ContactForm: React.FC = () => {
         <div className="w-14 h-14 rounded-full bg-brand-green/10 flex items-center justify-center">
           <HiCheckCircle className="w-8 h-8 text-brand-green" />
         </div>
-        <h3 className="font-bold text-lg text-brand-charcoal">
-          Message Sent!
-        </h3>
+        <h3 className="font-bold text-lg text-brand-charcoal">Message Sent!</h3>
         <p className="text-xs text-brand-grey max-w-xs">
           Thank you. We&apos;ll get back to you within one business day.
         </p>
@@ -70,10 +78,30 @@ const ContactForm: React.FC = () => {
       {(
         [
           { label: "Name", type: "text", placeholder: "Name", required: true },
-          { label: "Company", type: "text", placeholder: "Company", required: false },
-          { label: "Email", type: "email", placeholder: "Email", required: true },
-          { label: "Subject", type: "text", placeholder: "Subject", required: true },
-        ] as { label: string; type: string; placeholder: string; required: boolean }[]
+          {
+            label: "Company",
+            type: "text",
+            placeholder: "Company",
+            required: false,
+          },
+          {
+            label: "Email",
+            type: "email",
+            placeholder: "Email",
+            required: true,
+          },
+          {
+            label: "Subject",
+            type: "text",
+            placeholder: "Subject",
+            required: true,
+          },
+        ] as {
+          label: string;
+          type: string;
+          placeholder: string;
+          required: boolean;
+        }[]
       ).map(({ label, type, placeholder, required }) => (
         <div key={label}>
           <label className="block text-xs font-semibold text-brand-charcoal mb-1">
@@ -104,7 +132,7 @@ const ContactForm: React.FC = () => {
         type="submit"
         className="w-full py-2.5 rounded-md bg-brand-green hover:bg-brand-green-dark text-white font-bold text-xs uppercase tracking-widest transition-all duration-200"
       >
-        SEND
+        SUBMIT INQUIRY
       </button>
     </form>
   );
@@ -119,7 +147,15 @@ const ColumnHeader: React.FC<{
   iconBg: string;
   iconColor: string;
   labelColor: string;
-}> = ({ icon: Icon, number, title, subtitle, iconBg, iconColor, labelColor }) => (
+}> = ({
+  icon: Icon,
+  number,
+  title,
+  subtitle,
+  iconBg,
+  iconColor,
+  labelColor,
+}) => (
   <div className="mb-5">
     {/* Large circular icon */}
     <div
@@ -127,7 +163,9 @@ const ColumnHeader: React.FC<{
     >
       <Icon className={`w-6 h-6 ${iconColor}`} />
     </div>
-    <p className={`text-xs font-bold uppercase tracking-widest mb-0.5 ${labelColor}`}>
+    <p
+      className={`text-xs font-bold uppercase tracking-widest mb-0.5 ${labelColor}`}
+    >
       {number}) {title}
     </p>
     <p className="text-xs text-brand-grey leading-relaxed">{subtitle}</p>
@@ -140,7 +178,6 @@ export const ContactChannels: React.FC = () => {
     <section id="inquiry" className="py-12 sm:py-16 bg-[#FAF8F3]">
       <Container size="lg">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-
           {/* ── Column 1: Inquiry Form ─────────────────────── */}
           <div className="lg:col-span-1">
             <div className="bg-white rounded-2xl p-6 sm:p-8 border border-brand-border/80 shadow-sm">
@@ -195,13 +232,19 @@ export const ContactChannels: React.FC = () => {
                     </div>
                     <div className="flex items-center gap-1.5 text-xs text-brand-grey">
                       <HiMail className="w-3.5 h-3.5 text-brand-green shrink-0" />
-                      <a href={`mailto:${office.email}`} className="hover:text-brand-green transition-colors truncate">
+                      <a
+                        href={`mailto:${office.email}`}
+                        className="hover:text-brand-green transition-colors truncate"
+                      >
                         {office.email}
                       </a>
                     </div>
                     <div className="flex items-center gap-1.5 text-xs text-brand-grey">
                       <HiPhone className="w-3.5 h-3.5 text-brand-green shrink-0" />
-                      <a href={`tel:${office.phone}`} className="hover:text-brand-green transition-colors">
+                      <a
+                        href={`tel:${office.phone}`}
+                        className="hover:text-brand-green transition-colors"
+                      >
                         {office.phone}
                       </a>
                     </div>
@@ -277,7 +320,6 @@ export const ContactChannels: React.FC = () => {
               </div>
             </div>
           </div>
-
         </div>
       </Container>
     </section>

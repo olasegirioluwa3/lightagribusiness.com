@@ -7,11 +7,17 @@ import { LatestResources } from "@/components/resources/LatestResources";
 import { FeaturedResource } from "@/components/resources/FeaturedResource";
 import { PartnershipBanner } from "@/components/resources/PartnershipBanner";
 import { ElevateCTABanner } from "@/components/resources/ElevateCTABanner";
-import { ResourceModal, ResourceItem } from "@/components/resources/ResourceModal";
+import {
+  ResourceModal,
+  ResourceItem,
+} from "@/components/resources/ResourceModal";
 
 export default function ResourcesPage() {
-  const [selectedCategory, setSelectedCategory] = useState<string>("All Categories");
-  const [activeResource, setActiveResource] = useState<ResourceItem | null>(null);
+  const [selectedCategory, setSelectedCategory] =
+    useState<string>("All Categories");
+  const [activeResource, setActiveResource] = useState<ResourceItem | null>(
+    null,
+  );
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
   const handleOpenResource = (resource: ResourceItem) => {
@@ -43,7 +49,7 @@ export default function ResourcesPage() {
       />
 
       {/* 4. Featured Resource Spotlight */}
-      <FeaturedResource onOpenResource={handleOpenResource} />
+      <FeaturedResource />
 
       {/* 5. Resources & Partnerships Institutional Strip */}
       <PartnershipBanner />

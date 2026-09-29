@@ -20,7 +20,7 @@ export const InsightsHero: React.FC = () => {
             {/* Pill Badge */}
             <div className="inline-flex items-center self-start mb-6">
               <span className="px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-[#182C1E] text-[#8BC34A] border border-[#2A4C34] shadow-xs">
-                [LIGHT RESEARCH &amp; INSIGHTS]
+                LIGHT RESEARCH &amp; INSIGHTS
               </span>
             </div>
 
@@ -37,7 +37,7 @@ export const InsightsHero: React.FC = () => {
             {/* CTAs */}
             <div className="flex flex-wrap items-center gap-4 sm:gap-5">
               <a
-                href="#reports-grid"
+                href="/resources"
                 className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[#8BC34A] hover:bg-[#7cb342] text-[#0A170F] font-bold text-xs sm:text-sm uppercase tracking-wider transition-all duration-200 shadow-lg hover:shadow-xl active:scale-98"
               >
                 <span>VIEW LATEST REPORTS</span>

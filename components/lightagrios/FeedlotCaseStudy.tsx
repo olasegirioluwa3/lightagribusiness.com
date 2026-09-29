@@ -70,7 +70,9 @@ export const FeedlotCaseStudy: React.FC = () => {
                 </p>
 
                 <Link
-                  href="/advisory"
+                  href="/LightAgriOS_Enterprise_Software_Case_Study.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-brand-green hover:bg-brand-green-dark text-white font-semibold text-sm transition-all shadow-md group"
                 >
                   <span>View Full Case Study</span>

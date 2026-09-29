@@ -11,8 +11,8 @@ export const PartnershipsCTA: React.FC = () => {
       {/* Background landscape */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/image/lightagribusiness-gallery (11).jpg"
-          alt="Agricultural landscape sunrise partnership"
+          src="/image/footers image - sunset (1).jpg"
+          alt="African agricultural landscape at sunset"
           fill
           className="object-cover object-center opacity-55"
           priority={false}

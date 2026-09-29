@@ -9,24 +9,24 @@ import { HiArrowRight, HiTrendingUp, HiOutlineSparkles } from "react-icons/hi";
 export const PublicationAndTechSection: React.FC = () => {
   const timelineMilestones = [
     {
-      title: "Forthcoming 2025",
+      title: "First Quarter - 2026",
       subtitle: "Special Issue on African Food Security & Regional Trade",
-      active: true,
+      active: false,
     },
     {
-      title: "Increased Scale – Nov 28, 2024",
+      title: "Second Quarter - 2026",
       subtitle: "Farm Mechanization & Renewable Energy Audit",
       active: false,
     },
     {
-      title: "December 5th – March 23, 2024",
+      title: "Third Quarter - 2026",
       subtitle: "Input Subsidies & Localized Fertilizer Blending",
       active: false,
     },
     {
-      title: "Publication Site – June 31, 2024",
+      title: "Fourth Quarter - 2026",
       subtitle: "Annual African Agribusiness Readiness Benchmark",
-      active: false,
+      active: true,
     },
   ];
 
@@ -139,7 +139,7 @@ export const PublicationAndTechSection: React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center pt-4 border-t border-[#E2DCCF]">
                 <div className="sm:col-span-5">
                   <Link
-                    href="/advisory"
+                    href="/academy"
                     className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-[#112015] hover:bg-[#1F5C3F] text-white font-bold text-xs uppercase tracking-wider transition-colors shadow-xs"
                   >
                     <span>View Full Case Study</span>

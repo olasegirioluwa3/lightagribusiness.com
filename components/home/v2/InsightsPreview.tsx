@@ -8,20 +8,25 @@ const insights = [
   {
     tag: "ARTICLE",
     title: "The agrifood talent gap: Why people matter more than ever.",
-    image: "/image/pillar1 - female instructor advising many farmers in a farm.png",
-    href: "/insights",
+    image:
+      "/image/pillar1 - female instructor advising many farmers in a farm.png",
+    href: "/The_Agrifood_Talent_Gap_Why_People_Matter.pdf",
+    openInNewTab: true,
   },
   {
     tag: "GUIDE",
     title: "A practical guide to investment readiness for agribusinesses.",
     image: "/image/lightagribusiness-gallery (14).jpg",
-    href: "/insights",
+    href: "/Investment_Readiness_Framework_West_Africa_McKinsey_BCG.pdf",
+    openInNewTab: true,
   },
   {
     tag: "RESEARCH",
-    title: "Technology adoption in African agriculture: Opportunities and challenges.",
+    title:
+      "Technology adoption in African agriculture: Opportunities and challenges.",
     image: "/image/female famer with lighagrios phone.png",
-    href: "/insights",
+    href: "/Technology_Adoption_African_Agriculture_Research.pdf",
+    openInNewTab: true,
   },
 ];
 
@@ -41,8 +46,8 @@ export const InsightsPreview: React.FC = () => {
             </h2>
 
             <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-6">
-              Articles, research, guides, reports and practical tools to help you
-              stay informed and make better decisions.
+              Articles, research, guides, reports and practical tools to help
+              you stay informed and make better decisions.
             </p>
 
             <Link
@@ -61,6 +66,8 @@ export const InsightsPreview: React.FC = () => {
                 <Link
                   key={item.title}
                   href={item.href}
+                  target={item.openInNewTab ? "_blank" : undefined}
+                  rel={item.openInNewTab ? "noopener noreferrer" : undefined}
                   className="group flex flex-col bg-white rounded-xl overflow-hidden hover:-translate-y-1 transition-all duration-300"
                 >
                   {/* Card Image */}

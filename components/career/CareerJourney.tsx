@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { Container } from "@/components/ui/Container";
 import {
   HiClipboardCheck,
@@ -9,7 +9,6 @@ import {
   HiShieldCheck,
   HiUsers,
   HiArrowRight,
-  HiSearch,
 } from "react-icons/hi";
 
 interface JourneyStep {
@@ -18,128 +17,86 @@ interface JourneyStep {
   icon: React.ComponentType<{ className?: string }>;
   description: string;
   highlight: string;
-  category: "Foundations" | "Execution" | "Strategic";
 }
 
 const journeySteps: JourneyStep[] = [
   {
     number: "01",
-    title: "ONBOARDING",
+    title: "INTERN / GRADUATE TRAINEE",
     icon: HiClipboardCheck,
     description:
-      "Comprehensive immersion in Light's 5 core values, diagnostic methodologies, and operational toolkits.",
-    highlight: "Weeks 1–4 • Institutional Induction",
-    category: "Foundations",
+      "An entry point for students and recent graduates to learn, assist, observe, and develop.",
+    highlight: "Learn · Assist · Observe · Develop",
   },
   {
     number: "02",
-    title: "SKILLS DEVELOPMENT",
+    title: "ASSOCIATE",
     icon: HiCog,
     description:
-      "Hands-on diagnostic field training, financial modeling, farm biosecurity protocols, and SOP development.",
-    highlight: "Months 2–6 • Technical Mastery",
-    category: "Execution",
+      "Support consulting assignments and projects through structured analysis and delivery.",
+    highlight: "Analyse · Support · Deliver",
   },
   {
     number: "03",
-    title: "PROJECT LEADS",
+    title: "CONSULTANT / OFFICER",
     icon: HiBriefcase,
     description:
-      "Direct ownership leading client farm audits, outgrower network rollouts, and LightAgriOS deployments.",
-    highlight: "Year 1 • Client Operations",
-    category: "Execution",
+      "Own specific assignments and take responsibility for client outcomes.",
+    highlight: "Lead · Advise · Implement",
   },
   {
     number: "04",
-    title: "LEADERSHIP",
+    title: "SENIOR CONSULTANT",
     icon: HiShieldCheck,
     description:
-      "Executive advisory presentations, cross-functional team leadership, and institutional strategy building.",
-    highlight: "Years 2+ • Practice Leadership",
-    category: "Strategic",
+      "Lead technical assignments and teams while managing complex client relationships.",
+    highlight: "Lead teams · Solve complex problems · Manage clients",
   },
   {
     number: "05",
-    title: "MENTORSHIP",
+    title: "PRINCIPAL CONSULTANT",
     icon: HiUsers,
     description:
-      "Coaching upcoming cohorts, contributing to annual research readiness reports, and ecosystem governance.",
-    highlight: "Senior Partner & Ecosystem Fellow",
-    category: "Strategic",
+      "Lead major consulting engagements and provide senior technical direction.",
+    highlight: "Strategy · Technical leadership · Business development",
+  },
+  {
+    number: "06",
+    title: "DIRECTOR / PRACTICE LEAD",
+    icon: HiUsers,
+    description:
+      "Own a business or technical practice, developing people and growing the market.",
+    highlight: "Build the practice · Develop people · Grow the market",
   },
 ];
 
 export const CareerJourney: React.FC = () => {
-  const [searchQuery, setSearchQuery] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState<string>("All");
-
-  const filteredSteps = journeySteps.filter((step) => {
-    const matchesSearch =
-      step.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      step.description.toLowerCase().includes(searchQuery.toLowerCase());
-    const matchesCategory =
-      selectedCategory === "All" || step.category === selectedCategory;
-    return matchesSearch && matchesCategory;
-  });
-
   return (
     <section className="py-14 sm:py-20 bg-[#FAF9F5] border-b border-[#E8E4DA]">
       <Container size="lg">
-        {/* Header with Title and Search/Category Controls matching mockup */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
+        <div className="mb-10 max-w-3xl sm:mb-12">
           <div>
-            <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#2E7D32] block mb-2">
-              OUR PROFESSIONAL DEVELOPMENT
+            <span className="mb-2 block text-[11px] font-bold uppercase tracking-[0.2em] text-[#2E7D32]">
+              CAREER PROGRESSION
             </span>
-            <h2 className="font-sans font-black text-2xl sm:text-3xl lg:text-[36px] text-[#122216] tracking-tight leading-tight mb-2">
-              PROFESSIONAL DEVELOPMENT JOURNEY
+            <h2 className="mb-2 font-sans text-2xl font-black leading-tight tracking-tight text-[#122216] sm:text-3xl lg:text-[36px]">
+              A CLEAR PATH TO GROW
             </h2>
-            <p className="text-xs sm:text-sm text-[#666666] max-w-xl">
-              We guide you through every stage of your career with structured frameworks, continuous training, and real farm leadership.
+            <p className="max-w-2xl text-sm leading-relaxed text-[#666666] sm:text-base">
+              Progress from early-career learning to technical leadership and
+              practice ownership across Light&apos;s agribusiness work.
             </p>
-          </div>
-
-          {/* Filter Bar matching mockup right corner */}
-          <div className="flex flex-wrap items-center gap-2.5">
-            {/* Search Input */}
-            <div className="relative">
-              <HiSearch className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#888888]" />
-              <input
-                type="text"
-                placeholder="Search stages..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-8 pr-3 py-1.5 text-xs rounded-full bg-white border border-[#E0DCD3] text-[#122216] focus:outline-none focus:border-[#2E7D32] shadow-sm w-36 sm:w-44"
-              />
-            </div>
-
-            {/* Category Filter Pills */}
-            {["All", "Foundations", "Execution", "Strategic"].map((cat) => (
-              <button
-                key={cat}
-                type="button"
-                onClick={() => setSelectedCategory(cat)}
-                className={`text-[11px] font-bold px-3 py-1.5 rounded-full transition-all duration-200 ${
-                  selectedCategory === cat
-                    ? "bg-[#2E7D32] text-white shadow-sm"
-                    : "bg-white text-[#555555] border border-[#E0DCD3] hover:border-[#2E7D32]"
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
           </div>
         </div>
 
-        {/* 5-Step Horizontal Pathway with connecting arrows */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 relative">
-          {filteredSteps.map((step, idx) => {
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+          {journeySteps.map((step, idx) => {
             const Icon = step.icon;
-            const isLast = idx === filteredSteps.length - 1;
+            const isLast = idx === journeySteps.length - 1;
 
             return (
               <div key={step.number} className="relative group">
-                <div className="bg-white rounded-2xl p-5 border border-[#E5E0D5] shadow-sm h-full flex flex-col justify-between hover:shadow-md hover:border-[#2E7D32] transition-all duration-200">
+                <div className="flex h-full flex-col justify-between rounded-2xl border border-[#E5E0D5] bg-white p-5 shadow-sm transition-all duration-200 hover:border-[#2E7D32] hover:shadow-md">
                   <div>
                     {/* Header Row: Icon & Step Number */}
                     <div className="flex items-center justify-between mb-4">
@@ -164,7 +121,7 @@ export const CareerJourney: React.FC = () => {
 
                   {/* Stage Milestone Badge */}
                   <div className="pt-3 border-t border-[#F0ECE3]">
-                    <span className="text-[10px] font-bold text-[#2E7D32] block">
+                    <span className="block text-[10px] font-bold leading-relaxed text-[#2E7D32]">
                       {step.highlight}
                     </span>
                   </div>
@@ -172,7 +129,7 @@ export const CareerJourney: React.FC = () => {
 
                 {/* Connecting arrow indicator for desktop */}
                 {!isLast && (
-                  <div className="hidden lg:flex absolute -right-3 top-1/2 -translate-y-1/2 z-10 w-6 h-6 rounded-full bg-white border border-[#E0DCD3] items-center justify-center text-[#2E7D32] shadow-sm pointer-events-none">
+                  <div className="absolute -right-3 top-1/2 z-10 hidden h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full border border-[#E0DCD3] bg-white text-[#2E7D32] shadow-sm pointer-events-none xl:flex">
                     <HiArrowRight className="w-3 h-3" />
                   </div>
                 )}

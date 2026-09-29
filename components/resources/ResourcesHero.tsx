@@ -20,7 +20,7 @@ export const ResourcesHero: React.FC = () => {
             {/* Pill Badge */}
             <div className="inline-flex items-center self-start mb-6">
               <span className="px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-[#182C1E] text-[#8BC34A] border border-[#2A4C34] shadow-xs">
-                [LIGHT RESOURCES CENTER]
+                LIGHT RESOURCES CENTER
               </span>
             </div>
 

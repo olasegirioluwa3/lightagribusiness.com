@@ -3,38 +3,14 @@
 import React from "react";
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
-import { HiArrowRight, HiDocumentText, HiOutlineBookOpen, HiOutlineCalendar } from "react-icons/hi";
-import { ResourceItem } from "./ResourceModal";
+import {
+  HiArrowRight,
+  HiDocumentText,
+  HiOutlineBookOpen,
+  HiOutlineCalendar,
+} from "react-icons/hi";
 
-interface FeaturedResourceProps {
-  onOpenResource: (resource: ResourceItem) => void;
-}
-
-export const FeaturedResource: React.FC<FeaturedResourceProps> = ({ onOpenResource }) => {
-  const featuredItem: ResourceItem = {
-    id: "comprehensive-soil-health-guide",
-    title: "Comprehensive Soil Health Guide",
-    category: "Technical Guides",
-    categoryKey: "technical",
-    year: "2024",
-    region: "Pan-Africa",
-    date: "June 2024",
-    description:
-      "Comprehensive soil health guide covering soil microbiology, nutrient stratification, organic matter remediation, and customized fertilizer schedules for tropical African soils.",
-    fullAbstract:
-      "This 50-page flagship field manual provides farm agronomists, plantation managers, and extension leads with actionable testing protocols, pH balancing methodologies, composting formulas, and microbial revitalization strategies designed to stop yield leaks in tropical sub-Saharan soils.",
-    fileSize: "22 MB",
-    pages: 50,
-    format: "Full PDF Technical Manual (50 Pages)",
-    image: "/image/lightagribusiness-gallery (36).jpg",
-    topics: [
-      "Tropical soil microbiology & mycorrhizal fungi dynamics",
-      "Correcting soil acidity & aluminum toxicity in West/East Africa",
-      "Precision NPK + micronutrient application calendars",
-      "Biological pest resistance through root microbiome enrichment",
-    ],
-  };
-
+export const FeaturedResource: React.FC = () => {
   return (
     <section className="py-12 sm:py-16 bg-[#16432D] text-white overflow-hidden relative border-y border-[#23583C]">
       {/* Subtle ambient lighting */}
@@ -74,8 +50,12 @@ export const FeaturedResource: React.FC<FeaturedResourceProps> = ({ onOpenResour
 
                 {/* Footer of book cover */}
                 <div className="pt-2 flex items-center justify-between border-t border-[#E2DCCF]">
-                  <span className="text-[8px] font-semibold text-[#5A5A5A]">50 Pages • 2024</span>
-                  <span className="text-[8px] font-bold text-[#1F5C3F]">Pillar 2 Series</span>
+                  <span className="text-[8px] font-semibold text-[#5A5A5A]">
+                    50 Pages • 2024
+                  </span>
+                  <span className="text-[8px] font-bold text-[#1F5C3F]">
+                    Pillar 2 Series
+                  </span>
                 </div>
               </div>
 
@@ -89,7 +69,10 @@ export const FeaturedResource: React.FC<FeaturedResourceProps> = ({ onOpenResour
                     Comprehensive Soil Health Guide
                   </h3>
                   <p className="text-xs sm:text-sm text-white/85 leading-relaxed mb-6 max-w-xl">
-                    Comprehensive soil health guide covering soil biology, microbial vitality, high-yield soil restoration, and customized fertilizer protocols for tropical agricultural lands.
+                    Comprehensive soil health guide covering soil biology,
+                    microbial vitality, high-yield soil restoration, and
+                    customized fertilizer protocols for tropical agricultural
+                    lands.
                   </p>
                 </div>
 
@@ -97,11 +80,11 @@ export const FeaturedResource: React.FC<FeaturedResourceProps> = ({ onOpenResour
                 <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 text-xs text-white/90 mb-6">
                   <div className="flex items-center gap-1.5 bg-black/25 px-3 py-1.5 rounded-lg border border-white/10">
                     <HiDocumentText className="w-4 h-4 text-[#8BC34A]" />
-                    <span className="font-semibold">22 MB</span>
+                    <span className="font-semibold">771 KB</span>
                   </div>
                   <div className="flex items-center gap-1.5 bg-black/25 px-3 py-1.5 rounded-lg border border-white/10">
                     <HiOutlineBookOpen className="w-4 h-4 text-[#8BC34A]" />
-                    <span className="font-semibold">50 Pages</span>
+                    <span className="font-semibold">6 Pages</span>
                   </div>
                   <div className="flex items-center gap-1.5 bg-black/25 px-3 py-1.5 rounded-lg border border-white/10">
                     <HiOutlineCalendar className="w-4 h-4 text-[#8BC34A]" />
@@ -111,13 +94,15 @@ export const FeaturedResource: React.FC<FeaturedResourceProps> = ({ onOpenResour
 
                 {/* CTA Button */}
                 <div>
-                  <button
-                    onClick={() => onOpenResource(featuredItem)}
+                  <a
+                    href="/Comprehensive_Soil_Health_Guide_v2.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-[#8BC34A] hover:bg-[#7cb342] text-[#112015] font-bold text-xs sm:text-sm uppercase tracking-wider transition-all duration-200 shadow-lg hover:shadow-xl active:scale-98"
                   >
-                    <span>DOWNLOAD</span>
+                    <span>VIEW / DOWNLOAD</span>
                     <HiArrowRight className="w-4 h-4" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

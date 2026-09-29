@@ -21,13 +21,13 @@ export const AboutSystem: React.FC = () => {
       icon: HiSparkles,
       label: "Production",
       className:
-        "top-[22%] right-0 translate-x-1/2",
+        "top-[22%] right-0",
     },
     {
       icon: HiCurrencyDollar,
       label: "Finance",
       className:
-        "bottom-[22%] right-0 translate-x-1/2",
+        "bottom-[22%] right-0",
     },
     {
       icon: HiChartBar,
@@ -39,13 +39,13 @@ export const AboutSystem: React.FC = () => {
       icon: HiChip,
       label: "Technology",
       className:
-        "bottom-[22%] left-0 -translate-x-1/2",
+        "bottom-[22%] left-0",
     },
     {
       icon: HiGlobeAlt,
       label: "Environment",
       className:
-        "top-[22%] left-0 -translate-x-1/2",
+        "top-[22%] left-0",
     },
   ];
 
@@ -90,8 +90,8 @@ export const AboutSystem: React.FC = () => {
           </div>
 
           {/* RIGHT DIAGRAM */}
-          <div className="flex justify-center">
-            <div className="relative w-[420px] h-[420px]">
+          <div className="flex min-w-0 justify-center px-3 sm:px-0">
+            <div className="relative aspect-square w-full max-w-[420px]">
 
               {/* OUTER RING */}
               <div className="absolute inset-10 rounded-full border border-[#C9D7CC]" />

@@ -1,8 +1,17 @@
 "use client";
 
 import React, { useState } from "react";
-import { HiX, HiCheckCircle, HiBriefcase, HiMail, HiUser, HiPhone, HiLink } from "react-icons/hi";
+import {
+  HiX,
+  HiCheckCircle,
+  HiBriefcase,
+  HiMail,
+  HiUser,
+  HiPhone,
+  HiLink,
+} from "react-icons/hi";
 import { JobRole, sampleJobs } from "./CareerOpenRoles";
+import { talentAreas } from "./CareerFutureTalent";
 
 interface CareerApplyModalProps {
   isOpen: boolean;
@@ -19,19 +28,22 @@ export const CareerApplyModal: React.FC<CareerApplyModalProps> = ({
     fullName: "",
     email: "",
     phone: "",
-    roleId: selectedRole ? selectedRole.id : sampleJobs[0].id,
+    roleId: selectedRole ? selectedRole.id : "general",
+    talentArea: "",
     portfolioUrl: "",
     coverNote: "",
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  // Sync roleId if selectedRole changes
   React.useEffect(() => {
-    if (selectedRole) {
-      setFormData((prev) => ({ ...prev, roleId: selectedRole.id }));
+    if (isOpen) {
+      setFormData((prev) => ({
+        ...prev,
+        roleId: selectedRole?.id ?? "general",
+      }));
     }
-  }, [selectedRole]);
+  }, [isOpen, selectedRole]);
 
   if (!isOpen) return null;
 
@@ -66,7 +78,9 @@ export const CareerApplyModal: React.FC<CareerApplyModalProps> = ({
               Application Received
             </h3>
             <p className="text-xs sm:text-sm text-white/80 max-w-md mx-auto leading-relaxed">
-              Thank you for applying to Light Agribusiness. Our talent and advisory team will review your credentials and contact you within 3–5 business days.
+              Thank you for applying to Light Agribusiness. Our talent and
+              advisory team will review your credentials and contact you within
+              3–5 business days.
             </p>
             <div className="pt-4">
               <button
@@ -85,7 +99,9 @@ export const CareerApplyModal: React.FC<CareerApplyModalProps> = ({
                 CAREERS &amp; TALENT NETWORK
               </span>
               <h3 className="font-sans font-black text-2xl text-white tracking-tight">
-                {selectedRole ? `Apply: ${selectedRole.title}` : "Join the Light Team"}
+                {selectedRole
+                  ? `Apply: ${selectedRole.title}`
+                  : "Join the Light Team"}
               </h3>
               <p className="text-xs text-white/70 mt-1">
                 {selectedRole
@@ -110,17 +126,42 @@ export const CareerApplyModal: React.FC<CareerApplyModalProps> = ({
                     className="w-full bg-[#182B1E] border border-white/20 rounded-xl pl-10 pr-4 py-2.5 text-xs text-white focus:outline-none focus:border-[#8BC34A]"
                     required
                   >
+                    <option value="general">
+                      General / Future Openings (All Departments)
+                    </option>
                     {sampleJobs.map((j) => (
                       <option key={j.id} value={j.id}>
                         {j.title} ({j.department} - {j.location})
                       </option>
                     ))}
-                    <option value="general">
-                      General / Future Openings (All Departments)
-                    </option>
                   </select>
                 </div>
               </div>
+
+              {!selectedRole && (
+                <div>
+                  <label className="mb-1 block text-[10px] font-bold uppercase tracking-wider text-white/70">
+                    Talent Area of Interest *
+                  </label>
+                  <select
+                    value={formData.talentArea}
+                    onChange={(e) =>
+                      setFormData({ ...formData, talentArea: e.target.value })
+                    }
+                    className="w-full rounded-xl border border-white/20 bg-[#182B1E] px-4 py-2.5 text-xs text-white focus:border-[#8BC34A] focus:outline-none"
+                    required
+                  >
+                    <option value="" disabled>
+                      Select an area
+                    </option>
+                    {talentAreas.map((area) => (
+                      <option key={area} value={area}>
+                        {area}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              )}
 
               {/* Full Name */}
               <div>

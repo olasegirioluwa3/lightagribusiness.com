@@ -5,8 +5,18 @@ import { Container } from "@/components/ui/Container";
 import { HiArrowRight } from "react-icons/hi";
 
 // High-fidelity SVG icons matching the framework
-const DiagnosticIcon: React.FC<{ className?: string }> = ({ className = "w-4 h-4" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+const DiagnosticIcon: React.FC<{ className?: string }> = ({
+  className = "w-4 h-4",
+}) => (
+  <svg
+    className={className}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.75"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <circle cx="12" cy="12" r="9" />
     <path d="M12 7v10" />
     <path d="M7 12h10" />
@@ -14,8 +24,18 @@ const DiagnosticIcon: React.FC<{ className?: string }> = ({ className = "w-4 h-4
   </svg>
 );
 
-const BusinessSystemsIcon: React.FC<{ className?: string }> = ({ className = "w-4 h-4" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+const BusinessSystemsIcon: React.FC<{ className?: string }> = ({
+  className = "w-4 h-4",
+}) => (
+  <svg
+    className={className}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.75"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <circle cx="6" cy="6" r="3" />
     <circle cx="18" cy="18" r="3" />
     <path d="M6 9v3a3 3 0 0 0 3 3h6" />
@@ -24,15 +44,35 @@ const BusinessSystemsIcon: React.FC<{ className?: string }> = ({ className = "w-
   </svg>
 );
 
-const OperationalVisibilityIcon: React.FC<{ className?: string }> = ({ className = "w-4 h-4" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+const OperationalVisibilityIcon: React.FC<{ className?: string }> = ({
+  className = "w-4 h-4",
+}) => (
+  <svg
+    className={className}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.75"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z" />
     <circle cx="12" cy="12" r="3" />
   </svg>
 );
 
-const StructuredReportingIcon: React.FC<{ className?: string }> = ({ className = "w-4 h-4" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+const StructuredReportingIcon: React.FC<{ className?: string }> = ({
+  className = "w-4 h-4",
+}) => (
+  <svg
+    className={className}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.75"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
     <path d="M14 2v6h6" />
     <path d="M9 13h6" />
@@ -40,8 +80,18 @@ const StructuredReportingIcon: React.FC<{ className?: string }> = ({ className =
   </svg>
 );
 
-const CapacityDevelopmentIcon: React.FC<{ className?: string }> = ({ className = "w-4 h-4" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+const CapacityDevelopmentIcon: React.FC<{ className?: string }> = ({
+  className = "w-4 h-4",
+}) => (
+  <svg
+    className={className}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.75"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
     <circle cx="9" cy="7" r="4" />
     <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
@@ -49,8 +99,18 @@ const CapacityDevelopmentIcon: React.FC<{ className?: string }> = ({ className =
   </svg>
 );
 
-const TechnologyAdoptionIcon: React.FC<{ className?: string }> = ({ className = "w-4 h-4" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+const TechnologyAdoptionIcon: React.FC<{ className?: string }> = ({
+  className = "w-4 h-4",
+}) => (
+  <svg
+    className={className}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.75"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <rect x="4" y="4" width="16" height="16" rx="2" />
     <rect x="9" y="9" width="6" height="6" />
     <path d="M9 1v3" />
@@ -64,13 +124,24 @@ const TechnologyAdoptionIcon: React.FC<{ className?: string }> = ({ className = 
   </svg>
 );
 
-const serviceItems = [
+const adoptionResearchPdf =
+  "/Technology_Adoption_African_Agriculture_Research.pdf";
+
+const serviceItems: {
+  label: string;
+  icon: React.FC<{ className?: string }>;
+  href?: string;
+}[] = [
   { label: "Diagnostics", icon: DiagnosticIcon },
   { label: "Business Systems Assessment", icon: BusinessSystemsIcon },
   { label: "Operational Visibility", icon: OperationalVisibilityIcon },
   { label: "Structured Reporting", icon: StructuredReportingIcon },
   { label: "Capacity Development", icon: CapacityDevelopmentIcon },
-  { label: "Technology Adoption", icon: TechnologyAdoptionIcon },
+  {
+    label: "Technology Adoption",
+    icon: TechnologyAdoptionIcon,
+    href: adoptionResearchPdf,
+  },
 ];
 
 export const InvestorBanner: React.FC = () => {
@@ -113,10 +184,12 @@ export const InvestorBanner: React.FC = () => {
             </p>
 
             <Link
-              href="/partnerships#investors"
+              href={adoptionResearchPdf}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-[#c8e6b2] hover:bg-[#b8dd9f] text-[#062615] text-xs sm:text-sm font-semibold transition-all duration-200 shadow-md group"
             >
-              <span>Explore Investment Readiness</span>
+              <span>Explore Technology Adoption Research</span>
               <HiArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
             </Link>
           </div>
@@ -141,14 +214,36 @@ export const InvestorBanner: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 lg:gap-3.5">
               {serviceItems.map((item) => {
                 const IconComponent = item.icon;
-                return (
-                  <div key={item.label} className="flex items-center gap-3 group">
+                const content = (
+                  <>
                     <div className="w-8 h-8 rounded-lg bg-[#0a2c1e] border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0 group-hover:border-emerald-400/60 group-hover:bg-[#0e3b29] transition-colors">
                       <IconComponent className="w-4 h-4" />
                     </div>
-                    <span className="text-xs sm:text-[13px] font-medium text-white/90 group-hover:text-white transition-colors">
+                    <span
+                      className={`text-xs sm:text-[13px] font-medium text-white/90 group-hover:text-white transition-colors ${item.href ? "text-emerald-300 underline decoration-dotted underline-offset-4" : ""}`}
+                    >
                       {item.label}
                     </span>
+                  </>
+                );
+
+                return item.href ? (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${item.label} research PDF, opens in a new tab`}
+                    className="group flex items-center gap-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400"
+                  >
+                    {content}
+                  </a>
+                ) : (
+                  <div
+                    key={item.label}
+                    className="group flex items-center gap-3"
+                  >
+                    {content}
                   </div>
                 );
               })}

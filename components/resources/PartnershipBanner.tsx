@@ -9,22 +9,17 @@ export const PartnershipBanner: React.FC = () => {
     {
       name: "Agri Agribusiness Consultancy",
       logo: "/image/partner-1.png",
-      label: "Advisory & Technical Partner",
+      // label: "Advisory & Technical Partner",
     },
     {
       name: "AgriBusiness Hub",
       logo: "/image/partner-2.png",
-      label: "Commercial Trade Network",
-    },
-    {
-      name: "LoanFirm AgCapital",
-      logo: "/image/partner-3.png",
-      label: "DFI & Capital Network",
+      // label: "Commercial Trade Network",
     },
     {
       name: "LightAgriOS Systems",
-      logo: "/image/lightagrios logo with name.png",
-      label: "Digital Agriculture Platform",
+      logo: "/image/partner-3.png",
+      // label: "Digital Agriculture Platform",
     },
   ];
 
@@ -118,13 +113,13 @@ export const PartnershipBanner: React.FC = () => {
 
             {/* Right Column: Original Partner Logos */}
             <div className="lg:col-span-8">
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 items-center">
+              <div className="grid grid-cols-3 sm:grid-cols-3 gap-4 sm:gap-6 items-center">
                 {partners.map((partner, index) => (
                   <div
                     key={index}
-                    className="bg-[#15251E]/90 hover:bg-[#1C3228] border border-white/10 hover:border-[#8BC34A]/40 rounded-xl p-4 flex flex-col items-center justify-center text-center transition-all duration-300 group min-h-[105px] shadow-sm hover:shadow-md"
+                    className="bg-white hover:bg-[#a9d2c0] border border-white/10 hover:border-[#8BC34A]/40 rounded-xl p-4 flex flex-col items-center justify-center text-center transition-all duration-300 group min-h-[105px] shadow-sm hover:shadow-md"
                   >
-                    <div className="relative w-full h-12 mb-2 flex items-center justify-center">
+                    <div className="relative w-full h-20 mb-2 flex items-center justify-center">
                       <Image
                         src={partner.logo}
                         alt={partner.name}
@@ -132,9 +127,7 @@ export const PartnershipBanner: React.FC = () => {
                         className="object-contain filter brightness-110 contrast-105 group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
-                    <span className="text-[10px] sm:text-[11px] font-semibold text-white/80 group-hover:text-[#8BC34A] transition-colors leading-tight line-clamp-1">
-                      {partner.label}
-                    </span>
+                   
                   </div>
                 ))}
               </div>

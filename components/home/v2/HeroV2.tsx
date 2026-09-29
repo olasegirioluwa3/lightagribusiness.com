@@ -142,7 +142,7 @@ export const HeroV2: React.FC = () => {
                 {/* Tile 2: Poultry Production */}
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/20 shadow-xl group">
                   <Image
-                    src="/image/lightagribusiness-gallery (20).jpg"
+                    src="/image/female famer with lighagrios phone.png"
                     alt="Poultry farm operations"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -165,7 +165,7 @@ export const HeroV2: React.FC = () => {
                 {/* Tile 4: Aerial Farm Landscape */}
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/20 shadow-xl group">
                   <Image
-                    src="/image/lightagribusiness-gallery (37).jpg"
+                    src="/image/lightagribusiness-gallery (28).jpg"
                     alt="Lush agricultural landscape"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"

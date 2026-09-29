@@ -12,8 +12,8 @@ export const ApproachCTA: React.FC = () => {
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/image/lightagribusiness-gallery (11).jpg"
-          alt="Agribusiness landscape — ready to move forward"
+          src="/image/footers image - sunset (1).jpg"
+          alt="African agricultural landscape at sunset"
           fill
           className="object-cover opacity-25"
         />

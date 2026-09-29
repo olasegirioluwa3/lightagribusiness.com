@@ -17,8 +17,8 @@ export const LightAgriOSCTA: React.FC = () => {
       {/* Background Landscape Texture */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/image/lightAgriOs (1).jpg"
-          alt="Agriculture landscape"
+          src="/image/footers image - sunset (1).jpg"
+          alt="African agricultural landscape at sunset"
           fill
           className="object-cover opacity-20 mix-blend-luminosity scale-105"
         />

@@ -8,8 +8,7 @@ const pillars = [
   {
     number: "01",
     title: "Knowledge & Capacity Development",
-    description:
-      "Build the people behind better agribusinesses.",
+    description: "Build the people behind better agribusinesses.",
     image:
       "/image/pillar1- male instructor with some students having a lot of feed samples.png",
     link: "/academy",
@@ -20,8 +19,7 @@ const pillars = [
   {
     number: "02",
     title: "Advisory & Business Systems",
-    description:
-      "Fix the systems behind performance.",
+    description: "Fix the systems behind performance.",
     image: "/image/advisory-man presenting analytics1.png",
     link: "/advisory",
     cta: "Explore Advisory & Business Systems",
@@ -31,8 +29,7 @@ const pillars = [
   {
     number: "03",
     title: "LightAgriOS",
-    description:
-      "See your agribusiness clearly.",
+    description: "See your agribusiness clearly.",
     image: "/image/lightAgriOs (1).jpg",
     link: "/lightagrios",
     cta: "Explore LightAgriOS",
@@ -43,9 +40,11 @@ const pillars = [
 
 export const AboutEcosystem: React.FC = () => {
   return (
-    <section className="bg-[#FAF8F3] py-14 lg:py-16">
+    <section
+      id="light-ecosystem"
+      className="scroll-mt-24 bg-[#FAF8F3] py-14 lg:py-16"
+    >
       <Container size="lg">
-
         {/* Heading */}
         <div className="mb-10">
           <span className="block mb-2 text-[10px] font-bold uppercase tracking-[0.25em] text-[#1F5C3F]">
@@ -57,8 +56,8 @@ export const AboutEcosystem: React.FC = () => {
           </h2>
 
           <p className="max-w-2xl text-[#53625B] text-sm lg:text-[15px]">
-            An integrated ecosystem to build capability,
-            fix systems and create visibility.
+            An integrated ecosystem to build capability, fix systems and create
+            visibility.
           </p>
         </div>
 

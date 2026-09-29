@@ -9,97 +9,164 @@ import {
   HiFilter,
 } from "react-icons/hi";
 
+export type EmploymentCategory = "Full-Time" | "Contract" | "Project-based";
+export type LocationCategory = "Nigeria" | "Hybrid" | "Field-based";
+
 export interface JobRole {
   id: string;
   department: string;
-  departmentCategory: "Advisory" | "Technology" | "Academy" | "Research";
+  departmentCategory:
+    | "Advisory"
+    | "Academy"
+    | "Projects"
+    | "Business Development";
   title: string;
   location: string;
-  locationCategory: "Lagos" | "Nairobi" | "Accra" | "Remote";
+  locationCategory: LocationCategory[];
   type: string;
-  typeCategory: "Full-Time" | "Contract" | "Internship";
+  typeCategory: EmploymentCategory[];
+  roleLevel: string;
   description: string;
   experience: string;
+  responsibilities: string[];
+  qualifications: string[];
+  desirable: string[];
 }
 
 export const sampleJobs: JobRole[] = [
   {
-    id: "job-1",
-    department: "ADVISORY",
+    id: "agribusiness-consultant",
+    department: "ADVISORY & BUSINESS SYSTEMS",
     departmentCategory: "Advisory",
-    title: "Senior Agri-Analyst",
-    location: "Lagos, Nigeria (HQ)",
-    locationCategory: "Lagos",
-    type: "Full-Time",
-    typeCategory: "Full-Time",
+    title: "Agribusiness Consultant / Associate Consultant",
+    location: "Nigeria · Field assignments as required",
+    locationCategory: ["Nigeria", "Field-based"],
+    type: "Full-time / Contract / Project-based",
+    typeCategory: ["Full-Time", "Contract", "Project-based"],
+    roleLevel: "Associate / Mid-level",
     description:
-      "Lead farm diagnostic audits, design customized operational SOPs, and evaluate commercial agribusiness feasibility models.",
-    experience: "3+ years advisory / agribusiness experience",
+      "Support consulting assignments through business analysis, feasibility studies, farm assessments, market research, financial analysis, and implementation support.",
+    experience: "Relevant professional experience is an advantage",
+    responsibilities: [
+      "Conduct farm and agribusiness assessments, market research, and value-chain analysis.",
+      "Support business plans, feasibility studies, farm budgets, production projections, and financial models.",
+      "Analyse costs, revenue, profitability, cash flow, and investment readiness.",
+      "Help clients develop operational systems and standard operating procedures.",
+      "Participate in field assessments, client meetings, implementation monitoring, and stakeholder engagements.",
+      "Prepare consulting reports, presentations, proposals, and training materials.",
+    ],
+    qualifications: [
+      "Bachelor's degree in Agribusiness, Agricultural Economics, Agriculture, Business Administration, Economics, or a related discipline.",
+      "Strong analytical, communication, and report-writing skills.",
+      "Good understanding of agriculture and agribusiness.",
+      "Proficiency with Microsoft Excel and PowerPoint.",
+      "Ability to turn business information into practical recommendations.",
+    ],
+    desirable: [
+      "Business planning, feasibility study, or financial modelling experience.",
+      "Farm management, market research, or value-chain experience.",
+      "Project management experience or experience working with agribusinesses.",
+    ],
   },
   {
-    id: "job-2",
-    department: "ADVISORY",
-    departmentCategory: "Advisory",
-    title: "Farm Diagnostics & Biosecurity Lead",
-    location: "Nairobi, Kenya",
-    locationCategory: "Nairobi",
-    type: "Full-Time",
-    typeCategory: "Full-Time",
-    description:
-      "Execute hands-on clinical and biosecurity audits across large poultry, livestock, and greenhouse operations in East Africa.",
-    experience: "4+ years animal science / agronomy",
-  },
-  {
-    id: "job-3",
-    department: "TECHNOLOGY",
-    departmentCategory: "Technology",
-    title: "LightAgriOS Systems Engineer",
-    location: "Remote / Hybrid (West Africa)",
-    locationCategory: "Remote",
-    type: "Full-Time",
-    typeCategory: "Full-Time",
-    description:
-      "Architect and ship core digital recordkeeping, inventory modules, and AI decision support tools for African farm managers.",
-    experience: "TypeScript, React, Next.js, Node.js",
-  },
-  {
-    id: "job-4",
-    department: "ACADEMY",
+    id: "capacity-development-officer",
+    department: "KNOWLEDGE & CAPACITY DEVELOPMENT",
     departmentCategory: "Academy",
-    title: "Agricultural Curriculum Specialist",
-    location: "Lagos, Nigeria",
-    locationCategory: "Lagos",
-    type: "Full-Time",
-    typeCategory: "Full-Time",
+    title: "Knowledge & Capacity Development Officer",
+    location: "Nigeria / Hybrid",
+    locationCategory: ["Nigeria", "Hybrid"],
+    type: "Full-time / Contract",
+    typeCategory: ["Full-Time", "Contract"],
+    roleLevel: "Officer / Associate",
     description:
-      "Design practical, market-tested vocational training modules and certification assessments for students and agripreneurs.",
-    experience: "Education / Agribusiness instructional design",
+      "Design and deliver practical learning for farmers, professionals, students, institutions, and development programmes.",
+    experience:
+      "Agriculture-related degree; facilitation experience is an advantage",
+    responsibilities: [
+      "Design training programmes, manuals, presentations, workbooks, and learning materials.",
+      "Facilitate workshops, practical sessions, virtual learning, and Training of Trainers programmes.",
+      "Conduct training needs assessments and develop learning evaluations.",
+      "Support SCUP and other Light capacity-building programmes.",
+      "Develop digital agricultural knowledge content, case studies, and knowledge products.",
+      "Document training outcomes and collaborate with specialists on sector-specific courses.",
+    ],
+    qualifications: [
+      "Bachelor's degree in Agriculture, Agribusiness, Education, Agricultural Economics, Development Studies, Business, or a related discipline.",
+      "Excellent communication, presentation, and writing skills.",
+      "Ability to simplify complex concepts into practical learning.",
+      "Basic digital literacy.",
+    ],
+    desirable: [
+      "Training, facilitation, adult-learning, or agricultural extension experience.",
+      "Experience developing learning materials or using online learning platforms.",
+      "Experience working with farmers, youth, or agribusiness professionals.",
+    ],
   },
   {
-    id: "job-5",
-    department: "ADVISORY",
-    departmentCategory: "Advisory",
-    title: "Outgrower Supply-Chain Coordinator",
-    location: "Accra, Ghana",
-    locationCategory: "Accra",
-    type: "Contract",
-    typeCategory: "Contract",
+    id: "agricultural-project-field-officer",
+    department: "ADVISORY & IMPLEMENTATION",
+    departmentCategory: "Projects",
+    title: "Agricultural Project & Field Officer",
+    location: "Nigeria · Field-based assignments",
+    locationCategory: ["Nigeria", "Field-based"],
+    type: "Full-time / Project-based",
+    typeCategory: ["Full-Time", "Project-based"],
+    roleLevel: "Field Officer",
     description:
-      "Manage smallholder outgrower schemes, quality-control field stations, and aggregator logistics for partner processors.",
-    experience: "Supply chain / smallholder coordination",
+      "Translate consulting recommendations into practical implementation, monitoring, and continuous improvement on farms and projects.",
+    experience: "Practical agricultural experience",
+    responsibilities: [
+      "Conduct farm and project-site visits and monitor client activities and milestones.",
+      "Support farm management systems, SOP adherence, and implementation teams.",
+      "Collect field data, prepare reports, and document evidence and results.",
+      "Identify operational challenges, escalate risks, and recommend corrective actions.",
+      "Coordinate field contractors and service providers when required.",
+      "Support farmer training, extension, and monitoring and evaluation activities.",
+    ],
+    qualifications: [
+      "Bachelor's degree or HND in Agriculture, Agribusiness, Animal Science, Crop Science, Agricultural Engineering, or a related field.",
+      "Practical agricultural experience and a strong field orientation.",
+      "Good communication and report-writing skills.",
+      "Ability to use Microsoft Office or Google Workspace.",
+    ],
+    desirable: [
+      "Farm or project management experience.",
+      "Experience with agricultural infrastructure, livestock, crops, or controlled-environment agriculture.",
+      "Climate-smart agriculture, data collection, or monitoring experience.",
+    ],
   },
   {
-    id: "job-6",
-    department: "RESEARCH",
-    departmentCategory: "Research",
-    title: "Agribusiness Intelligence Researcher",
-    location: "Remote / Pan-African",
-    locationCategory: "Remote",
-    type: "Full-Time",
-    typeCategory: "Full-Time",
+    id: "business-development-partnerships-officer",
+    department: "BUSINESS DEVELOPMENT & PARTNERSHIPS",
+    departmentCategory: "Business Development",
+    title: "Business Development & Strategic Partnerships Officer",
+    location: "Nigeria / Hybrid",
+    locationCategory: ["Nigeria", "Hybrid"],
+    type: "Full-time / Contract",
+    typeCategory: ["Full-Time", "Contract"],
+    roleLevel: "Officer / Executive",
     description:
-      "Author our flagship Annual Agribusiness Readiness Report, analyze regional trade corridors, and publish benchmark metrics.",
-    experience: "Applied economics / agricultural research",
+      "Identify and develop opportunities with agribusinesses, institutions, financial partners, government, NGOs, and development organisations.",
+    experience: "Relevant degree and commercial or partnership experience",
+    responsibilities: [
+      "Identify potential clients, institutional partners, tenders, grants, and consulting opportunities.",
+      "Develop and maintain a business and partnership pipeline.",
+      "Prepare proposals, expressions of interest, partnership concepts, pitch decks, and capability statements.",
+      "Support client acquisition, partner relationships, stakeholder meetings, and negotiations.",
+      "Conduct market intelligence and identify opportunities for Light's training and consulting services.",
+      "Work with technical teams to develop commercially viable solutions.",
+    ],
+    qualifications: [
+      "Bachelor's degree in Business Administration, Agribusiness, Economics, Agriculture, Marketing, Development Studies, or a related field.",
+      "Strong communication, relationship-building, and presentation skills.",
+      "Proposal-writing ability and commercial awareness.",
+      "Ability to conduct market research.",
+    ],
+    desirable: [
+      "Business development, consulting, or agriculture-sector experience.",
+      "NGO or development-sector experience.",
+      "Knowledge of grants, donor-funded projects, or B2B partnerships.",
+    ],
   },
 ];
 
@@ -112,35 +179,46 @@ export const CareerOpenRoles: React.FC<CareerOpenRolesProps> = ({
   onSelectRole,
   onOpenGeneralApply,
 }) => {
-  const [selectedRoleType, setSelectedRoleType] = useState<string>("All");
-  const [selectedDept, setSelectedDept] = useState<string>("All");
-  const [selectedLoc, setSelectedLoc] = useState<string>("All");
+  const [selectedRoleType, setSelectedRoleType] = useState<
+    EmploymentCategory | "All"
+  >("All");
+  const [selectedDept, setSelectedDept] = useState<
+    JobRole["departmentCategory"] | "All"
+  >("All");
+  const [selectedLoc, setSelectedLoc] = useState<LocationCategory | "All">(
+    "All",
+  );
 
   const filteredJobs = sampleJobs.filter((job) => {
     const matchesType =
-      selectedRoleType === "All" || job.typeCategory === selectedRoleType;
+      selectedRoleType === "All" || job.typeCategory.includes(selectedRoleType);
     const matchesDept =
       selectedDept === "All" || job.departmentCategory === selectedDept;
     const matchesLoc =
-      selectedLoc === "All" || job.locationCategory === selectedLoc;
+      selectedLoc === "All" || job.locationCategory.includes(selectedLoc);
     return matchesType && matchesDept && matchesLoc;
   });
 
   return (
-    <section id="open-roles" className="py-16 sm:py-24 bg-[#0A160E] text-white relative">
+    <section
+      id="open-roles"
+      className="py-16 sm:py-24 bg-[#0A160E] text-white relative"
+    >
       <Container size="lg">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
           {/* Left Column: Heading, Subtitle & Interactive Dropdowns matching mockup */}
           <div className="lg:col-span-4 space-y-6">
             <div>
               <span className="text-[11px] font-bold uppercase tracking-[0.25em] text-[#8BC34A] block mb-2">
-                FILTERABLE JOB OPENINGS
+                CURRENT OPPORTUNITIES
               </span>
               <h2 className="font-sans font-black text-3xl sm:text-4xl text-white tracking-tight leading-tight mb-3">
-                CURRENT JOB OPENINGS
+                CURRENT OPPORTUNITIES
               </h2>
               <p className="text-xs sm:text-sm text-white/75 leading-relaxed">
-                Discover positions where you can apply practical knowledge, build scalable business systems, and power Africa&apos;s agricultural transformation.
+                Discover positions where you can apply practical knowledge,
+                build scalable business systems, and power Africa&apos;s
+                agricultural transformation.
               </p>
             </div>
 
@@ -153,13 +231,17 @@ export const CareerOpenRoles: React.FC<CareerOpenRolesProps> = ({
                 </label>
                 <select
                   value={selectedRoleType}
-                  onChange={(e) => setSelectedRoleType(e.target.value)}
+                  onChange={(e) =>
+                    setSelectedRoleType(
+                      e.target.value as EmploymentCategory | "All",
+                    )
+                  }
                   className="w-full bg-[#122218] border border-white/15 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-[#8BC34A] transition-colors"
                 >
                   <option value="All">All Role Types</option>
                   <option value="Full-Time">Full-Time</option>
                   <option value="Contract">Contract / Retainer</option>
-                  <option value="Internship">Internship / Fellowship</option>
+                  <option value="Project-based">Project-based</option>
                 </select>
               </div>
 
@@ -170,14 +252,22 @@ export const CareerOpenRoles: React.FC<CareerOpenRolesProps> = ({
                 </label>
                 <select
                   value={selectedDept}
-                  onChange={(e) => setSelectedDept(e.target.value)}
+                  onChange={(e) =>
+                    setSelectedDept(
+                      e.target.value as JobRole["departmentCategory"] | "All",
+                    )
+                  }
                   className="w-full bg-[#122218] border border-white/15 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-[#8BC34A] transition-colors"
                 >
                   <option value="All">All Departments</option>
                   <option value="Advisory">Advisory &amp; Systems</option>
-                  <option value="Technology">Technology (LightAgriOS)</option>
                   <option value="Academy">Academy &amp; Capacity</option>
-                  <option value="Research">Research &amp; Insights</option>
+                  <option value="Projects">
+                    Projects &amp; Implementation
+                  </option>
+                  <option value="Business Development">
+                    Business Development &amp; Partnerships
+                  </option>
                 </select>
               </div>
 
@@ -188,14 +278,15 @@ export const CareerOpenRoles: React.FC<CareerOpenRolesProps> = ({
                 </label>
                 <select
                   value={selectedLoc}
-                  onChange={(e) => setSelectedLoc(e.target.value)}
+                  onChange={(e) =>
+                    setSelectedLoc(e.target.value as LocationCategory | "All")
+                  }
                   className="w-full bg-[#122218] border border-white/15 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-[#8BC34A] transition-colors"
                 >
                   <option value="All">All Locations</option>
-                  <option value="Lagos">Lagos, Nigeria (HQ)</option>
-                  <option value="Nairobi">Nairobi, Kenya</option>
-                  <option value="Accra">Accra, Ghana</option>
-                  <option value="Remote">Remote / Field Based</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Hybrid">Hybrid</option>
+                  <option value="Field-based">Field-based</option>
                 </select>
               </div>
 
@@ -239,7 +330,8 @@ export const CareerOpenRoles: React.FC<CareerOpenRolesProps> = ({
                   No roles match the selected filters
                 </h3>
                 <p className="text-xs text-white/60 mb-4">
-                  Try clearing some filters or submit an open general application.
+                  Try clearing some filters or submit an open general
+                  application.
                 </p>
                 <button
                   type="button"
@@ -250,12 +342,11 @@ export const CareerOpenRoles: React.FC<CareerOpenRolesProps> = ({
                 </button>
               </div>
             ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 {filteredJobs.map((job) => (
-                  <div
+                  <article
                     key={job.id}
-                    onClick={() => onSelectRole(job)}
-                    className="bg-[#122218] hover:bg-[#162B1E] border border-white/10 hover:border-[#8BC34A]/60 rounded-2xl p-5 flex flex-col justify-between transition-all duration-200 cursor-pointer group shadow-sm hover:shadow-lg hover:-translate-y-0.5"
+                    className="bg-[#122218] border border-white/10 rounded-2xl p-5 flex flex-col justify-between transition-all duration-200 group shadow-sm hover:shadow-lg hover:border-[#8BC34A]/40"
                   >
                     <div>
                       {/* Department Tag */}
@@ -278,17 +369,71 @@ export const CareerOpenRoles: React.FC<CareerOpenRolesProps> = ({
                       <p className="text-[11px] text-white/60 leading-relaxed line-clamp-3 mb-4">
                         {job.description}
                       </p>
+
+                      <p className="mb-4 text-[10px] text-white/55">
+                        <span className="font-semibold text-white/75">
+                          Level:
+                        </span>{" "}
+                        {job.roleLevel}
+                        <span className="px-1.5 text-white/30">|</span>
+                        <span className="font-semibold text-white/75">
+                          Experience:
+                        </span>{" "}
+                        {job.experience}
+                      </p>
+
+                      <details className="group/details border-t border-white/10 pt-3">
+                        <summary className="cursor-pointer list-none text-xs font-semibold text-[#8BC34A] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#8BC34A]">
+                          View responsibilities &amp; requirements
+                        </summary>
+                        <div className="mt-4 space-y-4 text-xs leading-relaxed text-white/75">
+                          <div>
+                            <h4 className="mb-2 font-bold text-white">
+                              Key responsibilities
+                            </h4>
+                            <ul className="list-disc space-y-1.5 pl-4">
+                              {job.responsibilities.map((item) => (
+                                <li key={item}>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                          <div>
+                            <h4 className="mb-2 font-bold text-white">
+                              Qualifications
+                            </h4>
+                            <ul className="list-disc space-y-1.5 pl-4">
+                              {job.qualifications.map((item) => (
+                                <li key={item}>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                          <div>
+                            <h4 className="mb-2 font-bold text-white">
+                              Desirable experience
+                            </h4>
+                            <ul className="list-disc space-y-1.5 pl-4">
+                              {job.desirable.map((item) => (
+                                <li key={item}>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      </details>
                     </div>
 
                     {/* Card Footer: Type & Arrow */}
                     <div className="pt-3 border-t border-white/10 flex items-center justify-between text-[11px]">
                       <span className="text-white/50">{job.type}</span>
-                      <span className="text-[#8BC34A] font-bold inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                        <span>Details</span>
+                      <button
+                        type="button"
+                        onClick={() => onSelectRole(job)}
+                        className="text-[#8BC34A] font-bold inline-flex items-center gap-1 hover:translate-x-1 transition-transform focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8BC34A]"
+                      >
+                        <span>Apply</span>
                         <HiArrowRight className="w-3 h-3" />
-                      </span>
+                      </button>
                     </div>
-                  </div>
+                  </article>
                 ))}
               </div>
             )}

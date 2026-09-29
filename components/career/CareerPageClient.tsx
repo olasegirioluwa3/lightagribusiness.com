@@ -5,6 +5,7 @@ import { CareerHero } from "@/components/career/CareerHero";
 import { WhyGrowWithLight } from "@/components/career/WhyGrowWithLight";
 import { CareerJourney } from "@/components/career/CareerJourney";
 import { CareerOpenRoles, JobRole } from "@/components/career/CareerOpenRoles";
+import { CareerFutureTalent } from "@/components/career/CareerFutureTalent";
 import { CareerFrameworkAndStories } from "@/components/career/CareerFrameworkAndStories";
 import { CareerPartnerships } from "@/components/career/CareerPartnerships";
 import { CareerCTA } from "@/components/career/CareerCTA";
@@ -45,6 +46,8 @@ export const CareerPageClient: React.FC = () => {
         onSelectRole={handleSelectRole}
         onOpenGeneralApply={handleOpenGeneralApply}
       />
+
+      <CareerFutureTalent onOpenGeneralApply={handleOpenGeneralApply} />
 
       {/* 5. Career Framework + Global Impact Stories & Professional Network matching mockup */}
       <CareerFrameworkAndStories />

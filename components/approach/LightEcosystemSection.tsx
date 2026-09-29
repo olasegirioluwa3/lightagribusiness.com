@@ -5,7 +5,11 @@ import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { HiArrowRight } from "react-icons/hi";
 
-import { HiBookOpen, HiOutlineOfficeBuilding, HiDesktopComputer } from "react-icons/hi";
+import {
+  HiBookOpen,
+  HiOutlineOfficeBuilding,
+  HiDesktopComputer,
+} from "react-icons/hi";
 
 const pillars = [
   {
@@ -48,7 +52,6 @@ export const LightEcosystemSection: React.FC = () => {
     <section className="py-14 sm:py-20 bg-[#0D1810] text-white border-b border-[#182B1E]">
       <Container size="lg">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-
           {/* Left: Heading + CTA */}
           <div className="lg:col-span-4">
             <span className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#8BC34A] block mb-3">
@@ -58,10 +61,13 @@ export const LightEcosystemSection: React.FC = () => {
               Knowledge + Advisory + Technology.
             </h2>
             <p className="text-sm text-white/70 leading-[1.85] mb-8">
-              Better systems require more than one tool. Our approach connects the three pillars of the Light ecosystem. Together, they build capability, create visibility and turn information into better decisions.
+              Better systems require more than one tool. Our approach connects
+              the three pillars of the Light ecosystem. Together, they build
+              capability, create visibility and turn information into better
+              decisions.
             </p>
             <Link
-              href="/about"
+              href="/about#light-ecosystem"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#8BC34A] hover:bg-[#7cb342] text-[#0A170F] font-bold text-xs uppercase tracking-wider transition-all duration-200 shadow-md group"
             >
               <span>Explore the Light Ecosystem</span>
@@ -89,20 +95,24 @@ export const LightEcosystemSection: React.FC = () => {
                     >
                       {p.label}
                     </span>
-                    <p className="text-[11px] font-medium text-white/50 mb-3">{p.sub}</p>
-                    <p className="text-[12px] text-white/75 leading-relaxed">{p.desc}</p>
+                    <p className="text-[11px] font-medium text-white/50 mb-3">
+                      {p.sub}
+                    </p>
+                    <p className="text-[12px] text-white/75 leading-relaxed">
+                      {p.desc}
+                    </p>
                   </div>
                   <div
                     className="flex items-center gap-1.5 text-[11px] font-bold mt-auto transition-colors"
                     style={{ color: p.accent }}
                   >
-                    Learn more <HiArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    Learn more{" "}
+                    <HiArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </Link>
               );
             })}
           </div>
-
         </div>
       </Container>
     </section>

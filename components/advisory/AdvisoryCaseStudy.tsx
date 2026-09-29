@@ -41,16 +41,26 @@ export const AdvisoryCaseStudy: React.FC = () => {
             </div>
 
             <p className="text-xs sm:text-sm text-[#555555] leading-relaxed">
-              A commercial poultry operation was experiencing high mortality, poor feed conversion and inconsistent performance. Through a structured diagnostic and advisory process, we redesigned operating systems, improved biosecurity and introduced better records and monitoring.
+              A commercial poultry operation was experiencing high mortality,
+              poor feed conversion and inconsistent performance. Through a
+              structured diagnostic and advisory process, we redesigned
+              operating systems, improved biosecurity and introduced better
+              records and monitoring.
             </p>
 
             <p className="text-xs font-bold text-[#122216]">
-              Outcome: <span className="font-normal text-[#555555]">Improved performance, lower mortality, and stronger operational control.</span>
+              Outcome:{" "}
+              <span className="font-normal text-[#555555]">
+                Improved performance, lower mortality, and stronger operational
+                control.
+              </span>
             </p>
 
             <div className="pt-2">
               <Link
-                href="/contact"
+                href="/Improving_Farm_Performance_Through_Better_Systems_Case_Study.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#122216] hover:bg-black text-white font-bold text-xs uppercase tracking-wider transition-all duration-200 group shadow-sm"
               >
                 <span>View Full Case Study</span>

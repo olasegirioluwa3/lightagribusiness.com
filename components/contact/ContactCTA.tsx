@@ -18,8 +18,8 @@ export const ContactCTA: React.FC = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/image/farmers onn a farmland.jpg"
-          alt="Transform your agribusiness with Light"
+          src="/image/footers image - sunset (1).jpg"
+          alt="African agricultural landscape at sunset"
           fill
           className="object-cover opacity-25 mix-blend-luminosity"
         />

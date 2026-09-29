@@ -8,74 +8,97 @@ import { HiArrowRight } from "react-icons/hi";
 
 export const ApproachHero: React.FC = () => {
   return (
-    <section className="relative bg-[#0B1A10] text-white overflow-hidden border-b border-[#182B1E]">
-      {/* Background image layer */}
-      <div className="absolute inset-0 z-0">
+    <section className="relative overflow-hidden border-b border-brand-green/20 bg-[#07130D] pb-8 pt-6 text-white lg:pb-10 lg:pt-8">
+      <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
         <Image
           src="/image/advisory-man presenting analytics1.png"
-          alt="Agribusiness advisory consultation"
+          alt=""
           fill
           priority
-          className="object-cover object-center opacity-30"
+          className="object-cover object-right opacity-35 transition-opacity duration-700 lg:object-[80%_center] lg:opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0B1A10]/98 via-[#0B1A10]/80 to-[#0B1A10]/50" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0B1A10]/90 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#07130D] via-[#07130D]/92 via-35% to-[#07130D]/40" />
+        <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#07130D] via-[#07130D]/70 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#07130D] via-[#07130D]/80 to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_75%_35%,rgba(31,92,63,0.38)_0%,transparent_65%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_85%,rgba(198,146,20,0.14)_0%,transparent_50%)]" />
       </div>
 
-      {/* Glow orbs */}
-      <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-[#1F5C3F]/25 rounded-full blur-[130px] pointer-events-none" />
-      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#C69214]/15 rounded-full blur-[100px] pointer-events-none" />
+      <Container size="lg" className="relative z-10">
+        <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-8 xl:gap-12">
+          <div className="lg:col-span-6">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-md border border-emerald-500/40 bg-brand-green/25 px-3 py-1.5 backdrop-blur-sm">
+              <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
+              <span className="font-mono text-xs font-bold uppercase tracking-widest text-emerald-300 sm:text-sm">
+                HOW WE WORK &gt; UNDERSTAND, DESIGN, IMPROVE
+              </span>
+            </div>
 
-      <Container size="lg" className="relative z-10 py-20 sm:py-24 lg:py-32">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-
-          {/* Left */}
-          <div className="lg:col-span-7">
-            <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.22em] text-[#8BC34A] block mb-5">
-              Our Approach
-            </span>
-
-            <h1 className="font-sans font-black text-3xl sm:text-4xl lg:text-[46px] xl:text-[52px] text-white tracking-tight leading-[1.18] mb-6">
-              We don&apos;t start with solutions.{" "}
-              <span className="block mt-1">
+            <h1 className="mb-6 text-3xl font-extrabold leading-[1.12] tracking-tight text-white sm:text-5xl xl:text-[52px]">
+              We don&apos;t start with solutions.
+              <span className="mt-1 block">
                 We start with{" "}
-                <span className="text-[#C69214] italic">understanding.</span>
+                <span className="text-[#D4AF37]">understanding.</span>
               </span>
             </h1>
 
-            <p className="text-sm sm:text-[15px] lg:text-base text-white/75 leading-[1.85] max-w-lg mb-10">
-              Agribusiness problems are rarely as simple as they first appear. At Light, we combine practical field understanding, systems thinking, evidence and continuous improvement to help agribusinesses and institutions move from uncertainty to clearer action.
+            <p className="mb-8 max-w-xl text-base font-normal leading-relaxed text-slate-300 sm:text-lg">
+              Agribusiness problems are rarely as simple as they first appear.
+              At Light, we combine practical field understanding, systems
+              thinking, evidence and continuous improvement to help
+              agribusinesses and institutions move from uncertainty to clearer
+              action.
             </p>
 
-            <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+            <div className="flex flex-col items-stretch gap-4 sm:flex-row sm:items-center">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-[#8BC34A] hover:bg-[#7cb342] text-[#0A170F] font-bold text-xs sm:text-sm uppercase tracking-wider transition-all duration-200 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center justify-center gap-2.5 rounded-lg bg-[#1F5C3F] px-6 py-3.5 text-sm font-semibold tracking-wide text-white shadow-lg shadow-emerald-950/50 transition-all hover:scale-[1.02] hover:bg-[#184932] active:scale-[0.98] sm:text-base"
               >
                 <span>Start a Conversation</span>
-                <HiArrowRight className="w-4 h-4" />
+                <HiArrowRight className="h-4 w-4 text-emerald-300" />
               </Link>
               <Link
                 href="/advisory"
-                className="inline-flex items-center px-6 py-3.5 rounded-full bg-black/30 hover:bg-white/10 border border-white/30 hover:border-white/60 text-white font-semibold text-xs sm:text-sm uppercase tracking-wider transition-all duration-200"
+                className="inline-flex items-center justify-center rounded-lg border border-white/20 bg-white/5 px-6 py-3.5 text-sm font-medium tracking-wide text-white/90 backdrop-blur-sm transition-all hover:border-white/40 hover:bg-white/10 hover:text-white sm:text-base"
               >
                 Explore Our Services
               </Link>
             </div>
           </div>
 
-          {/* Right: Typography Stack */}
-          <div className="lg:col-span-5 flex flex-col justify-center items-start lg:items-end text-left lg:text-right pt-6 lg:pt-0">
-            <div className="space-y-1 sm:space-y-2">
-              <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-white tracking-tight">
-                Better understanding.
-              </p>
-              <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-white tracking-tight">
-                Better decisions.
-              </p>
-              <p className="text-xl sm:text-2xl lg:text-3xl font-black text-[#8BC34A] tracking-tight">
-                Stronger agribusinesses.
-              </p>
+          <div className="relative lg:col-span-6">
+            <div className="relative mx-auto w-full max-w-[540px] lg:max-w-none">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/20 shadow-2xl shadow-black/90">
+                <Image
+                  src="/image/advisory-man presenting analytics2.png"
+                  alt="Agribusiness advisors reviewing operational performance data"
+                  fill
+                  priority
+                  className="object-cover object-center"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-transparent" />
+
+                <div className="absolute right-4 top-4 space-y-1 rounded-xl border border-white/15 bg-black/60 p-3 text-right shadow-lg backdrop-blur-md sm:p-4">
+                  <p className="text-xs font-bold tracking-wide text-white sm:text-sm">
+                    Better Understanding
+                  </p>
+                  <p className="text-xs font-bold tracking-wide text-emerald-300 sm:text-sm">
+                    Better Decisions
+                  </p>
+                  <p className="text-xs font-bold tracking-wide text-[#D4AF37] sm:text-sm">
+                    Stronger Agribusinesses
+                  </p>
+                </div>
+
+                <div className="absolute bottom-4 left-4 right-4 flex items-center gap-2.5 rounded-lg border border-emerald-500/30 bg-[#071710]/90 px-4 py-2.5 shadow-lg backdrop-blur-md sm:right-auto">
+                  <span className="h-2 w-2 shrink-0 animate-pulse rounded-full bg-emerald-400" />
+                  <span className="text-xs font-medium text-slate-200 sm:text-sm">
+                    Evidence-led. Field-informed. Continuously improved.
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -21,7 +21,8 @@ const frameworkPillars = [
     icon: HiCog,
     cx: 200,
     cy: 70,
-    description: "Deep agronomic science, biosecurity protocols, farm diagnostics, and financial feasibility modeling.",
+    description:
+      "Deep agronomic science, biosecurity protocols, farm diagnostics, and financial feasibility modeling.",
   },
   {
     id: "leadership",
@@ -29,7 +30,8 @@ const frameworkPillars = [
     icon: HiUsers,
     cx: 320,
     cy: 160,
-    description: "Leading multi-disciplinary teams, managing client farm turnarounds, and executive presentation mastery.",
+    description:
+      "Leading multi-disciplinary teams, managing client farm turnarounds, and executive presentation mastery.",
   },
   {
     id: "networking",
@@ -37,7 +39,8 @@ const frameworkPillars = [
     icon: HiGlobeAlt,
     cx: 280,
     cy: 300,
-    description: "Engaging commercial aggregators, DFIs, university faculties, and institutional investor desks.",
+    description:
+      "Engaging commercial aggregators, DFIs, university faculties, and institutional investor desks.",
   },
   {
     id: "innovation",
@@ -45,7 +48,8 @@ const frameworkPillars = [
     icon: HiLightBulb,
     cx: 120,
     cy: 300,
-    description: "Designing scalable SOPs, deploying LightAgriOS modules, and testing modern farm technologies.",
+    description:
+      "Designing scalable SOPs, deploying LightAgriOS modules, and testing modern farm technologies.",
   },
   {
     id: "relations",
@@ -53,7 +57,8 @@ const frameworkPillars = [
     icon: HiHeart,
     cx: 80,
     cy: 160,
-    description: "Developing trust with farm managers, owner-operators, and outgrower communities on the ground.",
+    description:
+      "Developing trust with farm managers, owner-operators, and outgrower communities on the ground.",
   },
 ];
 
@@ -62,7 +67,10 @@ export const CareerFrameworkAndStories: React.FC = () => {
   const [activeVideoModal, setActiveVideoModal] = useState<string | null>(null);
 
   return (
-    <section id="network" className="py-16 sm:py-24 bg-white border-b border-[#E8E4DA]">
+    <section
+      id="network"
+      className="py-16 sm:py-24 bg-white border-b border-[#E8E4DA]"
+    >
       <Container size="lg">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           {/* LEFT: OUR CAREER FRAMEWORK matching mockup */}
@@ -75,7 +83,8 @@ export const CareerFrameworkAndStories: React.FC = () => {
                 OUR CAREER FRAMEWORK
               </h2>
               <p className="text-xs sm:text-sm text-[#555555] leading-relaxed mb-6">
-                We develop well-rounded agribusiness leaders through 5 interconnected core competencies. Click any node to explore:
+                We develop well-rounded agribusiness leaders through 5
+                interconnected core competencies. Click any node to explore:
               </p>
             </div>
 
@@ -209,13 +218,15 @@ export const CareerFrameworkAndStories: React.FC = () => {
                     left: "50%",
                     top: "14%",
                     labelPosition: "top",
-                    labelClasses: "bottom-full mb-1.5 left-1/2 -translate-x-1/2",
+                    labelClasses:
+                      "bottom-full mb-1.5 left-1/2 -translate-x-1/2",
                   },
                   leadership: {
                     left: "83%",
                     top: "38%",
                     labelPosition: "right",
-                    labelClasses: "left-full ml-2 top-1/2 -translate-y-1/2 text-left",
+                    labelClasses:
+                      "left-full ml-2 top-1/2 -translate-y-1/2 text-left",
                   },
                   networking: {
                     left: "71%",
@@ -233,7 +244,8 @@ export const CareerFrameworkAndStories: React.FC = () => {
                     left: "17%",
                     top: "38%",
                     labelPosition: "left",
-                    labelClasses: "right-full mr-2 top-1/2 -translate-y-1/2 text-right",
+                    labelClasses:
+                      "right-full mr-2 top-1/2 -translate-y-1/2 text-right",
                   },
                 };
 
@@ -301,178 +313,72 @@ export const CareerFrameworkAndStories: React.FC = () => {
               </p>
               <div className="flex items-center gap-1.5 text-[11px] text-[#2E7D32] font-semibold">
                 <HiCheckCircle className="w-3.5 h-3.5" />
-                <span>Integrated into everyday client farm diagnostics &amp; advisory</span>
+                <span>
+                  Integrated into everyday client farm diagnostics &amp;
+                  advisory
+                </span>
               </div>
             </div>
           </div>
 
           {/* RIGHT: GLOBAL IMPACT STORIES & OUR PROFESSIONAL NETWORK matching mockup */}
           <div className="lg:col-span-7 space-y-8">
-            {/* Top Sub-section: GLOBAL IMPACT STORIES */}
-            <div>
-              <div className="mb-4">
-                <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#2E7D32] block mb-1">
-                  GLOBAL IMPACT STORIES
-                </span>
-                <h3 className="font-sans font-black text-xl sm:text-2xl text-[#122216] tracking-tight leading-tight">
-                  GLOBAL IMPACT STORIES
-                </h3>
-                <p className="text-xs text-[#666666]">
-                  Short video perspectives and field reports from current team members.
-                </p>
-              </div>
-
-              {/* 2 Video Cards Grid matching mockup */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {/* Story 1 */}
-                <div className="bg-[#FAF9F5] border border-[#E8E4DA] rounded-2xl overflow-hidden p-3.5 flex flex-col justify-between hover:shadow-md transition-shadow">
-                  <div
-                    onClick={() => setActiveVideoModal("somto")}
-                    className="relative aspect-[16/10] w-full rounded-xl overflow-hidden bg-black cursor-pointer group mb-3"
-                  >
-                    <Image
-                      src="/image/lightagribusiness-gallery (36).jpg"
-                      alt="Field agronomist inspecting greenhouse crops"
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300 opacity-85"
-                    />
-                    <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors" />
-                    {/* Play Button Overlay */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-10 h-10 rounded-full bg-white/90 text-[#122216] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                        <HiPlay className="w-5 h-5 ml-0.5" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p className="text-[11px] text-[#444444] italic leading-relaxed mb-3">
-                      &ldquo;Being on the ground with commercial farms gave me practical systems insight that no textbook ever taught.&rdquo;
-                    </p>
-                    <div className="flex items-center gap-2.5 pt-2 border-t border-[#E8E4DA]">
-                      <div className="w-7 h-7 rounded-full bg-[#2E7D32] text-white text-[10px] font-bold flex items-center justify-center">
-                        SF
-                      </div>
-                      <div>
-                        <h5 className="font-bold text-xs text-[#122216] leading-none">
-                          Somto Forescta
-                        </h5>
-                        <span className="text-[10px] text-[#2E7D32]">
-                          Field Agronomist &amp; Diagnostic Fellow
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Story 2 */}
-                <div className="bg-[#FAF9F5] border border-[#E8E4DA] rounded-2xl overflow-hidden p-3.5 flex flex-col justify-between hover:shadow-md transition-shadow">
-                  <div
-                    onClick={() => setActiveVideoModal("semona")}
-                    className="relative aspect-[16/10] w-full rounded-xl overflow-hidden bg-black cursor-pointer group mb-3"
-                  >
-                    <Image
-                      src="/image/middle-aged man with lighagrios tab.png"
-                      alt="LightAgriOS systems lead with farm management tablet"
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300 opacity-85"
-                    />
-                    <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors" />
-                    {/* Play Button Overlay */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-10 h-10 rounded-full bg-white/90 text-[#122216] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                        <HiPlay className="w-5 h-5 ml-0.5" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p className="text-[11px] text-[#444444] italic leading-relaxed mb-3">
-                      &ldquo;Building software directly connected to farmers&apos; daily realities is the most rewarding work of my career.&rdquo;
-                    </p>
-                    <div className="flex items-center gap-2.5 pt-2 border-t border-[#E8E4DA]">
-                      <div className="w-7 h-7 rounded-full bg-[#2E7D32] text-white text-[10px] font-bold flex items-center justify-center">
-                        SS
-                      </div>
-                      <div>
-                        <h5 className="font-bold text-xs text-[#122216] leading-none">
-                          Semona Sachanson
-                        </h5>
-                        <span className="text-[10px] text-[#2E7D32]">
-                          Systems Lead &amp; LightAgriOS Architect
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* Bottom Sub-section: OUR PROFESSIONAL NETWORK */}
-            <div className="pt-6 border-t border-[#E8E4DA]">
-              <div className="mb-4">
-                <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#2E7D32] block mb-1">
+            <div className="border-t border-[#E8E4DA] pt-8 sm:pt-10">
+              <div className="mb-6">
+                <span className="mb-2 block text-xs font-bold uppercase tracking-[0.2em] text-[#2E7D32]">
                   OUR PROFESSIONAL NETWORK
                 </span>
-                <h4 className="font-sans font-black text-lg sm:text-xl text-[#122216] tracking-tight leading-tight">
+                <h4 className="font-sans text-2xl font-black leading-tight tracking-tight text-[#122216] sm:text-3xl">
                   OUR PROFESSIONAL NETWORK
                 </h4>
-                <p className="text-xs text-[#666666]">
+                <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[#666666] sm:text-base">
                   Verified case study partners, alumni, and ecosystem leaders.
                 </p>
               </div>
 
               {/* Alumni quote cards + Partner badges matching mockup */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-                <div className="p-3.5 rounded-xl bg-white border border-[#E5E0D5]">
-                  <p className="text-[11px] text-[#555555] italic leading-relaxed mb-3">
-                    &ldquo;Light equipped me with workable biosecurity SOPs that completely turned around our livestock mortalities.&rdquo;
+              <div className="mb-4 grid grid-cols-1 gap-5 xl:grid-cols-2">
+                <div className="flex min-h-[210px] flex-col justify-between rounded-2xl border border-[#E5E0D5] bg-white p-5 shadow-sm sm:min-h-[230px] sm:p-6">
+                  <p className="mb-6 text-sm italic leading-7 text-[#555555] sm:text-base">
+                    &ldquo;Light equipped me with workable biosecurity SOPs that
+                    completely turned around our livestock mortalities.&rdquo;
                   </p>
-                  <div className="flex items-center gap-2">
-                    <div className="w-6 h-6 rounded-full bg-[#122216] text-[#8BC34A] text-[9px] font-bold flex items-center justify-center">
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#122216] text-xs font-bold text-[#8BC34A]">
                       SW
                     </div>
                     <div>
-                      <span className="font-bold text-[11px] text-[#122216] block leading-none">
+                      <span className="block text-sm font-bold leading-tight text-[#122216]">
                         Seno Willon
                       </span>
-                      <span className="text-[9px] text-[#666666]">Senior Farm Partner</span>
+                      <span className="mt-1 block text-xs text-[#666666]">
+                        Senior Farm Partner
+                      </span>
                     </div>
                   </div>
                 </div>
 
-                <div className="p-3.5 rounded-xl bg-white border border-[#E5E0D5]">
-                  <p className="text-[11px] text-[#555555] italic leading-relaxed mb-3">
-                    &ldquo;Their practical frameworks survival test on real farms every week. That is what separates Light from theoretical consultants.&rdquo;
+                <div className="flex min-h-[210px] flex-col justify-between rounded-2xl border border-[#E5E0D5] bg-white p-5 shadow-sm sm:min-h-[230px] sm:p-6">
+                  <p className="mb-6 text-sm italic leading-7 text-[#555555] sm:text-base">
+                    &ldquo;Their practical frameworks survival test on real
+                    farms every week. That is what separates Light from
+                    theoretical consultants.&rdquo;
                   </p>
-                  <div className="flex items-center gap-2">
-                    <div className="w-6 h-6 rounded-full bg-[#122216] text-[#8BC34A] text-[9px] font-bold flex items-center justify-center">
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#122216] text-xs font-bold text-[#8BC34A]">
                       AP
                     </div>
                     <div>
-                      <span className="font-bold text-[11px] text-[#122216] block leading-none">
+                      <span className="block text-sm font-bold leading-tight text-[#122216]">
                         Adebayo Patrick
                       </span>
-                      <span className="text-[9px] text-[#666666]">Agripreneur &amp; Academy Alum</span>
+                      <span className="mt-1 block text-xs text-[#666666]">
+                        Agripreneur &amp; Academy Alum
+                      </span>
                     </div>
                   </div>
                 </div>
-              </div>
-
-              {/* Institutional verification logos matching mockup */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2">
-                {["USDA Standard", "ResearchGate", "USCAL Network", "IDISO Advisory"].map(
-                  (badge, idx) => (
-                    <div
-                      key={idx}
-                      className="px-3 py-2 rounded-lg bg-[#FAF9F5] border border-[#E8E4DA] text-center"
-                    >
-                      <span className="font-mono font-bold text-[10px] text-[#444444] tracking-wider uppercase">
-                        {badge}
-                      </span>
-                    </div>
-                  )
-                )}
               </div>
             </div>
           </div>
@@ -512,7 +418,8 @@ export const CareerFrameworkAndStories: React.FC = () => {
                 : "Semona Sachanson — Systems Lead"}
             </h4>
             <p className="text-xs text-white/70 leading-relaxed mb-4">
-              Working at Light Agribusiness provides hands-on problem solving on real commercial farms across Nigeria, Kenya, and Ghana.
+              Working at Light Agribusiness provides hands-on problem solving on
+              real commercial farms across Nigeria, Kenya, and Ghana.
             </p>
             <button
               onClick={() => setActiveVideoModal(null)}
