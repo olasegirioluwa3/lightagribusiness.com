@@ -20,7 +20,7 @@ const offices = [
     name: "Abeokuta Office",
     address: "Abeokuta, Nigeria",
     email: "hello@lightagribusiness.com",
-    phone: "+234 801 234 5678",
+    phone: "+234 703 887 4959, 0707 915 4039",
     mapUrl:
       "https://www.google.com/maps/search/?api=1&query=Abeokuta%2C+Nigeria",
     image: "/image/lightagribusiness-gallery (22).jpg",
@@ -29,7 +29,7 @@ const offices = [
     name: "Abuja Office",
     address: "Abuja, Nigeria",
     email: "hello@lightagribusiness.com",
-    phone: "+234 801 234 5678",
+    phone: "+234 703 887 4959, 0707 915 4039",
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Abuja%2C+Nigeria",
     image: "/image/lightagribusiness-gallery (23).jpg",
   },
@@ -37,7 +37,7 @@ const offices = [
     name: "Ilorin Office",
     address: "Ilorin, Nigeria",
     email: "hello@lightagribusiness.com",
-    phone: "+234 801 234 5678",
+    phone: "+234 703 887 4959, 0707 915 4039",
     mapUrl:
       "https://www.google.com/maps/search/?api=1&query=Geri-Alimi%2C+Ilorin%2C+Kwara+State%2C+Nigeria",
     image: "/image/lightagribusiness-gallery (24).jpg",
@@ -288,7 +288,7 @@ export const ContactChannels: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-2 text-xs text-brand-grey">
                   <HiPhone className="w-4 h-4 text-brand-green shrink-0" />
-                  <span>+234 801 234 5678</span>
+                  <span>+234 703 887 4959, 0707 915 4039</span>
                 </div>
               </div>
             </div>

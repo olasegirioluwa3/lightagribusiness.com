@@ -14,38 +14,32 @@ export const AboutSystem: React.FC = () => {
     {
       icon: HiUsers,
       label: "People",
-      className:
-        "top-0 left-1/2 -translate-x-1/2",
+      className: "top-0 left-1/2 -translate-x-1/2",
     },
     {
       icon: HiSparkles,
       label: "Production",
-      className:
-        "top-[22%] right-0",
+      className: "top-[22%] right-0",
     },
     {
       icon: HiCurrencyDollar,
       label: "Finance",
-      className:
-        "bottom-[22%] right-0",
+      className: "bottom-[22%] right-0",
     },
     {
       icon: HiChartBar,
       label: "Markets",
-      className:
-        "bottom-0 left-1/2 -translate-x-1/2",
+      className: "bottom-0 left-1/2 -translate-x-1/2",
     },
     {
       icon: HiChip,
       label: "Technology",
-      className:
-        "bottom-[22%] left-0",
+      className: "bottom-[22%] left-0",
     },
     {
       icon: HiGlobeAlt,
       label: "Environment",
-      className:
-        "top-[22%] left-0",
+      className: "top-[22%] left-0",
     },
   ];
 
@@ -53,7 +47,6 @@ export const AboutSystem: React.FC = () => {
     <section className="bg-[#F5F8F5] py-16 lg:py-20">
       <Container size="lg">
         <div className="grid lg:grid-cols-[420px_1fr] gap-12 items-center">
-
           {/* LEFT CONTENT */}
           <div>
             <span className="block mb-3 text-[10px] font-bold uppercase tracking-[0.25em] text-[#1F5C3F]">
@@ -66,15 +59,14 @@ export const AboutSystem: React.FC = () => {
 
             <div className="space-y-4 text-sm lg:text-[15px] leading-relaxed text-[#53625B]">
               <p>
-                Agribusiness is a connected system. People affect
-                production. Production affects finance. Finance
-                affects investment. Markets affect production
-                decisions.
+                Agribusiness is a connected system. People affect production.
+                Production affects finance. Finance affects investment. Markets
+                affect production decisions.
               </p>
 
               <p>
-                Technology affects visibility. The environment
-                affects everything.
+                Technology affects visibility. The environment affects
+                everything.
               </p>
             </div>
 
@@ -92,7 +84,6 @@ export const AboutSystem: React.FC = () => {
           {/* RIGHT DIAGRAM */}
           <div className="flex min-w-0 justify-center px-3 sm:px-0">
             <div className="relative aspect-square w-full max-w-[420px]">
-
               {/* OUTER RING */}
               <div className="absolute inset-10 rounded-full border border-[#C9D7CC]" />
 
@@ -117,7 +108,6 @@ export const AboutSystem: React.FC = () => {
                     className={`absolute ${item.className}`}
                   >
                     <div className="flex items-center gap-2">
-
                       {item.label === "Environment" && (
                         <span className="text-xs font-medium text-[#0D2A1E]">
                           {item.label}
@@ -134,12 +124,9 @@ export const AboutSystem: React.FC = () => {
                         <Icon className="w-5 h-5 text-[#1F5C3F]" />
                       </div>
 
-                      {[
-                        "People",
-                        "Production",
-                        "Finance",
-                        "Markets",
-                      ].includes(item.label) && (
+                      {["People", "Production", "Finance", "Markets"].includes(
+                        item.label,
+                      ) && (
                         <span className="text-xs font-medium text-[#0D2A1E] whitespace-nowrap">
                           {item.label}
                         </span>
@@ -150,7 +137,6 @@ export const AboutSystem: React.FC = () => {
               })}
             </div>
           </div>
-
         </div>
       </Container>
     </section>

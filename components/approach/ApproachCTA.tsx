@@ -31,7 +31,9 @@ export const ApproachCTA: React.FC = () => {
               Ready to put a clearer plan in place for your agribusiness?
             </h2>
             <p className="text-sm text-white/70 leading-[1.85] max-w-xl">
-              Whatever stage you are at, we&apos;re ready to listen, understand and help you build a stronger, more productive and more investable agribusiness.
+              Whatever stage you are at, we&apos;re ready to listen, understand
+              and help you build a stronger, more productive and more investable
+              agribusiness.
             </p>
           </div>
 

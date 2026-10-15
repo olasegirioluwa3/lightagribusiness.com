@@ -35,7 +35,6 @@ export const AboutApproach = () => {
     <section className="bg-white py-0">
       <Container size="lg">
         <div className="grid min-w-0 lg:grid-cols-[420px_minmax(0,1fr)]">
-
           {/* Left Banner */}
           <div className="relative min-h-[280px] overflow-hidden sm:min-h-[320px]">
             <Image
@@ -59,15 +58,13 @@ export const AboutApproach = () => {
               </h2>
 
               <p className="text-white/85">
-                Every engagement begins by asking
-                better questions.
+                Every engagement begins by asking better questions.
               </p>
             </div>
           </div>
 
           {/* Right Timeline */}
           <div className="grid grid-cols-1 gap-4 px-6 py-8 sm:grid-cols-2 lg:px-8 xl:flex xl:items-center xl:justify-between xl:gap-2 xl:px-4 xl:py-12">
-
             {steps.map((step, index) => (
               <React.Fragment key={step.number}>
                 <div className="mx-auto w-full max-w-sm rounded-xl border border-[#E8E4DA] bg-[#FAF9F5] p-4 text-center xl:w-[100px] xl:shrink-0 xl:rounded-none xl:border-0 xl:bg-transparent xl:p-0">

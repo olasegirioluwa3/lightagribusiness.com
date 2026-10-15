@@ -18,7 +18,6 @@ export const AboutCommitment = () => {
 
       <Container size="lg" className="relative z-10">
         <div className="py-16 text-center sm:py-20 lg:py-24">
-
           <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.22em] text-[#8BC34A]">
             Our Commitment
           </p>
@@ -28,15 +27,13 @@ export const AboutCommitment = () => {
           </h2>
 
           <p className="mx-auto mb-10 max-w-4xl text-[15px] leading-relaxed text-white/80">
-            Whether you need to improve an agribusiness,
-            build capability, explore investment readiness,
-            strengthen an institution or understand how
-            technology can help — there is a clearer next step.
+            Whether you need to improve an agribusiness, build capability,
+            explore investment readiness, strengthen an institution or
+            understand how technology can help — there is a clearer next step.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center gap-4">
-
             <Link
               href="/advisory"
               className="px-7 py-3 rounded-full bg-[#2EA64D] text-white font-medium hover:bg-[#249040]"
@@ -64,7 +61,6 @@ export const AboutCommitment = () => {
             >
               Discuss a Partnership
             </Link>
-
           </div>
         </div>
       </Container>

@@ -4,7 +4,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
-import { HiArrowRight, HiShieldCheck, HiLightningBolt, HiChip } from "react-icons/hi";
+import {
+  HiArrowRight,
+  HiShieldCheck,
+  HiLightningBolt,
+  HiChip,
+} from "react-icons/hi";
 
 const valueProps = [
   { icon: HiShieldCheck, label: "Proven frameworks" },
